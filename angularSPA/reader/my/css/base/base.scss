@@ -21,7 +21,6 @@ html{
 }
 body{
     font-size: 15px;
-    background: #000;
 }
 @each $w in $d-list{
     @media screen and (min-width: #{$w}){
@@ -76,3 +75,4 @@ input{
 .clear{
     clear: both;
 }
+$imgPath:'../img/';

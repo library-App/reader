@@ -1,3 +1,1 @@
-app.controller("readCtrl",["$scope",function($scope){
-	
-}])
+app.controller('myfiveCtrl', ['$scope', function($scope){}])

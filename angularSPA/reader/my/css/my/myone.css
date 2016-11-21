@@ -144,22 +144,28 @@ a {
 }
 
 /*顶部*/
-#persontopintercalate {
+#myone {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#myone #persontopintercalate {
   width: 100%;
   height: 1.08rem;
   background: #2BA6DC;
 }
 
-#persontopintercalate .install {
+#myone #persontopintercalate .install {
   width: 100%;
   height: 1.08rem;
 }
 
-#persontopintercalate .install li {
+#myone #persontopintercalate .install li {
   line-height: 1.08rem;
 }
 
-#persontopintercalate .install .left {
+#myone #persontopintercalate .install .left {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -167,18 +173,19 @@ a {
   left: 0.24rem;
 }
 
-#persontopintercalate .install .left span {
+#myone #persontopintercalate .install .left span {
   display: inline-block;
   width: 0.44rem;
   height: 0.44rem;
   border: 3px solid #0F74B5;
   border-radius: 50%;
-  background: #FAFAFA;
+  background: #FAFAFA url("../../img/my/11.png") no-repeat;
+  background-size: 30%;
+  background-position: center;
   margin-top: 0.32rem;
 }
 
-#persontopintercalate .install .left span img {
-  width: 30%;
+#myone #persontopintercalate .install .middle {
   position: absolute;
   left: 0;
   right: 0;
@@ -189,18 +196,7 @@ a {
   margin: auto;
 }
 
-#persontopintercalate .install .middle {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-#persontopintercalate .install .middle div:nth-of-type(1) {
+#myone #persontopintercalate .install .middle div:nth-of-type(1) {
   line-height: 0.9rem;
   text-align: center;
   height: 50%;
@@ -208,15 +204,17 @@ a {
   color: #FAFAFA;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(2) {
+#myone #persontopintercalate .install .middle div:nth-of-type(2) {
   line-height: 0.2rem;
   text-align: center;
   height: 25%;
   font-size: 0.35rem;
   color: #FAFAFA;
+  background: url("../../img/my/1.png") no-repeat;
+  background-position: center 52%;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(3) {
+#myone #persontopintercalate .install .middle div:nth-of-type(3) {
   line-height: 0rem;
   text-align: center;
   height: 25%;
@@ -224,7 +222,7 @@ a {
   color: #90DCFF;
 }
 
-#persontopintercalate .install .right {
+#myone #persontopintercalate .install .right {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -232,29 +230,19 @@ a {
   right: 0.24rem;
 }
 
-#persontopintercalate .install .right span {
+#myone #persontopintercalate .install .right span {
   display: inline-block;
   width: 0.44rem;
   height: 0.44rem;
   border: 3px solid #0F74B5;
   border-radius: 50%;
-  background: #FAFAFA;
+  background: #FAFAFA url("../../img/my/10.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
   margin-top: 0.32rem;
 }
 
-#persontopintercalate .install .right span img {
-  width: 70%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-#personmain {
+#myone #personmain {
   widows: 100%;
   height: auto;
   position: absolute;
@@ -264,7 +252,7 @@ a {
   top: 1.29rem;
 }
 
-#personmain .list {
+#myone #personmain .list {
   position: absolute;
   left: 0;
   right: 0;
@@ -276,30 +264,32 @@ a {
   border-radius: 0.02rem;
 }
 
-#personmain .list li {
+#myone #personmain .list li {
   height: 0.87rem;
   border-bottom: 1px dotted #B8B8B8;
   line-height: 0.87rem;
   font-size: 0.11rem;
 }
 
-#personmain .list li div {
+#myone #personmain .list li div {
   display: inline-block;
 }
 
-#personmain .list li .lister {
+#myone #personmain .list li .lister {
   display: inline-block;
   float: right;
   margin-right: 0.31rem;
+  background: url("../../img/my/7.png") no-repeat;
+  background-position: right;
 }
 
-#personmain .list li .lister h6 {
+#myone #personmain .list li .lister h6 {
   display: inline-block;
-  margin-right: 0.11rem;
+  margin-right: 0.3rem;
   color: #3D3D3D;
 }
 
-#personmain .list li .lister .cirty {
+#myone #personmain .list li .lister .cirty {
   width: 0.88rem;
   height: 0.42rem;
   border: 0.03rem solid #D9E1FF;
@@ -307,7 +297,7 @@ a {
   margin-right: 0;
 }
 
-#personmain .list li .lister .cirty .cir {
+#myone #personmain .list li .lister .cirty .cir {
   width: 0.26rem;
   height: 0.26rem;
   border: 0.03rem solid #D9E1FF;
@@ -320,7 +310,7 @@ a {
   right: 0.03rem;
 }
 
-#personmain .list li .lister .cirty .cir .smallcir {
+#myone #personmain .list li .lister .cirty .cir .smallcir {
   width: 0.06rem;
   height: 0.06rem;
   border-radius: 50%;
@@ -332,20 +322,20 @@ a {
   left: 0.03rem;
 }
 
-#personmain .list li h2 {
+#myone #personmain .list li h2 {
   line-height: 0.7rem;
   height: 50%;
   color: #363636;
   font-size: 0.16rem;
 }
 
-#personmain .list li p {
+#myone #personmain .list li p {
   height: 50%;
   line-height: 0.01rem;
   color: #666666;
 }
 
-#personmain .list li span {
+#myone #personmain .list li span {
   margin-left: 0.165rem;
   margin-right: 0.165rem;
   margin-top: 0.27rem;
@@ -353,33 +343,79 @@ a {
   display: inline-block;
   width: 0.33rem;
   height: 0.33rem;
-  background: #3D63FD;
+  background: #3D63FD url("../../img/my/12.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
   border-radius: 50%;
   text-align: center;
   line-height: 0.33rem;
 }
 
-#personmain .list li span img {
-  width: 70%;
+#myone #personmain .list li #xixw {
+  background: transparent;
 }
 
-#personmain .list li .qblue {
-  background: #3DBFFD;
+#myone #personmain .list li #xixw span {
+  background: transparent;
 }
 
-#personmain .list li .green {
+#myone #personmain .list li #xixw .cirty {
+  width: 0.88rem;
+  height: 0.42rem;
+  border: 0.03rem solid #D9E1FF;
+  border-radius: 0.42rem;
+  margin-right: 0;
+  background: #3D91FD;
+}
+
+#myone #personmain .list li #xixw .cirty .cir {
+  width: 0.26rem;
+  height: 0.26rem;
+  border: 0.03rem solid #D9E1FF;
+  border-radius: 0.26rem;
+  background: #FAFAFA;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.03rem;
+}
+
+#myone #personmain .list li #xixw .cirty .cir .smallcir {
+  width: 0.06rem;
+  height: 0.06rem;
+  border-radius: 50%;
   background: #2FE7CB;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.03rem;
 }
 
-#personmain .list li .yellow {
-  background: #FDCD3D;
+#myone #personmain .list li .qblue {
+  background: #3DBFFD url("../../img/my/13.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 
-#personmain .list .last {
+#myone #personmain .list li .green {
+  background: #2FE7CB url("../../img/my/14.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+#myone #personmain .list li .yellow {
+  background: #FDCD3D url("../../img/my/15.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+#myone #personmain .list .last {
   border: 0;
 }
 
-#quit {
+#myone #quit {
   width: 100%;
   height: 0.7rem;
   position: absolute;
@@ -389,7 +425,7 @@ a {
   top: 11.49rem;
 }
 
-#quit .quitcon {
+#myone #quit .quitcon {
   width: 5.64rem;
   height: 100%;
   position: absolute;
@@ -409,7 +445,7 @@ a {
   font-weight: bold;
 }
 
-#quit .quitcon span {
+#myone #quit .quitcon span {
   display: inline-block;
   width: 0.06rem;
   height: 0.06rem;
@@ -417,7 +453,7 @@ a {
   border-radius: 50%;
 }
 
-#quit .quitcon .left {
+#myone #quit .quitcon .left {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -425,7 +461,7 @@ a {
   left: 0.34rem;
 }
 
-#quit .quitcon .right {
+#myone #quit .quitcon .right {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -433,7 +469,7 @@ a {
   right: 0.34rem;
 }
 
-#shade {
+#myone #shade {
   display: none;
   width: 100%;
   height: 100%;
@@ -446,7 +482,7 @@ a {
   top: 0;
 }
 
-#Headportrait {
+#myone #Headportrait {
   display: none;
   position: absolute;
   left: 0;
@@ -463,7 +499,7 @@ a {
   border-radius: 0.2rem;
 }
 
-#Headportrait .headp {
+#myone #Headportrait .headp {
   position: absolute;
   left: 0;
   right: 0;
@@ -473,33 +509,29 @@ a {
   height: 100%;
 }
 
-#Headportrait .headp .first {
+#myone #Headportrait .headp .first {
   height: 0.72rem;
-}
-
-#Headportrait .headp .first img {
-  width: 100%;
-  height: 100%;
+  background: url("../../img/my/25.png") no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-#Headportrait .headp .first .pers {
+#myone #Headportrait .headp .first .pers {
   position: absolute;
   top: 0.18rem;
   left: 0.54rem;
   width: 0.36rem;
   height: 0.36rem;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #FFFFFF url("../../img/my/28.png") no-repeat;
+  background-position: center;
+  background-size: 60%;
   text-align: center;
   line-height: 0.36rem;
 }
 
-#Headportrait .headp .first .pers img {
-  width: 70%;
-}
-
-#Headportrait .headp .first h5 {
+#myone #Headportrait .headp .first h5 {
   position: absolute;
   top: 0.18rem;
   left: 1.04rem;
@@ -508,7 +540,7 @@ a {
   font-weight: normal;
 }
 
-#Headportrait .headp .first h6 {
+#myone #Headportrait .headp .first h6 {
   position: absolute;
   top: 0.4rem;
   left: 1.04rem;
@@ -517,19 +549,19 @@ a {
   font-weight: normal;
 }
 
-#Headportrait .headp .second {
+#myone #Headportrait .headp .second {
   margin: 0 auto;
   width: 4.34rem;
   height: 0.9rem;
   border-bottom: 1px dotted #999999;
 }
 
-#Headportrait .headp .second .leftd {
+#myone #Headportrait .headp .second .leftd {
   margin-left: 0.15rem;
   display: inline-block;
 }
 
-#Headportrait .headp .second .rightd {
+#myone #Headportrait .headp .second .rightd {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -539,7 +571,7 @@ a {
   text-align: center;
 }
 
-#Headportrait .headp .second .rightd span {
+#myone #Headportrait .headp .second .rightd span {
   margin: 0;
   margin-top: 0.3rem;
   width: 0.3rem;
@@ -549,21 +581,21 @@ a {
   background: transparent;
 }
 
-#Headportrait .headp .second h2 {
+#myone #Headportrait .headp .second h2 {
   line-height: 0.7rem;
   height: 50%;
   color: #363636;
   font-size: 0.22rem;
 }
 
-#Headportrait .headp .second p {
+#myone #Headportrait .headp .second p {
   height: 50%;
   line-height: 0.01rem;
   color: #666666;
   font-size: 0.13rem;
 }
 
-#Headportrait .headp .second span {
+#myone #Headportrait .headp .second span {
   margin-left: 0.165rem;
   margin-right: 0.165rem;
   margin-top: 0.3rem;
@@ -577,20 +609,20 @@ a {
   line-height: 0.33rem;
 }
 
-#Headportrait .headp .second span img {
+#myone #Headportrait .headp .second span img {
   width: 50%;
 }
 
-#Headportrait .headp .second .yellow {
+#myone #Headportrait .headp .second .yellow {
   background: #E1B42E;
 }
 
-#Headportrait .headp .three {
+#myone #Headportrait .headp .three {
   width: 100%;
   height: 1.49rem;
 }
 
-#Headportrait .headp .three span {
+#myone #Headportrait .headp .three span {
   display: inline-block;
   width: 1.95rem;
   height: 0.58rem;
@@ -600,7 +632,7 @@ a {
   background: #29DD8B;
 }
 
-#Headportrait .headp .three .left {
+#myone #Headportrait .headp .three .left {
   background: #FAFAFA;
   border: 1px solid #29DD8B;
   position: absolute;
@@ -613,7 +645,7 @@ a {
   text-align: center;
 }
 
-#Headportrait .headp .three .left .cirl {
+#myone #Headportrait .headp .three .left .cirl {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -625,7 +657,7 @@ a {
   background: #29DD8B;
 }
 
-#Headportrait .headp .three .left .cirr {
+#myone #Headportrait .headp .three .left .cirr {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -637,7 +669,7 @@ a {
   background: #29DD8B;
 }
 
-#Headportrait .headp .three .right {
+#myone #Headportrait .headp .three .right {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -648,7 +680,7 @@ a {
   color: #FAFAFA;
 }
 
-#Headportrait .headp .three .right .cirl {
+#myone #Headportrait .headp .three .right .cirl {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -660,7 +692,7 @@ a {
   background: #FAFAFA;
 }
 
-#Headportrait .headp .three .right .cirr {
+#myone #Headportrait .headp .three .right .cirr {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -672,7 +704,7 @@ a {
   background: #FAFAFA;
 }
 
-#Headportrait .headp .dx .rightd span .cir {
+#myone #Headportrait .headp .dx .rightd span .cir {
   margin: 0 auto;
   width: 0.14rem;
   height: 0.14rem;
@@ -682,7 +714,7 @@ a {
   margin-left: 0.055rem;
 }
 
-#Sex {
+#myone #Sex {
   display: none;
   position: absolute;
   left: 0;
@@ -699,7 +731,7 @@ a {
   border-radius: 0.2rem;
 }
 
-#Sex .headp {
+#myone #Sex .headp {
   position: absolute;
   left: 0;
   right: 0;
@@ -709,17 +741,15 @@ a {
   height: 100%;
 }
 
-#Sex .headp .first {
+#myone #Sex .headp .first {
   height: 0.72rem;
-}
-
-#Sex .headp .first img {
-  width: 100%;
-  height: 100%;
+  background: url("../../img/my/25.png") no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
   border-radius: 0.2rem 0.2rem 0 0;
 }
 
-#Sex .headp .first .leftd {
+#myone #Sex .headp .first .leftd {
   width: 70%;
   position: absolute;
   top: 0;
@@ -728,24 +758,21 @@ a {
   left: 0.15rem;
 }
 
-#Sex .headp .first .leftd .pers {
+#myone #Sex .headp .first .leftd .pers {
   position: absolute;
   top: 0.18rem;
   left: 0.54rem;
   width: 0.36rem;
   height: 0.36rem;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #FFFFFF url("../../img/my/35.png") no-repeat;
+  background-position: center;
+  background-size: 60%;
   text-align: center;
   line-height: 0.36rem;
 }
 
-#Sex .headp .first .leftd .pers img {
-  width: 70%;
-  height: 70%;
-}
-
-#Sex .headp .first .leftd h5 {
+#myone #Sex .headp .first .leftd h5 {
   position: absolute;
   top: 0.18rem;
   left: 1.04rem;
@@ -754,7 +781,7 @@ a {
   font-weight: normal;
 }
 
-#Sex .headp .first .leftd h6 {
+#myone #Sex .headp .first .leftd h6 {
   position: absolute;
   top: 0.4rem;
   left: 1.04rem;
@@ -763,7 +790,7 @@ a {
   font-weight: normal;
 }
 
-#Sex .headp .first .rightd {
+#myone #Sex .headp .first .rightd {
   width: 30%;
   position: absolute;
   top: 0;
@@ -774,7 +801,7 @@ a {
   text-align: center;
 }
 
-#Sex .headp .first .rightd span {
+#myone #Sex .headp .first .rightd span {
   display: inline-block;
   width: 0.3rem;
   height: 0.3rem;
@@ -782,7 +809,7 @@ a {
   border-radius: 50%;
 }
 
-#Sex .headp .first .rightd span .cir {
+#myone #Sex .headp .first .rightd span .cir {
   margin: 0 auto;
   width: 0.2rem;
   height: 0.2rem;
@@ -792,7 +819,7 @@ a {
   margin-left: 0.025rem;
 }
 
-#Sex .headp .first .rightd .xz {
+#myone #Sex .headp .first .rightd .xz {
   color: #FAFAFA;
   font-size: 0.14rem;
   width: auto;
@@ -800,19 +827,19 @@ a {
   border: 0;
 }
 
-#Sex .headp .second {
+#myone #Sex .headp .second {
   margin: 0 auto;
   width: 4.34rem;
   height: 0.9rem;
   border-bottom: 1px dotted #999999;
 }
 
-#Sex .headp .second .leftd {
+#myone #Sex .headp .second .leftd {
   margin-left: 0.15rem;
   display: inline-block;
 }
 
-#Sex .headp .second .rightd {
+#myone #Sex .headp .second .rightd {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -822,7 +849,7 @@ a {
   text-align: center;
 }
 
-#Sex .headp .second .rightd span {
+#myone #Sex .headp .second .rightd span {
   margin: 0;
   margin-top: 0.3rem;
   width: 0.3rem;
@@ -832,21 +859,21 @@ a {
   background: transparent;
 }
 
-#Sex .headp .second h2 {
+#myone #Sex .headp .second h2 {
   line-height: 0.7rem;
   height: 50%;
   color: #363636;
   font-size: 0.22rem;
 }
 
-#Sex .headp .second p {
+#myone #Sex .headp .second p {
   height: 50%;
   line-height: 0.01rem;
   color: #666666;
   font-size: 0.13rem;
 }
 
-#Sex .headp .second span {
+#myone #Sex .headp .second span {
   margin-left: 0.165rem;
   margin-right: 0.165rem;
   margin-top: 0.3rem;
@@ -860,20 +887,20 @@ a {
   line-height: 0.33rem;
 }
 
-#Sex .headp .second span img {
+#myone #Sex .headp .second span img {
   width: 50%;
 }
 
-#Sex .headp .second .yellow {
+#myone #Sex .headp .second .yellow {
   background: #E1B42E;
 }
 
-#Sex .headp .three {
+#myone #Sex .headp .three {
   width: 100%;
   height: 1.49rem;
 }
 
-#Sex .headp .three span {
+#myone #Sex .headp .three span {
   display: inline-block;
   width: 1.95rem;
   height: 0.58rem;
@@ -883,7 +910,7 @@ a {
   background: #29DD8B;
 }
 
-#Sex .headp .three .left {
+#myone #Sex .headp .three .left {
   background: #FAFAFA;
   border: 1px solid #29DD8B;
   position: absolute;
@@ -896,7 +923,7 @@ a {
   text-align: center;
 }
 
-#Sex .headp .three .left .cirl {
+#myone #Sex .headp .three .left .cirl {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -908,7 +935,7 @@ a {
   background: #29DD8B;
 }
 
-#Sex .headp .three .left .cirr {
+#myone #Sex .headp .three .left .cirr {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -920,7 +947,7 @@ a {
   background: #29DD8B;
 }
 
-#Sex .headp .three .right {
+#myone #Sex .headp .three .right {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -931,7 +958,7 @@ a {
   color: #FAFAFA;
 }
 
-#Sex .headp .three .right .cirl {
+#myone #Sex .headp .three .right .cirl {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -943,7 +970,7 @@ a {
   background: #FAFAFA;
 }
 
-#Sex .headp .three .right .cirr {
+#myone #Sex .headp .three .right .cirr {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -955,7 +982,7 @@ a {
   background: #FAFAFA;
 }
 
-#Sex .headp .dx .rightd span .cir {
+#myone #Sex .headp .dx .rightd span .cir {
   margin: 0 auto;
   width: 0.14rem;
   height: 0.14rem;

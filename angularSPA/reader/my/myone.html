@@ -1,73 +1,61 @@
-<!doctype html>
-<html lang="en" ng-app="reminder">
-<head>
-	<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title></title>
-		<script type="text/javascript"src="js/jquery.js"></script>
-		<script src="http://cdn.bootcss.com/angular.js/1.5.8/angular.js"></script>
-		<script type="text/javascript"src="js/my/myone.js"></script>
-		<link rel="stylesheet" href="css/my/myone.css" />
-</head>
-<body ng-controller="ctrl">
+
 	<!--顶部-->
+	<div id="myone">
 	<div id="persontopintercalate">
 		<ul class="install">
 			<li class="left">
 				<span>
-					<a href="my.html"><img src="img/my/11.png" alt="" /></a>
+					<a href="#/my"></a>
 				</span>
 			</li>
 			<li class="middle">
 				<div>设置</div>
 				<div>
-					<img src="img/my/1.png" alt="" />
 				</div>
 				<div>Settings</div>
 			</li>
 			<li class="right">
 				<span>
-					<a href="mythree.html"><img src="img/my/10.png" alt="" /></a>
+					<a href="#/mythree"></a>
 				</span>
 			</li>
 		</ul>
 	</div>
 	<div id="personmain">
 		<ul class="list">
-			<div wd-l>
-			<!--<li>-->
+			<!--<div wd-l>-->
+			<li>
 				<a href="">
-					<span class="dblue"><img src="img/my/12.png" alt="" /></span>
+					<span class="dblue"></span>
 					<div>
 						<h2>阅读休息提醒</h2>
 					    <p>Read the rest reminders</p>
 					</div>
 					<div class="lister">
 						<h6>关闭</h6>
-						<img src="img/my/7.png" alt="" />
 					</div>
 				</a>
-			<!--</li>-->
-			</div>
+			</li>
+			<!--</div>-->
 			<li>
-				<a href="mytwo.html">
-					<span class="qblue"><img src="img/my/13.png" alt="" /></span>
+				<a href="#/mytwo">
+					<span class="qblue"></span>
 					<div>
 						<h2>推荐偏好</h2>
 						<p>Recommended Preferences</p>
 					</div>
 					<div class="lister">
-						<img src="img/my/7.png" alt="" />
+						<h6></h6>
 					</div>
 				</a>
 			</li>
 			<li>
-				<span class="green"><img src="img/my/14.png" alt="" /></span>
+				<span class="green"></span>
 				<div>
 					<h2>启动后继续上次阅读</h2>
 					<p>Continue reading after startup</p>
 				</div>
-				<div class="lister">
+				<div class="lister" id="xixw">
 					<span class="cirty">
 						<span class="cir">
 							<span class="smallcir"></span>
@@ -75,20 +63,20 @@
 					</span>
 				</div>
 			</li>
-			<div yj-h>
-			<!--<li class="last">-->
+			<!--<div yj-h>-->
+			<li class="last">
 				<a href="">
-					<span class="yellow"><img src="img/my/15.png" alt="" /></span>
+					<span class="yellow"></span>
 					<div>
 						<h2>清除缓存</h2>
 						<p>clear cache</p>
 					</div>
 					<div class="lister">
-						<img src="img/my/7.png" alt="" />
+						<h6></h6>
 					</div>
 				</a>
-			<!--</li>-->
-			</div>
+			</li>
+			<!--</div>-->
 		</ul>
 	</div>
 	<div id="quit">
@@ -102,9 +90,7 @@
 	<div id="Headportrait">
 		<ul class='headp'>
 			<li class="first">
-				<img src="img/my/25.png"/>
 				<span class="pers">
-					<img src="img/my/28.png" alt="" />
 				</span>
 				<h5>阅读休息提醒设置</h5>
 				<h6>Read the rest reminder settings</h6>
@@ -170,10 +156,8 @@
 	<div id="Sex">
 		<ul class='headp'>
 			<li class="first">
-				<img src="img/my/25.png"/>
 				<div class="leftd">
 					<span class="pers">
-					    <img src="img/my/35.png" alt="" />
 					</span>
 					<h5>清除缓存</h5>
 					<h6>clear cache</h6>
@@ -244,5 +228,4 @@
 			</li>
 		</ul>
 	</div>
-</body>
-</html>
+	</div>

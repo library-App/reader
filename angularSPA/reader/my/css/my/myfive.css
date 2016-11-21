@@ -23,7 +23,6 @@ html {
 
 body {
   font-size: 15px;
-  background: #000;
 }
 
 @media screen and (min-width: 320px) {
@@ -113,10 +112,6 @@ input {
   clear: both;
 }
 
-body {
-  background: #FAFAFA;
-}
-
 body, html {
   width: 100%;
   height: 100%;
@@ -140,22 +135,22 @@ a {
 }
 
 /*顶部*/
-#persontopintercalate {
+#myfive #persontopintercalate {
   width: 100%;
   height: 1.08rem;
   background: #2BA6DC;
 }
 
-#persontopintercalate .install {
+#myfive #persontopintercalate .install {
   width: 100%;
   height: 1.08rem;
 }
 
-#persontopintercalate .install li {
+#myfive #persontopintercalate .install li {
   line-height: 1.08rem;
 }
 
-#persontopintercalate .install .left {
+#myfive #persontopintercalate .install .left {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -163,17 +158,19 @@ a {
   left: 0.24rem;
 }
 
-#persontopintercalate .install .left span {
+#myfive #persontopintercalate .install .left span {
   display: inline-block;
   width: 0.44rem;
   height: 0.44rem;
   border: 3px solid #0F74B5;
   border-radius: 50%;
-  background: #FAFAFA;
+  background: #FAFAFA url("../../img/my/11.png") no-repeat;
+  background-size: 30%;
+  background-position: center;
   margin-top: 0.32rem;
 }
 
-#persontopintercalate .install .left span img {
+#myfive #persontopintercalate .install .left span img {
   width: 30%;
   position: absolute;
   left: 0;
@@ -185,7 +182,7 @@ a {
   margin: auto;
 }
 
-#persontopintercalate .install .middle {
+#myfive #persontopintercalate .install .middle {
   position: absolute;
   left: 0;
   right: 0;
@@ -196,7 +193,7 @@ a {
   margin: auto;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(1) {
+#myfive #persontopintercalate .install .middle div:nth-of-type(1) {
   line-height: 0.9rem;
   text-align: center;
   height: 50%;
@@ -204,15 +201,17 @@ a {
   color: #FAFAFA;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(2) {
+#myfive #persontopintercalate .install .middle div:nth-of-type(2) {
   line-height: 0.2rem;
   text-align: center;
   height: 25%;
   font-size: 0.35rem;
   color: #FAFAFA;
+  background: url("../../img/my/1.png") no-repeat;
+  background-position: center 52%;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(3) {
+#myfive #persontopintercalate .install .middle div:nth-of-type(3) {
   line-height: 0rem;
   text-align: center;
   height: 25%;
@@ -220,7 +219,7 @@ a {
   color: #90DCFF;
 }
 
-#personmain {
+#myfive #personmain {
   widows: 100%;
   height: auto;
   position: absolute;
@@ -230,7 +229,7 @@ a {
   top: 1.29rem;
 }
 
-#personmain .list {
+#myfive #personmain .list {
   position: absolute;
   left: 0;
   right: 0;
@@ -242,25 +241,25 @@ a {
   border-radius: 0.02rem;
 }
 
-#personmain .list li {
+#myfive #personmain .list li {
   height: 20%;
 }
 
-#personmain .list li h2 {
+#myfive #personmain .list li h2 {
   line-height: 0.5rem;
   height: 50%;
   color: #363636;
   font-size: 0.16rem;
 }
 
-#personmain .list li p {
+#myfive #personmain .list li p {
   height: 50%;
   line-height: 0.02rem;
   color: #666666;
   font-size: 0.13rem;
 }
 
-#personmain .list li span {
+#myfive #personmain .list li span {
   margin-left: 0.165rem;
   margin-right: 0.165rem;
   margin-top: 0.27rem;
@@ -270,20 +269,19 @@ a {
   height: 0.34rem;
   text-align: center;
   line-height: 0.2rem;
+  background: url("../../img/my/32.png") no-repeat;
+  background-position: center;
+  background-size: 80%;
 }
 
-#personmain .list li span img {
-  width: 80%;
-}
-
-#personmain .list textarea {
+#myfive #personmain .list textarea {
   background: transparent;
   outline: medium;
   width: 100%;
   height: 80%;
 }
 
-#quit {
+#myfive #quit {
   width: 100%;
   height: 0.7rem;
   position: absolute;
@@ -293,7 +291,7 @@ a {
   top: 5.6rem;
 }
 
-#quit .quitcon {
+#myfive #quit .quitcon {
   width: 5.64rem;
   height: 100%;
   position: absolute;
@@ -313,7 +311,7 @@ a {
   font-weight: bold;
 }
 
-#quit .quitcon span {
+#myfive #quit .quitcon span {
   display: inline-block;
   width: 0.06rem;
   height: 0.06rem;
@@ -321,7 +319,7 @@ a {
   border-radius: 50%;
 }
 
-#quit .quitcon .left {
+#myfive #quit .quitcon .left {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -329,7 +327,7 @@ a {
   left: 0.34rem;
 }
 
-#quit .quitcon .right {
+#myfive #quit .quitcon .right {
   position: absolute;
   top: 0;
   bottom: 0;

@@ -1,80 +1,65 @@
-<!doctype html>
-<html lang="en" ng-app="reminder">
-<head>
-	<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title></title>
-		<script type="text/javascript"src="js/jquery.js"></script>
-		<script src="http://cdn.bootcss.com/angular.js/1.5.8/angular.js"></script>
-		<script type="text/javascript"src="js/my/my.js"></script>
-		<link rel="stylesheet" href="css/my/my.css" />
-</head>
-<body ng-controller="ctrl">
+
 	<!--顶部-->
+	<div id="my">
 	<div id="persontop">
 		<ul class="install">
 			<li class="left">
 				<span>
-					<a href="myone.html"><img src="img/my/9.png" alt="" /></a>
+					<a href="#/myone"></a>
 				</span>
 			</li>
 			<li class="middle">
 				<div>个人中心</div>
 				<div>
-					<img src="img/my/1.png" alt="" />
 				</div>
 				<div>Personal Center</div>
 			</li>
 			<li class="right">
 				<span>
-					<a href="mythree.html"><img src="img/my/10.png" alt="" /></a>
+					<a href="#/mythree"></a>
 				</span>
 			</li>
 		</ul>
 	</div>
 	<div id="personbody">
 		<ul class="cir1">
-			<li class="per"><a href="myfour.html"></a></li>
+			<li class="per"><a href="#/myfour"></a></li>
 			<li class="ziti1">烟雨九华</li>
-			<li class="ziti2">时间从未走远，在那些始终和时间赛跑的人身上。
-				<img src="img/my/3.png" alt="" />
-			</li>
+			<li class="ziti2">时间从未走远，在那些始终和时间赛跑的人身上。</li>
 		</ul>
 	</div>
 	<div id="personmain">
 		<ul class="list">
-			
 			<li>
-				<a href="mysix.html">
-					<span class="dblue"><img src="img/my/4.png" alt="" /></span>
+				<a href="#/mysix">
+					<span class="dblue"></span>
 					<div>
 						<h2>版本说明</h2>
 					    <p>Release Notes</p>
 					</div>
 					<div class="lister">
 						<h6>V1.0</h6>
-						<img src="img/my/7.png" alt="" />
 					</div>
 				</a>
 			</li>
-			<div wd-l>
+			<!--<div wd-l>-->
 			
-			<!--<li>-->
+			<li>
 				<a href="">
-					<span class="qblue"><img src="img/my/5.png" alt="" /></span>
+					<span class="qblue"></span>
 				<div>
 					<h2>检查更新</h2>
 					<p>Check for updates</p>
 				</div>
 				<div class="lister">
-					<img src="img/my/7.png" alt="" />
+					<h6></h6>
 				</div>
 				</a>
-			<!--</li>-->
-			</div>
+			</li>
+			<!--</div>-->
 			<li>
 				<a href="">
-					<span class="green"><img src="img/my/6.png" alt="" /></span>
+					<span class="green"></span>
 				<div>
 					<h2>联系反馈</h2>
 					<p>Contact Feedback</p>
@@ -82,8 +67,8 @@
 				</a>
 			</li>
 			<li class="last">
-				<a href="myfive.html">
-					<span class="yellow"><img src="img/my/8.png" alt="" /></span>
+				<a href="#/myfive">
+					<span class="yellow"></span>
 					<div>
 						<h2>意见反馈</h2>
 						<p>Feedback</p>
@@ -95,16 +80,24 @@
 	<div id="footer">
 		<ul class="footeran">
 			<li>
-				<div class="icon">&#xe68e;</div>
+				<a href="#/bookshelf">
+					<div class="icon">&#xe68e;</div>
 				<h3>书架</h3>
+				</a>
 			</li>
 			<li>
-				<div class="icon">&#xe616;</div>
-				<h3>书</h3>
+				<a href="#/select">
+					<div class="icon">&#xe616;</div>
+				<h3>书城</h3>
+				</a>
+				
 			</li>
 			<li class="last">
-				<div class="icon">&#xe615;</div>
-				<h3>我的</h3>
+				<a href="#/my">
+					<div class="icon">&#xe615;</div>
+				    <h3>我的</h3>
+				</a>
+				
 			</li>
 		</ul>
 	</div>
@@ -112,9 +105,7 @@
 	<div id="Sex">
 		<ul class='headp'>
 			<li class="first">
-				<img src="img/my/25.png"/>
 				<span class="pers">
-					<img src="img/my/34.png" alt="" />
 				</span>
 				<h5>版本更新</h5>
 				<h6>Version update</h6>
@@ -123,12 +114,10 @@
 				 <div class="first">恭喜您</div>
 				 <div>Congratulations</div>
 				 <div>当前已经是最新版本了</div>
-				 <div>
-				 	<img src="img/my/33.png"/>
+				 <div class="last">
 				 </div>
 			</li>
 		</ul>
 	</div>
-	
-</body>
-</html>
+	</div>
+

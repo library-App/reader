@@ -1,7 +1,4 @@
 @import "../base/base.scss";
-body{ 
-    background: #FAFAFA;
-}
 body,html{
     width: 100%;
     height: 100%;
@@ -17,6 +14,11 @@ a{
 }
 $img:"../../img/my/";
 /*顶部*/
+#myfour{ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+
 #persontopintercalate{
     width: 100%;
     height: 1.08rem; 
@@ -39,10 +41,9 @@ $img:"../../img/my/";
             border-radius: 50%;
             background: #FAFAFA;
             margin-top: 0.32rem;
-            img{
-                width: 30%;
-                @include center;
-            }
+            background: #FAFAFA url($img+"11.png")no-repeat;
+            background-size: 30%;
+            background-position: center;
         }
     }
     .install .middle{
@@ -60,6 +61,8 @@ $img:"../../img/my/";
             height: 25%;
             font-size: 0.35rem;
             color: #FAFAFA;
+            background:url($img+"1.png")no-repeat;
+            background-position: center 52%;
         }
         div:nth-of-type(3){
             line-height: 0rem;
@@ -90,10 +93,13 @@ $img:"../../img/my/";
             div{
                 display: inline-block;
             }
+            
             .lister{
                 display: inline-block;
                 float: right;
                 margin-right: 0.31rem;
+                background:url($img+"7.png")no-repeat;
+                background-position: right;
                 h6{
                     display: inline-block;
                     margin-right: 0.11rem;
@@ -124,6 +130,9 @@ $img:"../../img/my/";
                     }
                 }
             }
+            .weq{
+                background: transparent;
+            }
             h2{
                 line-height: 0.7rem;
                 height: 50%;
@@ -145,22 +154,27 @@ $img:"../../img/my/";
                 display: inline-block;
                 width: 0.33rem;
                 height: 0.33rem;
-                background: #3DCDFD;
+                background: #3D63FD url($img+"19.png")no-repeat;
+                background-size: 60%;
+                background-position: center;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 0.33rem;
-                img{
-                    width: 60%;
-                }
             }
             .qblue{
-                background: #3DFBFD;
+                background: #3DFBFD url($img+"21.png")no-repeat;
+                background-size: 60%;
+                background-position: center;
             }
             .green{
-                background: #3DFD9A;
+                background: #3DFD9A url($img+"22.png")no-repeat;
+                background-size: 60%;
+                background-position: center;
             }
             .yellow{
-                background: #FDCD3D;
+                background: #FDCD3D url($img+"22.png")no-repeat;
+                background-size: 60%;
+                background-position: center;
             }
         }
         .last{
@@ -192,6 +206,8 @@ $img:"../../img/my/";
                 display: inline-block;
                 float: right;
                 margin-right: 0.31rem;
+                background:url($img+"7.png")no-repeat;
+                background-position: right;
                 h6{
                     display: inline-block;
                     margin-right: 0.11rem;
@@ -222,6 +238,9 @@ $img:"../../img/my/";
                     }
                 }
             }
+            .weq{
+                background: transparent;
+            }
             h2{
                 line-height: 0.7rem;
                 height: 50%;
@@ -243,7 +262,9 @@ $img:"../../img/my/";
                 display: inline-block;
                 width: 0.33rem;
                 height: 0.33rem;
-                background: #3DFBFD;
+                background: #3DFBFD url($img+"23.png")no-repeat;
+                background-size: 50%;
+                background-position: center;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 0.33rem;
@@ -252,7 +273,9 @@ $img:"../../img/my/";
                 }
             }
             .yellow{
-                background: #E1B42E;
+                background: #E1B42E url($img+"24.png")no-repeat;
+                background-size: 50%;
+                background-position: center;
             }
         }
         .last{
@@ -285,11 +308,10 @@ $img:"../../img/my/";
         height: 100%;
         .first{
             height: 0.72rem;
-            img{
-                width: 100%;
-                height: 100%;
-                border-radius: 0.2rem 0.2rem 0 0;
-            }
+            background:url($img+"25.png")no-repeat;
+            background-position: center bottom;
+            background-size: 100%;
+            border-radius: 0.2rem 0.2rem 0 0;
             .pers{
                 position: absolute;
                 top: 0.18rem;
@@ -297,12 +319,11 @@ $img:"../../img/my/";
                 width: 0.36rem;
                 height: 0.36rem;
                 border-radius: 50%;
-                background: #FFFFFF;
+                background:#FFFFFF url($img+"28.png")no-repeat;
+                background-position: center;
+                background-size: 60%;
                 text-align: center;
                 line-height: 0.36rem;
-                img{
-                    width: 70%;
-                }
             }
             h5{
                 position: absolute;
@@ -350,16 +371,12 @@ $img:"../../img/my/";
                 display: inline-block;
                 width: 0.33rem;
                 height: 0.33rem;
-                background: #34FC87;
+                background:#34FC87 url($img+"26.png")no-repeat;
+                background-position: center;
+                background-size: 60%;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 0.33rem;
-                img{
-                    width: 50%;
-                }
-            }
-            .yellow{
-                background: #E1B42E;
             }
         }
         .three{
@@ -390,19 +407,14 @@ $img:"../../img/my/";
                 display: inline-block;
                 width: 0.33rem;
                 height: 0.33rem;
-                background: #34FC87;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 0.33rem;
-                img{
-                    width: 80%;
-                }
-            }
-            .qblue{
-                background: #34FC87;
             }
             .yellow{
-                background: #34D3FC;
+                background:#34D3FC url($img+"27.png")no-repeat;
+                background-position: center;
+                background-size: 60%;
             }
         }
     }
@@ -434,11 +446,10 @@ $img:"../../img/my/";
         height: 100%;
         .first{
             height: 0.72rem;
-            img{
-                width: 100%;
-                height: 100%;
-                border-radius: 0.2rem 0.2rem 0 0;
-            }
+            background:url($img+"25.png")no-repeat;
+            background-position: center bottom;
+            background-size: 100%;
+            border-radius: 0.2rem 0.2rem 0 0;
             .pers{
                 position: absolute;
                 top: 0.18rem;
@@ -446,13 +457,11 @@ $img:"../../img/my/";
                 width: 0.36rem;
                 height: 0.36rem;
                 border-radius: 50%;
-                background: #FFFFFF;
+                background:#FFFFFF url($img+"30.png")no-repeat;
+                background-position: center;
+                background-size: 60%;
                 text-align: center;
                 line-height: 0.36rem;
-                img{
-                    max-width: 60%;
-                    max-height: 60%;
-                }
             }
             h5{
                 position: absolute;
@@ -479,14 +488,12 @@ $img:"../../img/my/";
                 width: 0.66rem;
                 height: 0.66rem;
                 border-radius: 50%;
-                background: #FAFAFA;
+                background:#FFFFFF url($img+"29.png")no-repeat;
+                background-position: center;
+                background-size: 60%;
                 box-shadow: 0 0 0 5px rgba(236,236,236,0.5);
                 text-align: center;
                 line-height: 0.66rem;
-                img{
-                    width: 70%;
-                    height: 70%;
-                }
             }
             span:nth-of-type(1){
                 @include top-bottom;
@@ -495,6 +502,9 @@ $img:"../../img/my/";
             span:nth-of-type(2){
                 @include top-bottom;
                 right: 1.09rem;
+                background:#2BDCBC url($img+"31.png")no-repeat;
+                background-position: center;
+                background-size: 60%;
             }
         }
     }
@@ -510,4 +520,5 @@ $img:"../../img/my/";
         font-size: 0.21rem;
         color: #FAFAFA;
     }
+}
 }
