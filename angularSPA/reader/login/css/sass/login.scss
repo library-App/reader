@@ -1,18 +1,16 @@
 @import "../base/base.scss";
-body{
-    background: #FAFAFA; 
-}
-a{ 
-    display: inline-block;
-    width: 100%;
-    height: 100%; 
-    @include center;
-    z-index: 100;
-    color: #FAFAFA;
-}
-$img:"../../img/login/";
 /*顶部*/
 #login{
+    background: #FAFAFA; 
+    a{ 
+        display: inline-block;
+        width: 100%;
+        height: 100%; 
+        @include center;
+        z-index: 100;
+        color: #FAFAFA;
+    }
+$img:"../../img/login/";
     #persontop{
         width: 100%;
         height: 1.08rem;

@@ -1,4 +1,4 @@
-var app=angular.module('readPage',[]);
+
 app.controller('markCtrl',["$scope",function($scope){
 	$scope.add=function(index){
 		var list=$(".list")

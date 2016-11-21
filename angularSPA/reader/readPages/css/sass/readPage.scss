@@ -1,10 +1,7 @@
 @import '../base/base';
-body{
-    background: #FFE7A7;
-}
 
 .box{
-    $backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac),(5,0.1rem,#21858e),(6,0.1rem,#f4c5d4),(7,0.1rem,#79d143),(8,0.1rem,#ffffff);
+    background: #FFE7A7;$backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac),(5,0.1rem,#21858e),(6,0.1rem,#f4c5d4),(7,0.1rem,#79d143),(8,0.1rem,#ffffff);
     height: 100%;
     background: #ffe7a7;
     .con{

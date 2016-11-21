@@ -112,11 +112,8 @@ input {
   clear: both;
 }
 
-body {
-  background: #FFE7A7;
-}
-
 .box {
+  background: #FFE7A7;
   height: 100%;
   background: #ffe7a7;
 }
