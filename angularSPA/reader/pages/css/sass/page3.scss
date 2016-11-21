@@ -1,0 +1,221 @@
+@import '../base/base';
+$imgPath:'../img/';
+body{
+    background:#fff;
+}
+*{
+    font-weight:normal;
+}
+.page3{
+    .header{
+        @include square(100%,1rem);
+        background:#2BA6DC;
+        .circle{
+            @include square(0.44rem,0.44rem);
+            border:0.02rem solid #076CBE;
+            border-radius:50%;
+            background:#fff url($imgPath+'book/left.jpg') no-repeat;
+            background-size:auto 0.17rem;
+            background-position:0.15rem 0.12rem;
+            @include top-bottom;
+            left:0.25rem;  
+        }
+        .title{
+            text-align:center;
+            h1{
+                font-size:0.33rem;
+                color:#fff;
+                line-height:0.58rem;
+            }
+            .line{
+                width:0.34rem;
+                border-top:0.01rem solid #fff;
+                position:absolute;
+                bottom:0.40rem;
+                left:3.57rem;
+            }
+            .line:before,.line:after{
+                content:'';
+                display:block;
+                @include square(0.03rem,0.03rem);
+                background:#fff;
+                border-radius:50%;
+                position:absolute;
+                top:-0.01rem;
+            }
+            .line:before{
+                left:0;
+            }
+            .line:after{
+                right:0;
+            }
+            span{
+                text-transform:uppercase;
+                font-size:0.13rem;
+                color:#A3E3FF;
+            }
+        }
+    }
+    .review{
+        width:6.9rem;
+        margin:0 auto;
+        ul{
+            width:100%;
+            margin:{
+                top:0.22rem;
+            }
+            li{
+                @include square(100%,1.54rem);
+                border-radius:0.1rem;
+                box-shadow:0 0 0.04rem #C4EDFF;
+                background:#FDFDFD;
+                margin:{
+                    bottom:0.22rem;
+                }
+                padding:{
+                    top:0.25rem;
+                }
+                .headPortrait{
+                    @include square(0.8rem,0.8rem);
+                    border-radius:50%;
+                    @include bg(url($imgPath+'book/book39.jpg'));
+                    background-size:100% 100%;
+                    float:left;
+                    margin:{
+                        left:0.19rem;
+                    }
+                }
+                p{
+                    @include square(5.32rem,0.76rem);
+                    float:left;
+                    font-size:0.2rem;
+                    color:#737373;
+                    border-bottom:0.01rem dashed #A0A0A0;
+                    margin:{
+                        left:0.35rem;
+                    }
+                    .smiling{
+                        display:block;
+                        @include square(0.21rem,0.21rem);
+                        position:absolute;
+                        right:1.71rem;
+                        bottom:0.1rem;
+                        @include bg(url($imgPath+'book/book23.jpg'))
+                        background-size:100% 100%;
+                        
+                    }
+                }
+                .time,.like{
+                    @include square(1.70rem,0.52rem);
+                    float:left; 
+                    margin:{
+                        left:0.28rem;
+                    }
+                  
+                    .circle{
+                        @include square(0.35rem,0.35rem);
+                        border-radius:50%;
+                        background:#fff url($imgPath+'book/book43.jpg');
+                        background-size:50% 50%;
+                        background-repeat:no-repeat;
+                        background-position:0.1rem 0.098rem;
+                        box-shadow:0 0 0.04rem #C4EDFF;
+                        margin:{
+                           top:0.09rem;
+                       }
+                   }
+                   span{
+                       display:block;
+                       font-size:0.13rem;
+                       line-height:0.13rem;
+                       position:absolute;
+                       left:0.42rem;
+                       top:0.19rem;
+                   }
+                }
+                .like{
+                    float:right;
+                    margin:{
+                        right:-0.3rem;
+                    }
+                    .circle{
+                        background:#fff url($imgPath+'book/book50.jpg');
+                        background-size:50% 50%;
+                        background-repeat:no-repeat;
+                        background-position:0.1rem 0.098rem;
+                    }
+                }
+            }
+            li:nth-of-type(2n){
+                .headPortrait{
+                    @include bg(url($imgPath+'book/book46.jpg'));
+                    background-size:100% 100%;
+                }
+            }
+        }
+    }
+    .bottom{
+        @include square(100%,1.27rem);
+        background:#151C2B;
+        position:fixed;
+        bottom:0;
+        left:0;
+        .release{
+            display:block;
+            margin:0.41rem auto;
+            @include square(1.40rem,0.51rem);
+            border-radius:0.25rem;
+            background:#F4F4F4;
+            color:#5E5E5E;
+            font-size:0.19rem;
+            text-align:center;
+            line-height:0.51rem;
+        }
+        .release:before,.release:after{
+            content:'';
+            display:block;
+            @include square(0.06rem,0.06rem);
+            background:#C4C4C4;
+            border-radius:50%;
+            position:absolute;
+            top:0.24rem;
+        }
+        .release:before{
+            left:0.08rem;
+        }
+        .release:after{
+            right:0.08rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

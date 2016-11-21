@@ -1,0 +1,141 @@
+@import '../base/base';
+#notes{
+    .header{
+        height: 1.1rem;
+        background: #29a6dc;
+        .return{
+            display: block;
+            @include square(0.43rem,0.43rem);
+            @include top-bottom;
+            left: 0.24rem;
+            background: #fafafa url(../img/note/return.png) center center no-repeat;
+            background-size: 0.22rem 0.22rem;
+            border: 1px solid #076cbe;
+            border-radius: 50%;
+            box-sizing: border-box;
+            z-index: 10;
+        }
+        .mynote{
+            @include center;
+            .ch{
+                margin-top: 0.1rem;
+                color: #fafafa;
+                font-size: 0.36rem;
+                display: block;
+                line-height: 0.5rem;
+                text-align: center;
+            }
+            .en{
+                color: #90dcff;
+                font-size: 0.2rem;
+                display: block;
+                line-height: 0.35rem;
+                text-align: center;
+            }
+        }
+    }
+    .con{
+        padding: 0 0.24rem;
+        .time{
+            height: 0.54rem;
+            padding-left: 0.56rem;
+            .img{
+                display: block;
+                width: 0.25rem;
+                height: 0.25rem;
+                @include top-bottom;
+                left: 0.14rem;
+                background: url(../img/note/ge.png) center no-repeat;
+                background-size: 0.25rem 0.25rem;
+            }
+            span{
+                font-size: 0.22rem;
+                color: #a8a8a8;
+                line-height: 0.54rem;
+            }
+        }
+        .text{
+            height: 3.3rem;
+            box-shadow: 0px 0 4px #999;
+            border-radius: 10px;
+            padding: 0 0.1rem;
+            font-size: 0.24rem;
+            color: #333;
+        }
+        .null{
+            height: 0.2rem;
+        }
+        .edit{
+            width: 7rem !important;
+            height: 1rem !important;
+            box-shadow: 0 0 4px #ccc;
+            outline: none;
+        }
+        .btn{
+            margin-top: 0.42rem;
+            .btn-edit{
+                display: block;
+                @include square(1.7rem,0.6rem);
+                border-radius: 0.3rem;
+                background: #29dcbc;
+                color: #FAFAFA;
+                font-size: 0.24rem;
+                text-align: center;
+                line-height: 0.6rem;
+                position: absolute;
+                top: 0;
+                left: 1.2rem;
+            }
+            .btn-edit:after{
+                content: "";
+                display: block;
+                @include square(0.08rem,0.08rem);
+                border-radius: 50%;
+                @include top-bottom;
+                left: 0.2rem;
+                background: #fff;
+            }
+            .btn-edit:before{
+                content: "";
+                display: block;
+                @include square(0.08rem,0.08rem);
+                border-radius: 50%;
+                @include top-bottom;
+                right: 0.2rem;
+                background: #fff;
+            }
+            
+            .ok{
+                display: block;
+                @include square(1.7rem,0.6rem);
+                border-radius: 0.3rem;
+                background: #28dd8b;
+                color: #FAFAFA;
+                font-size: 0.24rem;
+                text-align: center;
+                line-height: 0.6rem;
+                position: absolute;
+                top: 0;
+                right: 1.2rem;
+            }
+            .ok:after{
+                content: "";
+                display: block;
+                @include square(0.08rem,0.08rem);
+                border-radius: 50%;
+                @include top-bottom;
+                left: 0.2rem;
+                background: #fff;
+            }
+            .ok:before{
+                content: "";
+                display: block;
+                @include square(0.08rem,0.08rem);
+                border-radius: 50%;
+                @include top-bottom;
+                right: 0.2rem;
+                background: #fff;
+            }
+        }
+    }
+}

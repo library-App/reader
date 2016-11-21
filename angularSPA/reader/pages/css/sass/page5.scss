@@ -1,0 +1,159 @@
+@import '../base/base';
+$imgPath:'../img/';
+body{
+    background:#fff;
+}
+*{
+    font-weight:normal;
+}
+.page5{
+     .header{
+        @include square(100%,1rem);
+        background:#2BA6DC;
+        .circle{
+            @include square(0.44rem,0.44rem);
+            border:0.02rem solid #076CBE;
+            border-radius:50%;
+            background:#fff url($imgPath+'book/left.jpg') no-repeat;
+            background-size:auto 0.17rem;
+            background-position:0.15rem 0.12rem;
+            @include top-bottom;
+            left:0.25rem;  
+        }
+        .title{
+            text-align:center;
+            h1{
+                font-size:0.33rem;
+                color:#fff;
+                line-height:0.58rem;
+            }
+            .line{
+                width:0.34rem;
+                border-top:0.01rem solid #fff;
+                position:absolute;
+                bottom:0.40rem;
+                left:3.57rem;
+            }
+            .line:before,.line:after{
+                content:'';
+                display:block;
+                @include square(0.03rem,0.03rem);
+                background:#fff;
+                border-radius:50%;
+                position:absolute;
+                top:-0.01rem;
+            }
+            .line:before{
+                left:0;
+            }
+            .line:after{
+                right:0;
+            }
+            span{
+                text-transform:uppercase;
+                font-size:0.13rem;
+                color:#A3E3FF;
+            }
+        }
+    }
+    .star{
+        @include square(100%,1.63rem);
+        margin:0rem auto;
+        @include bg(url($imgPath+'book/book14.png'));
+        background-size:5.76rem 0.78rem;
+        background-repeat:no-repeat;
+        background-position:0.96rem 0.4rem;
+        border-bottom:0.02rem solid #999999;
+    }
+    .con{
+        @include square(7.02rem,3.24rem);
+        border-radius:0.1rem;
+        box-shadow:0 0 4rem #EFEFEF;
+        margin:0.42rem auto;
+        font-size:0.2rem;
+        color:#747474;
+        line-height:0.34rem;
+        padding:{
+            top:0.07rem;
+            left:0.16rem;
+            right:0.28rem;
+            
+        }
+    }
+    .key{
+        @include square(100%,4.32rem);
+        position:fixed;
+        left:0;
+        bottom:0;
+        background:url($imgPath+'book/book31.png');
+        background-size:cover;
+    }
+    .popupZhao{
+        @include square(100%,13.32rem);
+        background:rgba(0,0,0,0.3);
+        position:absolute;
+        top:0;
+        left:0;
+        .popup{
+            @include square(4.78rem,2.95rem);
+            border-radius:0.1rem;
+            background:#fff url($imgPath+'book/book13.png') no-repeat;
+            background-size:100% auto;
+            @include center;
+            margin:auto;
+            z-index:10rem;
+            padding:{
+                top:0.85rem;
+            }
+            h1{
+                font-size:0.24rem;
+                color:#363636;
+                text-align:center;
+            }
+            h2{
+                font-size:0.13rem;
+                color:#363636;
+                text-align:center; 
+                text-transform:uppercase;
+            }
+            a{
+                display:inline-block;
+                @include square(1.95rem,0.58rem);
+                border-radius:0.29rem;
+                text-align:center;
+                line-height:0.58rem;
+                border:0.01rem solid #29DD8B; 
+                color:#29DD8B;
+                margin:{
+                    top:0.24rem;
+                    left:0.22rem;
+                }
+            }
+            a:before,a:after{
+                content:'';
+                display:block;
+                @include square(0.06rem,0.06rem);
+                border-radius:50%;
+                background:#29DD8B;
+                position:absolute;
+                top:0.26rem;
+            }
+            a:before{
+                left:0.25rem;
+            }
+            a:after{
+                right:0.25rem;
+            }
+            a:nth-of-type(2){
+                background:#29DD8B;
+                color:#fff;
+            }
+            a:nth-of-type(2):before{
+                background:#fff;
+            }
+            a:nth-of-type(2):after{
+                background:#fff;
+            }
+        }
+    }
+}

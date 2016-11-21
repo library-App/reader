@@ -1,0 +1,122 @@
+@import "response.scss";
+@mixin auto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+ :root {
+    background: #F2F2F2;
+}
+/*导航*/
+.kk {
+    .head {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+    }
+    .header-f {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .h-add {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+        position: relative;
+    }
+    .header {
+        width: 5.72rem;
+        height: 0.84rem;
+        background: url("../../img/kk-img/title2.png") no-repeat;
+        background-size: cover;
+        @include auto;
+    }
+    .found {
+        width: 0.44rem;
+        height: 0.44rem;
+        @include auto;
+        background: url("../../img/kk-img/found.png") no-repeat;
+        background-size: cover;
+        margin-right: 0.24rem;
+    }
+    .h-chose {
+        display: block;
+        width: (5.72rem/3);
+        height: 100%;
+        float: left;
+        background: url("../../img/kk-img/1.png") no-repeat center;
+        background-size: 1.65rem 0.71rem;
+    }
+    .h-chose:nth-child(1) {
+        opacity: 0;
+    }
+    .h-chose:nth-child(2) {
+        background: url("../../img/kk-img/2.png") no-repeat center;
+        background-size: 1.65rem 0.71rem;
+    }
+    .h-chose:nth-child(3) {
+        background: url("../../img/kk-img/3.png") no-repeat center;
+        background-size: 1.65rem 0.71rem;
+        opacity: 0;
+    }
+    /*foot*/
+    .foot {
+        width: 100%;
+        height: 1rem;
+        background: url("../../img/kk-img/123_02.png") no-repeat;
+        background-size: cover;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        .foot-list {
+            display: block;
+            width: 33.33%;
+            height: 100%;
+            float: left;
+        }
+        .foot-list:nth-child(2) {
+            background: url("../../img/kk-img/2_02.png") no-repeat;
+            background-size: cover;
+        }
+    }
+    /*main*/
+    .main {
+        width: 100%;
+        .list-1 {
+            width: 100%;
+            height: 2.6rem;
+            background: url("../../img/kk-img/l1.png") no-repeat;
+            background-size: cover;
+            margin-bottom: 0.16rem;
+        }
+        .list-2 {
+            width: 100%;
+            height: 2.6rem;
+            background: url("../../img/kk-img/l2.png") no-repeat;
+            background-size: cover;
+            margin-bottom: 0.16rem;
+        }
+        .list-3 {
+            width: 100%;
+            height: 2.6rem;
+            background: url("../../img/kk-img/l3.png") no-repeat;
+            background-size: cover;
+            margin-bottom: 0.16rem;
+        }
+        .list-4 {
+            width: 100%;
+            height: 2.6rem;
+            background: url("../../img/kk-img/l4.png") no-repeat;
+            background-size: cover;
+            margin-bottom: 0.16rem;
+        }
+    }
+}

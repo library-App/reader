@@ -1,0 +1,242 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  color: #777779;
+  position: relative;
+  font-family: "苹方";
+  box-sizing: border-box; }
+
+img {
+  vertical-align: middle;
+  border: 0; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 15px;
+  background: #000; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 170.66667px; } }
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 213.33333px; } }
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 192px; } }
+
+input {
+  background: transparent;
+  outline: medium; }
+
+.clear {
+  clear: both; }
+
+body {
+  background: #fff; }
+
+* {
+  font-weight: normal; }
+
+.page4 .header {
+  width: 100%;
+  height: 1rem;
+  background: #2BA6DC; }
+  .page4 .header .circle {
+    width: 0.44rem;
+    height: 0.44rem;
+    border: 0.02rem solid #076CBE;
+    border-radius: 50%;
+    background: #fff url("../img/book/left.jpg") no-repeat;
+    background-size: auto 0.17rem;
+    background-position: 0.15rem 0.12rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.25rem; }
+  .page4 .header .title {
+    text-align: center; }
+    .page4 .header .title h1 {
+      font-size: 0.33rem;
+      color: #fff;
+      line-height: 0.58rem; }
+    .page4 .header .title .line {
+      width: 0.34rem;
+      border-top: 0.01rem solid #fff;
+      position: absolute;
+      bottom: 0.40rem;
+      left: 3.57rem; }
+    .page4 .header .title .line:before, .page4 .header .title .line:after {
+      content: '';
+      display: block;
+      width: 0.03rem;
+      height: 0.03rem;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -0.01rem; }
+    .page4 .header .title .line:before {
+      left: 0; }
+    .page4 .header .title .line:after {
+      right: 0; }
+    .page4 .header .title span {
+      text-transform: uppercase;
+      font-size: 0.13rem;
+      color: #A3E3FF; }
+
+.page4 .star {
+  width: 100%;
+  height: 1.63rem;
+  margin: 0rem auto;
+  background: url("../img/book/book14.png");
+  background-size: 5.76rem 0.78rem;
+  background-repeat: no-repeat;
+  background-position: 0.96rem 0.4rem;
+  border-bottom: 0.02rem solid #999999; }
+
+.page4 .con {
+  width: 7.02rem;
+  height: 3.24rem;
+  border-radius: 0.1rem;
+  box-shadow: 0 0 4rem #EFEFEF;
+  margin: 0.42rem auto;
+  font-size: 0.2rem;
+  color: #747474;
+  line-height: 0.34rem;
+  padding-top: 0.07rem;
+  padding-left: 0.16rem;
+  padding-right: 0.28rem; }
+
+.page4 .key {
+  width: 100%;
+  height: 4.32rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: url("../img/book/book31.png");
+  background-size: cover; }
+
+.page4 .popupZhao {
+  width: 100%;
+  height: 13.32rem;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .page4 .popupZhao .popup {
+    width: 4.78rem;
+    height: 2.95rem;
+    border-radius: 0.1rem;
+    background: #fff url("../img/book/book13.png") no-repeat;
+    background-size: 100% auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin: auto;
+    z-index: 10rem;
+    padding-top: 0.15rem; }
+    .page4 .popupZhao .popup span {
+      display: block;
+      color: #FFFFFF;
+      font-size: 0.19rem;
+      line-height: 0.22rem;
+      text-transform: uppercase;
+      margin-left: 1rem; }
+    .page4 .popupZhao .popup span:nth-of-type(2) {
+      font-size: 0.11rem; }
+    .page4 .popupZhao .popup h1 {
+      font-size: 0.24rem;
+      color: #363636;
+      text-align: center;
+      margin-top: 0.6rem; }
+    .page4 .popupZhao .popup h2 {
+      font-size: 0.13rem;
+      color: #363636;
+      text-align: center;
+      text-transform: uppercase; }
+    .page4 .popupZhao .popup a {
+      display: inline-block;
+      width: 1.95rem;
+      height: 0.58rem;
+      border-radius: 0.29rem;
+      text-align: center;
+      line-height: 0.58rem;
+      border: 0.01rem solid #29DD8B;
+      color: #29DD8B;
+      margin-top: 0.24rem;
+      margin-left: 0.22rem; }
+    .page4 .popupZhao .popup a:before, .page4 .popupZhao .popup a:after {
+      content: '';
+      display: block;
+      width: 0.06rem;
+      height: 0.06rem;
+      border-radius: 50%;
+      background: #29DD8B;
+      position: absolute;
+      top: 0.26rem; }
+    .page4 .popupZhao .popup a:before {
+      left: 0.25rem; }
+    .page4 .popupZhao .popup a:after {
+      right: 0.25rem; }
+    .page4 .popupZhao .popup a:nth-of-type(2) {
+      background: #29DD8B;
+      color: #fff; }
+    .page4 .popupZhao .popup a:nth-of-type(2):before {
+      background: #fff; }
+    .page4 .popupZhao .popup a:nth-of-type(2):after {
+      background: #fff; }

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="readPage">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width"/>
+		<title></title>
+		<link rel="stylesheet" href="css/readPage.css" />
+		<script src="js/jquery.js"></script>
+		<script src="http://cdn.bootcss.com/angular.js/1.5.8/angular.js"></script>
+		<script src="js/readPage.js"></script>
+	</head>
+	<body ng-controller="readCtrl">
+		<!--浏览书籍-->
+		<div class="box">
+			<div class="con">
+				<!--书名小标-->
+				<div class="book-title show">
+					<div class="short"></div>
+					<span>最强小农民</span>
+					<div class="long"></div>
+				</div>
+				<!--更多功能-->
+				     <!--头-->
+				<div class="book-title-t">
+					<ul class="b-con">
+						<li class="b-l">
+							<a href="##"></a>
+						</li>
+						<li class="b-r">
+							<div class="one"></div>
+							<div class="two"></div>
+						</li>
+					</ul>
+				</div>
+				<!--夜间小标-->
+				<div class="night"></div>
+				
+				<!--书签-->
+				<div class="bookmark"></div>
+					<!--底-->
+				
+				<div class="cor-footer">
+					<div class="foot1 show">
+						<ul class="progress">
+							<li class="last">上一章</li>
+							<li class="pick">
+								<div class="rel"></div>
+								<div class="circle-lg"></div>
+							</li>
+							<li class="next">下一章</li>
+						</ul>
+						<ul class="navs">
+							<li class="nav">
+								<a href="/bookmark.html">
+									<div></div>
+									<span>目录</span>
+								</a>
+							</li>
+							<li class="nav" ng-click='setAdd()'>
+								<div></div>
+								<span>设置</span>
+							</li>
+							<li class="nav" ng-click='nessAdd()'>
+								<div></div>
+								<span>亮度</span>
+							</li>
+						</ul>
+					</div>
+					
+					<!--点击设置后的底部-->
+					<div class="foot2">
+						<ul class="foot2-ul">
+							<li class="li size li-progress">
+								<div class="written">字号</div>
+								<div class="log"></div>
+								<div class="progress">
+									<div class="rel"></div>
+									<div class="circle-lg"></div>
+								</div>
+								<div class="num">20</div>
+							</li>
+							<li class="li kerning li-progress">
+								<div class="written">行距</div>
+								<div class="log"></div>
+								<div class="progress">
+									<div class="rel"></div>
+									<div class="circle-lg"></div>
+								</div>
+								<div class="num">06</div>
+							</li>
+							<li class="li back">
+								<div class="written">背景</div>
+								<ul>
+									<li class="color" ng-repeat="v in colors" ng-click="colAdd($index)">
+										<div class="squ">{{v.more}}</div>
+										<div class="name">{{v.name}}</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					
+					<!--点击亮度后的底部-->
+					<div class="foot3">
+						<ul>
+							<li class="pro">
+								<span class="an">暗</span>
+								<span class="liang">亮</span>
+								<div class="pick">
+									<div class="rel"></div>
+									<div class="circle-lg"></div>
+								</div>
+								<div class="squ">系统</div>
+							</li>
+							<li class="pattern">
+								<div class="pat">护眼模式</div>
+								<div class="ness">屏幕亮度</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<!--内容-->	
+				<div class="text" ng-click='textAdd()'>
+					<h2>第一卷 第1章 见鬼了！</h2>
+					<div class="texts">
+						<p> 岭西县第一人民医院。 一名少年迈出了大门。</p>
+						<p>
+							他十七八岁，身形高瘦，相貌有些清秀，但头发乱糟糟的，穿着一件皱巴巴的白衬衫，一条洗得发白的牛仔裤，看起来很土，很寒酸。
+						</p>
+						<p>
+							一双鞋子也有些破，脚后跟开了个裂口。 站在大门口，他深吸了口气，神情有些恍惚。抬起头，面对刺眼的阳光，他不由眯了眯眼。
+						</p>
+						<p>
+							半个月了，他在医院中，足足住了半个月。
+							
+							 这半个月，恍如隔世。
+						</p>
+						<p>
+							他叫唐昊，岭西县唐家村人，半个月前，路上见义勇为，不料却被歹人打成重伤，还被捅了一刀，被送进了医院。
+						</p>
+						<p>
+							而更令他郁闷的是，那被他救了的人，早就消失得无影无踪，而那几个混混也没抓到，无法证实是见义勇为，最后，事情就不了了之。
+						</p>	
+						<p>
+							沉重的医药费，也落到了他自个头上。
+						</p>
+						<p>
+							唐昊并不富裕，打小没了母亲，七年前，父亲也得病去世，没留下多少钱，去年缀学后，四处打工，也只攒了万把块钱，全赔在医药费上了。
+						</p>
+						<p>
+							这令唐昊很郁闷，不过，幸运的是，在他受重伤后，胸前戴着的玉佩突然发热，有无数信息涌入他脑海中。
+							这枚玉佩，是他偶然捡来的，一直戴在身上。
+						</p>
+						<p>
+							在他醒来后，仔细读了一遍，才发现是一种古老的修行之法，还有很多古老的知识。
+							在此之前，他如世间大多数人一样，是坚定的唯物主义者，不相信什么神神鬼鬼的超自然事件，直到这时，才不得不相信。
+							这些知识，为他打开了另一扇大门，也令他的心境发生了极大的变化。
+							他坚信，凭借这一门修行功法，还有这些知识，定能令他的人生发生改变。
+						</p>
+					</div>
+						
+				</div>
+				<!--角标-->
+				<div class="corner">
+					<div class="cor-left">本章进度0%</div>
+					<div class="cor-right">1/468</div>
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,155 @@
+@import '../base/base';
+$imgPath:'../img/';
+body{
+    background:#fff;
+}
+*{
+    font-weight:normal;
+}
+.page4{
+    .header{
+        @include square(100%,1rem);
+        background:#2BA6DC;
+        .circle{
+            @include square(0.44rem,0.44rem);
+            border:0.02rem solid #076CBE;
+            border-radius:50%;
+            background:#fff url($imgPath+'book/left.jpg') no-repeat;
+            background-size:auto 0.17rem;
+            background-position:0.15rem 0.12rem;
+            @include top-bottom;
+            left:0.25rem;  
+        }
+        .title{
+            text-align:center;
+            h1{
+                font-size:0.33rem;
+                color:#fff;
+                line-height:0.58rem;
+            }
+            .line{
+                width:0.34rem;
+                border-top:0.01rem solid #fff;
+                position:absolute;
+                bottom:0.40rem;
+                left:3.57rem;
+            }
+            .line:before,.line:after{
+                content:'';
+                display:block;
+                @include square(0.03rem,0.03rem);
+                background:#fff;
+                border-radius:50%;
+                position:absolute;
+                top:-0.01rem;
+            }
+            .line:before{
+                left:0;
+            }
+            .line:after{
+                right:0;
+            }
+            span{
+                text-transform:uppercase;
+                font-size:0.13rem;
+                color:#A3E3FF;
+            }
+        }
+    }
+    .bookmark{
+        width:100%;
+        margin:0.2rem auto 0;
+        ul{
+            width:100%;
+            li{
+                @include square(100%,1.54rem);
+                border-bottom:1px dotted #A7A7A7;
+                box-shadow:0 0 0 #fff;
+                border-radius:0;
+                padding:{
+                    top:0.22rem;
+                    left:0.31rem;
+                    bottom:0.3rem;
+                };
+                .img{
+                    @include square(0.66rem,0.64rem);
+                    @include bg(url($imgPath+'book/book54.jpg'));
+                    background-size:100% auto;
+                    float:left;
+                }
+                .text{
+                    @include square(5.6rem,100%);
+                    float:left;
+                    margin:{
+                        left:0.26rem;
+                    }
+                    h1{
+                        font-size:0.22rem;
+                        color:#151C2B;
+                        line-height:0.22rem;
+                        font-weight:bold;
+                    }
+                    h5{
+                        font-size:0.17rem;
+                        color:#505050;
+                    }
+                    .time,.like{
+                        @include square(1.70rem,0.52rem);
+                        float:left; 
+                        position:absolute;
+                        bottom:-0.2rem;
+                        .circle{
+                            @include square(0.17rem,0.17rem);
+                            background:#fff url($imgPath+'book/book43.jpg');
+                            background-size:auto 100%;
+                            background-repeat:no-repeat;
+                            margin:{
+                               top:0.15rem;
+                            }
+                        }
+                        span{
+                           font-size:0.11rem;
+                           position:absolute;
+                           left:0.31rem;
+                           top:0.1rem;
+                        }
+                    }
+                    .time{
+                        left:0.08rem;
+                    }
+                    .like{
+                        @include square(1.0rem,0.52rem);
+                        float:right;
+                        right:-0.03rem;
+                        .circle{
+                            @include square(0.34rem,0.17rem);
+                            background:#fff url($imgPath+'book/book11.jpg');
+                            background-size:auto 100%;
+                            background-repeat:no-repeat;
+                        }
+                    }
+                }
+            }
+            li:nth-of-type(2){
+                @include bg(url($imgPath+'book/book25.png'));
+                background-size:101% auto;
+                background-repeat:no-repeat;
+                .time{
+                    .circle{
+                        background:#fff url($imgPath+'book/book73.jpg');
+                        background-size:100% auto;
+                        background-repeat:no-repeat;
+                    }
+                }
+                .like{
+                    .circle{
+                        width:0.33rem;
+                        background:#fff url($imgPath+'book/book76.jpg');
+                        background-size:auto 100%;
+                        background-repeat:no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}

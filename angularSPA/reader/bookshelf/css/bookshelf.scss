@@ -1,0 +1,1050 @@
+@import "base/base.scss";
+body{
+    background: #fff;
+}
+
+/**书架第一张**/
+.first{
+    .header{
+        height:1.4rem ;
+        width:100%;
+        background: #2BA6DC;
+        position: relative;
+        span:nth-child(1){
+            width: 1.5rem;
+            height: 0.5rem;
+            @include center;
+            color: #fff;
+            font-size:0.36rem;
+        }
+        span:nth-child(2){
+            font-family: "San Francisco Display";
+            color: #A3E3FF;
+            font-size: 0.12rem;
+            @include left-right;
+            top: 65%;
+            width: 1.7rem;
+            
+        }
+        .sousuo{
+            width: 0.43rem;
+            height: 0.43rem;
+            border-radius: 50%;
+            border: 0.02rem solid #076DBF;
+            @include top-bottom;
+            right: 0.25rem;
+            background-color: #FFFFFF;
+            text-align: center;
+            line-height: 0.43rem;
+            li{
+                width:100%;
+                height:100%;          
+                font-family: "iconfont";
+                font-size: 0.24rem;
+                color: #3DADDF;
+                background-image: url($imgPath+"bookshelf/x4.png");
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+    .banner{
+        height: 4.20rem;
+        width: 100%;
+        position: relative;
+        .img{
+            width: 6.69rem;
+            height: 3.22rem;
+            @include center;
+            overflow: hidden;
+            border-radius: 0.1rem;
+            border: 0.03rem solid #FFFFFF;
+            box-shadow: 0 0 0.05rem #AAA;
+            z-index: 100;
+            background-image: url($imgPath+"bookshelf/2.png");
+            background-size: 100%;
+        }
+        .img1{
+            width: 7.04rem;
+            height:2.87rem;
+            overflow: hidden;
+            @include center;
+            border-radius: 0.1rem;
+            border: 0.03rem solid #FFFFFF;        
+            background-image: url($imgPath+"bookshelf/2.png");
+            background-size: 100%;
+        }
+    }
+    .dian{
+        
+        height:0.1rem;
+        @include left-right;
+        bottom: 0.1rem;
+        width:0.9rem;
+        li{
+            width: 8px;
+            height: 8px;
+            border: 1px solid #42ABFE;
+            border-radius: 50%;
+            float: left;
+            margin-right: 0.12rem;
+        }
+    }
+    
+    .new:nth-of-type(1){
+        width: 100%;
+        height: 4.6rem;
+    }
+    .new:nth-of-type(2){
+        width: 100%;
+        height: 6rem;
+    }
+        .new-top{
+            height: 0.84rem;
+            width: 100%;
+            padding-left: 0.38rem;
+            padding-right: 0.38rem;
+            position: relative;
+            .yellow{
+                float: left;
+                width: 0.3rem;
+                height: 0.3rem;
+                background: #FFC641;
+                border-radius: 50%;
+                background-image: url($imgPath+"bookshelf/star.png");
+                background-size: 76%;
+                background-repeat: no-repeat;
+                background-position: center;
+                @include top-bottom;
+                left:0.3rem;
+                
+            }
+            .yellow1{
+                 float: left;
+                width: 0.3rem;
+                height: 0.3rem;
+                background: #FFC641;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 0.3rem;
+                font-family: "iconfont";
+                 @include top-bottom;
+                left:0.3rem;
+                color: #fff;
+                font-size: 0.15rem;    
+                background-image:url($imgPath+"bookshelf/x3.png");     
+                background-size: 80%;
+                background-position: center;   
+            }
+            .best-new{
+                float: left;
+                @include top-bottom;
+                left: 0.7rem;
+                color: #333333;    
+                height: 0.4rem;        
+            }
+            .releases{
+                font-size: 0.22rem;
+                font-family: "San Francisco Display";
+                color: #666666;
+                top: 70%;
+                left: 0.7rem;
+                position: absolute;
+            }
+            .dian1{
+                float: left;
+                height: 0.04rem;
+                width: 0.3rem;
+                position: absolute;
+                top:55%;            
+                left:1.8rem;   
+                li{
+                    width:0.04rem;
+                    height: 0.04rem;                
+                    float:left;
+                    border-radius: 50%;
+                    margin-left: 0.03rem;
+                }      
+                li:nth-of-type(1){
+                    background-color: #FE58AA;                
+                } 
+                li:nth-of-type(2){
+                    background-color: #58FEDD;                
+                } li:nth-of-type(3){
+                    background-color: #FFC641;                
+                }
+            }        
+        }
+        .newjia{            
+            width: 100%;
+            height: 3.9rem;
+            padding-top: 0.15rem;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;            
+            margin-top: 0.3rem;
+            .newjia1{
+                width: 30%;
+                height: 3.6rem;
+                background-image: url($imgPath+"bookshelf/4.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                float: left;
+                position: relative;  
+                margin-left: 0.05rem;   
+                .banewo{
+                    width: 80%;
+                    height: 2.77rem;
+                    @include left-right;
+                    top: -0.14rem;
+                    background-image: url($imgPath+"bookshelf/cat.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }           
+                h3{
+                    margin-top: 2.25rem;
+                   font-size: 0.24rem;
+                   color: #333333;
+                   text-align: center;
+                  
+                }
+                h6{
+                    font-size: 0.18rem;
+                    font-family: "San Francisco Display";
+                    text-align: center;
+                    color: #999999;
+                    white-space: nowrap;   
+                    width: 100%;
+                    overflow: hidden;  
+                    padding-left: 0.03rem; 
+                    padding-right: 0.03rem;                             
+                }
+            }
+            
+           
+        }  
+    
+    
+    .read{
+        width: 100%;
+        height: 2.20rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+        margin-top:0.3rem;
+        .readkuan{
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 0.2rem #AAAAAA;
+            border-radius: 0.1rem;
+            position: relative;
+            .read-book{
+                width: 1.40rem;
+                height: 2rem;
+                float: left;
+                background-image: url($imgPath+"bookshelf/b1.png");
+                background-size: cover;
+                @include top-bottom;
+                left: 0.1rem;
+                overflow: hidden;
+            }
+            .hope{
+                font-size: 0.28rem;
+                color: #333333;
+                position: absolute;
+                top: 0.1rem;
+                left: 1.7rem;
+            }
+            .english{
+                font-family: "San Francisco Display";
+                color: #999999;
+                width: 70%;
+                height: 0.33rem;
+                line-height: 0.33rem;
+                border-bottom: 1px dotted #999999;
+                font-size: 0.16rem;
+                position: absolute;
+                top: 0.5rem;
+                left: 1.7rem;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .readzhi{
+                font-size: 0.22rem;
+                color: #666666;
+                position: absolute;
+                top: 40%;
+                left: 1.7rem;
+            }
+            .zhengwen{
+                font-size:0.15rem;
+                color: #666666;
+                width: 74%;
+                height: 0.8rem;
+                position: absolute;
+                top: 53%;
+                left: 1.7rem;
+                 white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+            .yidu{
+                width: 70%;
+                height: 0.3rem;
+                position: absolute;
+                bottom: 0.1rem;
+                left: 1.7rem;
+                line-height: 0.3rem;
+                
+                span:nth-of-type(1){
+                    color: #999999;
+                    font-size: 0.15rem;  
+                    float: left;              
+                }
+                span:nth-of-type(2){
+                    color: #1fb6ea;
+                    font-size: 0.15rem;  
+                    float: left;                               
+                }
+                .jindu{
+                    width: 1.70rem;
+                    height: 0.06rem;
+                    border-radius: 0.08rem;
+                    background-color: #D4D4D4;
+                    float: left;
+                    margin-top: 0.13rem;
+                    margin-left: 0.1rem;
+                    li{
+                        width: 50%;
+                        height: 100%;
+                        border-radius:0.08rem;
+                        background-color: #94D1E6;
+                    }
+                }
+                .continue{
+                    width:1.5rem;
+                    height: 0.44rem;
+                    border-radius: 0.2rem;
+                    background-color: #2BA5DB;
+                    float: right;
+                    position: absolute;
+                    bottom: 0.05rem;
+                    left: 70%;     
+                    text-align: center;
+                    line-height: 0.44rem;
+    
+                    font-size: 0.10rem; 
+                    li{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        color: #fff;                    
+                        span:nth-of-type(1){
+                            position: absolute;
+                            @include top-bottom;
+                            left: 0.15rem;
+                            width:0.04rem;
+                            height:0.04rem;
+                            border-radius: 50%;
+                            background: #75CDF3;
+                        }
+                        span:nth-of-type(2){
+                            position: absolute;
+                            @include top-bottom;
+                            left: 0.30rem;
+                            width:0.04rem;
+                            height:0.04rem;
+                            border-radius: 50%;
+                            background: #50B9E8;
+                        }
+                    }         
+                }
+            } 
+        } 
+    }   
+    .footer{
+        width: 100%;
+        height: 0.98rem;
+        background: #141C2D;
+        li{
+            width: 33%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            padding-top: 0.1rem;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                span{
+                    display: block;
+                    width: 0.5rem;
+                    height: 0.5rem;
+                    background-image: url($imgPath+"bookshelf/f1.png");
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    margin: 0 auto;
+                }
+                div{
+                    font-size: 0.24rem;
+                }
+            }
+            
+        }
+        li:nth-of-type(2){
+            border: 1px solid #717171;
+            border-top:0;
+            border-bottom:0;
+            a{
+                span{
+                    background-image: url($imgPath+"bookshelf/f2.png");                    
+                }
+            }
+        }
+        li:nth-of-type(3){
+          
+            a{
+                span{
+                    background-image: url($imgPath+"bookshelf/f3.png");                    
+                }
+            }
+        }
+        li:nth-of-type(1){
+            background-image: url($imgPath+"bookshelf/5.png");
+            background-size: cover;
+        }
+    }
+    .active{
+        opacity:0.5;
+    }
+
+}
+/**书架第二张**/
+.second{
+    .header{
+        height:1.4rem ;
+        width:100%;
+        background: #2BA6DC;
+        position: relative;
+        .head-left{
+            width: 0.5rem;
+            height:0.5rem;
+            border-radius: 50%; 
+            border:0.02rem solid #137ABA;     
+            @include top-bottom;
+            left: 0.25rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.5rem;           
+            font-size: 0.28rem;
+            a{
+                font-family: "宋体";
+                color: #45B0E0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .shuru{
+            width: 5.47rem;
+            height: 0.54rem;
+            border-radius: 0.4rem;
+            background: #FFFFFF;
+            overflow: hidden;
+            @include center;
+            .sousuo{
+                width:0.58rem;
+                height: 100%;
+                background-image:url($imgPath+"bookshelf/6.png");
+                background-position: center;
+                background-color: #F6F6F6;
+                 border-radius:0.4rem 0 0 0.4rem;
+                 background-size:0.26rem;
+                 background-repeat: no-repeat;
+                 float: left;
+            }
+            input{
+                padding-left: 0.2rem;
+                color: #DCDCDC;
+                width:70%;
+                height: 100%;
+                border:0;
+                float: left;
+                font-weight:300;
+            }
+        }
+        .head-right{
+            width: 0.5rem;
+            height:0.5rem;
+            border-radius: 50%; 
+            border:0.02rem solid #137ABA;     
+            @include top-bottom;
+            right: 0.25rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.5rem;
+            font-family: "宋体";
+            color: #45B0E0;
+            font-size: 0.28rem;
+            background-image: url($imgPath+"bookshelf/7.png");
+            background-position:center;
+            background-size:50%;
+            background-repeat: no-repeat;
+            background-color: #FAFAFA;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+    }
+    .hot{
+        width: 100%;
+        height: 1.2rem;
+        position: relative;
+        .new-top{
+           width: 100%;
+           height: 100%;   
+           padding-left: 0.25rem;
+           padding-right: 0.25rem;        
+            .yellow{
+                float: left;
+                width: 0.3rem;
+                height: 0.3rem;
+                background: #FFC641;
+                border-radius: 50%;
+                background-image: url($imgPath+"bookshelf/star.png");
+                background-size: 76%;
+                background-repeat: no-repeat;
+                background-position: center;
+                @include top-bottom;
+                left:0.3rem;                
+            }
+            .yellow1{
+                 float: left;
+                width: 0.3rem;
+                height: 0.3rem;
+                background: #FFC641;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 0.3rem;
+                font-family: "iconfont";
+                 @include top-bottom;
+                left:0.3rem;
+                color: #fff;
+                font-size: 0.15rem;            
+            }
+            .best-new{
+                float: left;
+                @include top-bottom;
+                left: 0.7rem;
+                color: #333333;    
+                height: 0.55rem;
+                font-size: 0.3rem;        
+            }
+            .releases{
+                font-size: 0.18rem;
+                font-family: "San Francisco Display";
+                color: #333333;
+                top: 55%;
+                left: 0.7rem;
+                position: absolute;
+            }
+            .dian1{
+                float: left;
+                height: 0.04rem;
+                width: 0.3rem;
+                position: absolute;
+                top:50%;            
+                left:1.9rem;   
+                li{
+                    width:0.04rem;
+                    height: 0.04rem;                
+                    float:left;
+                    border-radius: 50%;
+                    margin-left: 0.03rem;
+                }      
+                li:nth-of-type(1){
+                    background-color: #FE58AA;                
+                } 
+                li:nth-of-type(2){
+                    background-color: #58FEDD;                
+                } li:nth-of-type(3){
+                    background-color: #FFC641;                
+                }
+            }        
+        }
+    }  
+    .hotbook{
+        width: 100%;
+        height: 1.7rem;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;       
+        margin-bottom:0.16rem;
+        .hb{
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 0.18rem #AAAAAA;
+            border-radius: 0.1rem;
+            padding-top: 0.06rem;
+            padding-bottom: 0.06rem;
+            .bookpi{
+                width: 2.26rem;
+                height: 1.52rem;
+                @include top-bottom;
+                background-image: url($imgPath+"bookshelf/8.png");
+                background-size: cover;
+                background-position: center;
+                left: 0.08rem;
+            }
+            .border{
+                width: 0.15rem;
+                height: 90%;
+                border-right: 0.01rem dotted #C8C8C8;
+                @include top-bottom;
+                left:2.34rem;
+                margin-right:0.15rem;
+            }
+            .bookname{
+                width: 60%;
+                height: 90%;
+                @include top-bottom;
+                left:2.64rem;
+                h3{
+                    font-size: 0.28rem;
+                    color: #333333;
+                }
+                p{
+                    font-size: 0.22rem;
+                    color: #666666;
+                    margin-bottom: 0.1rem;
+                }
+                .hot-bottom{
+                    width: 100%;
+                    height: 0.24rem;
+                    margin-bottom: 0.1rem;  
+                    line-height: 0.24rem;                 
+                    .shu{
+                        width: 0.18rem;
+                        height: 0.24rem;
+                        background-image: url($imgPath+"bookshelf/9.png");
+                        background-size: cover;
+                        float: left;
+                    }
+                    .cbs{
+                        font-size: 0.16rem;
+                        color: #999999;
+                        margin-left: 0.1rem;   
+                        float: left;  
+                        width: 1.5rem;
+                        overflow: hidden; 
+                        white-space: nowrap;  
+                        text-overflow: ellipsis;               
+                    }
+                    .shu1{
+                        width: 0.18rem;
+                        height: 0.24rem;
+                        background-image: url($imgPath+"bookshelf/10.png");
+                        background-size: 100%;
+                        float: left;
+                        margin-left: 0.5rem;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+        
+    }  
+    .srf{
+        width: 100%;
+        height: 4.32rem;
+        background-image: url($imgPath+"bookshelf/j1.png");
+        background-size: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+    
+}
+
+/** 书架第三张**/
+.three{
+   .header{
+        height:1.4rem ;
+        width:100%;
+        background: #2BA6DC;
+        position: relative;
+        .head-left{
+            width: 0.5rem;
+            height:0.5rem;
+            border-radius: 50%; 
+            border:0.02rem solid #137ABA;     
+            @include top-bottom;
+            left: 0.25rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.5rem;           
+            font-size: 0.28rem;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                font-family: "宋体";
+                color: #45B0E0;
+            }
+        }
+        .shuru{
+            width: 5.47rem;
+            height: 0.54rem;
+            border-radius: 0.4rem;
+            background: #FFFFFF;
+            overflow: hidden;
+            @include center;
+            .sousuo{
+                width:0.58rem;
+                height: 100%;
+                background-image:url($imgPath+"bookshelf/6.png");
+                background-position: center;
+                background-color: #F6F6F6;
+                 border-radius:0.4rem 0 0 0.4rem;
+                 background-size:0.26rem;
+                 background-repeat: no-repeat;
+                 float: left;
+            }
+            input{
+                padding-left: 0.2rem;
+                color: #DCDCDC;
+                width:70%;
+                height: 100%;
+                border:0;
+                float: left;
+                font-weight:300;
+            }
+        }
+        .head-right{
+            width: 0.5rem;
+            height:0.5rem;
+            border-radius: 50%; 
+            border:0.02rem solid #137ABA;     
+            @include top-bottom;
+            right: 0.25rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.5rem;
+            font-family: "宋体";
+            color: #45B0E0;
+            font-size: 0.28rem;
+            background-image: url($imgPath+"bookshelf/t1.png");
+            background-position:center;
+            background-size:50%;
+            background-repeat: no-repeat;
+            background-color: #FAFAFA;
+            a{
+                display: block;
+                width: 100%;
+                height:100%;
+                border-radius: 50%;
+            }
+        }
+    } 
+    .clothes{
+        width: 100%;
+        height: 3.7rem;
+        border-radius: 0.1rem;
+        box-shadow: 0 0 0.18rem #989898;
+        margin-top: 0.18rem;
+        position: relative;
+        
+        .clo-fm{
+            width: 2.48rem;
+            height: 3.5rem;
+            background-image: url($imgPath+"bookshelf/c1.png");
+            background-size: cover;
+            @include top-bottom;
+            left:0.25rem;
+        }
+        .clo-pro{
+            height: 3.5rem;
+            width: 4.1rem;
+            @include top-bottom;
+            left: 2.99rem;
+            h3{
+                font-size: 0.28rem;
+                color: #333333;                
+            }
+            h6{
+                font-size: 0.16rem;
+                color: #999999;
+                margin-left: 0.2rem;
+            }
+            p{
+                font-size:0.22rem;
+                color: #666666;
+                margin-left:0.2rem;                
+            }
+            .author{
+                font-size: 0.18rem;
+                color: #666666;
+                margin-left: 0.2rem;
+                
+            }
+            .word{
+                font-size: 0.18rem;
+                color: #666666;
+                margin-top: 0.06rem;
+                margin-left: 0.2rem;
+            }
+            .starnew{
+                width: 30%;
+                height: 0.24rem;
+                background-image: url($imgPath+"bookshelf/x1.png");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                margin-top: 0.1rem;                
+                margin-left: 0.2rem;
+            }
+            .watch{
+                width: 1.85rem;
+                height: 0.57rem;
+                background:#2BA6DC;
+                border-radius: 0.3rem;
+                position: absolute;
+                bottom: 0.32rem;
+                right: 0rem;                
+                .watch1{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0.3rem;
+                    position: relative;    
+                    text-align: center;
+                    line-height: 0.57rem; 
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0.3rem;  
+                        .sto{
+                            width: 0.06rem;
+                            height: 0.06rem;
+                            border-radius: 50%;
+                            @include top-bottom;
+                            left: 0.1rem;
+                            background: #fff;
+                        }
+                        .sto1{
+                            width: 0.06rem;
+                            height: 0.06rem;
+                            border-radius: 50%;
+                            @include top-bottom;
+                            right: 0.1rem;
+                            background: #fff;
+                        }       
+                        .smile{
+                              @include top-bottom;
+                              left: 0.24rem;
+                              width: 0.2rem;
+                              height: 0.2rem;
+                              background-image: url($imgPath+"bookshelf/x2.png");
+                              background-size:100%;
+                              background-repeat: no-repeat;
+                        }    
+                        .there1{
+                            font-size: 0.06rem;
+                            font-weight: 400;
+                            color: #fff;
+                        }               
+                    }                                  
+                       
+                }
+            }
+        }
+    }
+}
+.four{
+    .header{
+        height:1.4rem ;
+        width:100%;
+        background: #2BA6DC;
+        position: relative;
+        .head-left{
+            width: 0.5rem;
+            height:0.5rem;
+            border-radius: 50%; 
+            border:0.02rem solid #137ABA;     
+            @include top-bottom;
+            left: 0.25rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.5rem;
+            font-family: "宋体";
+            color: #45B0E0;
+            font-size: 0.28rem;
+        }
+        .shuru{
+            width: 5.47rem;
+            height: 0.54rem;
+            border-radius: 0.4rem;
+            background: #FFFFFF;
+            overflow: hidden;
+            @include center;
+            .sousuo{
+                width:0.58rem;
+                height: 100%;
+                background-image:url($imgPath+"bookshelf/6.png");
+                background-position: center;
+                background-color: #F6F6F6;
+                 border-radius:0.4rem 0 0 0.4rem;
+                 background-size:0.26rem;
+                 background-repeat: no-repeat;
+                 float: left;
+            }
+            input{
+                padding-left: 0.2rem;
+                color: #DCDCDC;
+                width:70%;
+                height: 100%;
+                border:0;
+                float: left;
+                font-weight:300;
+            }
+        }
+        .head-right{
+            width: 0.5rem;
+            height:0.5rem;
+            border-radius: 50%; 
+            border:0.02rem solid #137ABA;     
+            @include top-bottom;
+            right: 0.25rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.5rem;
+            font-family: "宋体";
+            color: #45B0E0;
+            font-size: 0.28rem;
+            background-image: url($imgPath+"bookshelf/t1.png");
+            background-position:center;
+            background-size:50%;
+            background-repeat: no-repeat;
+            background-color: #FAFAFA;
+        }
+    }
+    .top-hidden{
+        height: 4.18rem;
+        width: 100%;
+        background: #fff;
+        border-radius: 0 0 0.4rem 0.4rem;
+        box-shadow: 0 0 0.18rem #AAAAAA;
+        .top-top{
+            width: 100%;
+            height: 1.19rem;
+            background: #fff;  
+            position: relative;            
+            .system{
+                width: 5.74rem;
+                height: 0.84rem;
+                background: #2C3744;
+                @include center;
+                border-radius: 0.5rem;
+                text-align: center;                
+                .sys{
+                    width: 50%;
+                    height: 100%;
+                    float: left;
+                    position: relative;
+                    .xian{
+                        height:0.54rem;
+                        width: 0.01rem;
+                        background: #fff;
+                        @include top-bottom;
+                        right: 0;  
+                        &:before{
+                            content: "";
+                            display: block;
+                            width: 0.04rem;
+                            height: 0.04rem;
+                            background: #fff;
+                            border-radius: 50%;
+                            margin-left: -0.02rem;
+                        } 
+                        &:after{
+                            content: "";
+                            display: block;
+                            width: 0.04rem;
+                            height: 0.04rem;
+                            background: #fff;
+                            border-radius: 50%;
+                            margin-left: -0.02rem;
+                            margin-top: 0.5rem;
+                        }           
+                     }
+                    .sys-nei{
+                        width: 2.39rem;
+                        height: 0.67rem;
+                        background:#2BA6DC;
+                        border-radius: 0.4rem;
+                        @include top-bottom;
+                        left: 0.1rem;
+                        border:0.02rem solid #fff;
+                    }
+                    .sys-nei1{
+                        width: 2.39rem;
+                        height: 0.67rem;                       
+                        border-radius: 0.4rem;
+                        @include top-bottom;
+                        left: 0.1rem;                        
+                    }
+                        h4{
+                            color:#fff;
+                            font-size: 0.24rem;
+                            margin-top: 0.05rem;
+                            text-align: center;
+                            height: 0,14rem;
+                        }
+                        span{
+                            font-size: 0.08rem;
+                            white-space: nowrap;
+                            color: #fff;
+                            opacity: 0.5;
+                            @include left-right;
+                            bottom: 0.02rem;                           
+                            font-family: "San Francisco Display";                            
+                        }
+                    
+                }
+            }          
+        }
+        .shaixuan{
+            height: 3rem;
+            width: 100%;
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+            .yanqing{
+                width: 33.33%;
+                height: 30%;
+                float: left;
+                position: relative;
+                .all{
+                    width: 1.75rem;
+                    height: 0.45rem;
+                    border: 0.02rem solid #80868E;
+                    border-radius: 0.4rem;;
+                    @include center;
+                    text-align: center;
+                    line-height: 0.45rem;
+                    color: #3F4752;
+                    font-size: 0.24rem;
+                }                
+            }
+            .yanqing:first-child{
+                .all{
+                    background: #2BA6DC;
+                    border:0;
+                    color: #fff;
+                }
+            }
+        }
+    } 
+}

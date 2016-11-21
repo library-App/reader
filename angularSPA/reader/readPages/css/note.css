@@ -1,0 +1,301 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  color: #777779;
+  position: relative;
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 170.66667px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 192px;
+  }
+}
+
+input {
+  background: transparent;
+  outline: medium;
+}
+
+.clear {
+  clear: both;
+}
+
+#notes .header {
+  height: 1.1rem;
+  background: #29a6dc;
+}
+
+#notes .header .return {
+  display: block;
+  width: 0.43rem;
+  height: 0.43rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.24rem;
+  background: #fafafa url(../img/note/return.png) center center no-repeat;
+  background-size: 0.22rem 0.22rem;
+  border: 1px solid #076cbe;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#notes .header .mynote {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#notes .header .mynote .ch {
+  margin-top: 0.1rem;
+  color: #fafafa;
+  font-size: 0.36rem;
+  display: block;
+  line-height: 0.5rem;
+  text-align: center;
+}
+
+#notes .header .mynote .en {
+  color: #90dcff;
+  font-size: 0.2rem;
+  display: block;
+  line-height: 0.35rem;
+  text-align: center;
+}
+
+#notes .con {
+  padding: 0 0.24rem;
+}
+
+#notes .con .time {
+  height: 0.54rem;
+  padding-left: 0.56rem;
+}
+
+#notes .con .time .img {
+  display: block;
+  width: 0.25rem;
+  height: 0.25rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.14rem;
+  background: url(../img/note/ge.png) center no-repeat;
+  background-size: 0.25rem 0.25rem;
+}
+
+#notes .con .time span {
+  font-size: 0.22rem;
+  color: #a8a8a8;
+  line-height: 0.54rem;
+}
+
+#notes .con .text {
+  height: 3.3rem;
+  box-shadow: 0px 0 4px #999;
+  border-radius: 10px;
+  padding: 0 0.1rem;
+  font-size: 0.24rem;
+  color: #333;
+}
+
+#notes .con .null {
+  height: 0.2rem;
+}
+
+#notes .con .edit {
+  width: 7rem !important;
+  height: 1rem !important;
+  box-shadow: 0 0 4px #ccc;
+  outline: none;
+}
+
+#notes .con .btn {
+  margin-top: 0.42rem;
+}
+
+#notes .con .btn .btn-edit {
+  display: block;
+  width: 1.7rem;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  background: #29dcbc;
+  color: #FAFAFA;
+  font-size: 0.24rem;
+  text-align: center;
+  line-height: 0.6rem;
+  position: absolute;
+  top: 0;
+  left: 1.2rem;
+}
+
+#notes .con .btn .btn-edit:after {
+  content: "";
+  display: block;
+  width: 0.08rem;
+  height: 0.08rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.2rem;
+  background: #fff;
+}
+
+#notes .con .btn .btn-edit:before {
+  content: "";
+  display: block;
+  width: 0.08rem;
+  height: 0.08rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.2rem;
+  background: #fff;
+}
+
+#notes .con .btn .ok {
+  display: block;
+  width: 1.7rem;
+  height: 0.6rem;
+  border-radius: 0.3rem;
+  background: #28dd8b;
+  color: #FAFAFA;
+  font-size: 0.24rem;
+  text-align: center;
+  line-height: 0.6rem;
+  position: absolute;
+  top: 0;
+  right: 1.2rem;
+}
+
+#notes .con .btn .ok:after {
+  content: "";
+  display: block;
+  width: 0.08rem;
+  height: 0.08rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.2rem;
+  background: #fff;
+}
+
+#notes .con .btn .ok:before {
+  content: "";
+  display: block;
+  width: 0.08rem;
+  height: 0.08rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.2rem;
+  background: #fff;
+}

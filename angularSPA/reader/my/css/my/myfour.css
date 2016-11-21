@@ -1,0 +1,784 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  color: #777779;
+  position: relative;
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+  background: #000;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 170.66667px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 192px;
+  }
+}
+
+input {
+  background: transparent;
+  outline: medium;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  background: #FAFAFA;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+  color: #FAFAFA;
+}
+
+/*顶部*/
+#persontopintercalate {
+  width: 100%;
+  height: 1.08rem;
+  background: #2BA6DC;
+}
+
+#persontopintercalate .install {
+  width: 100%;
+  height: 1.08rem;
+}
+
+#persontopintercalate .install li {
+  line-height: 1.08rem;
+}
+
+#persontopintercalate .install .left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.24rem;
+}
+
+#persontopintercalate .install .left span {
+  display: inline-block;
+  width: 0.44rem;
+  height: 0.44rem;
+  border: 3px solid #0F74B5;
+  border-radius: 50%;
+  background: #FAFAFA;
+  margin-top: 0.32rem;
+}
+
+#persontopintercalate .install .left span img {
+  width: 30%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#persontopintercalate .install .middle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#persontopintercalate .install .middle div:nth-of-type(1) {
+  line-height: 0.9rem;
+  text-align: center;
+  height: 50%;
+  font-size: 0.35rem;
+  color: #FAFAFA;
+}
+
+#persontopintercalate .install .middle div:nth-of-type(2) {
+  line-height: 0.2rem;
+  text-align: center;
+  height: 25%;
+  font-size: 0.35rem;
+  color: #FAFAFA;
+}
+
+#persontopintercalate .install .middle div:nth-of-type(3) {
+  line-height: 0rem;
+  text-align: center;
+  height: 25%;
+  font-size: 0.14rem;
+  color: #90DCFF;
+}
+
+#personmain {
+  widows: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 1.29rem;
+}
+
+#personmain .list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  width: 7.02rem;
+  height: 3.58rem;
+  box-shadow: 0 0 0 5px rgba(236, 236, 236, 0.2);
+  border-radius: 0.02rem;
+}
+
+#personmain .list li {
+  height: 0.87rem;
+  border-bottom: 1px dotted #B8B8B8;
+  line-height: 0.87rem;
+  font-size: 0.11rem;
+}
+
+#personmain .list li div {
+  display: inline-block;
+}
+
+#personmain .list li .lister {
+  display: inline-block;
+  float: right;
+  margin-right: 0.31rem;
+}
+
+#personmain .list li .lister h6 {
+  display: inline-block;
+  margin-right: 0.11rem;
+  color: #3D3D3D;
+}
+
+#personmain .list li .lister .cirty {
+  width: 0.88rem;
+  height: 0.42rem;
+  border: 0.03rem solid #D9E1FF;
+  border-radius: 0.42rem;
+  margin-right: 0;
+}
+
+#personmain .list li .lister .cirty .cir {
+  width: 0.26rem;
+  height: 0.26rem;
+  border: 0.03rem solid #D9E1FF;
+  border-radius: 0.26rem;
+  background: #FAFAFA;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.03rem;
+}
+
+#personmain .list li .lister .cirty .cir .smallcir {
+  width: 0.06rem;
+  height: 0.06rem;
+  border-radius: 50%;
+  background: #2FE7CB;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.03rem;
+}
+
+#personmain .list li h2 {
+  line-height: 0.7rem;
+  height: 50%;
+  color: #363636;
+  font-size: 0.16rem;
+}
+
+#personmain .list li p {
+  height: 50%;
+  line-height: 0.01rem;
+  color: #666666;
+}
+
+#personmain .list li span {
+  margin-left: 0.165rem;
+  margin-right: 0.165rem;
+  margin-top: 0.27rem;
+  float: left;
+  display: inline-block;
+  width: 0.33rem;
+  height: 0.33rem;
+  background: #3DCDFD;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.33rem;
+}
+
+#personmain .list li span img {
+  width: 60%;
+}
+
+#personmain .list li .qblue {
+  background: #3DFBFD;
+}
+
+#personmain .list li .green {
+  background: #3DFD9A;
+}
+
+#personmain .list li .yellow {
+  background: #FDCD3D;
+}
+
+#personmain .list .last {
+  border: 0;
+}
+
+#personmain1 {
+  widows: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 5.1rem;
+}
+
+#personmain1 .list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  width: 7.02rem;
+  height: 3.58rem;
+  box-shadow: 0 0 0 5px rgba(236, 236, 236, 0.2);
+  border-radius: 0.02rem;
+}
+
+#personmain1 .list li {
+  height: 0.87rem;
+  border-bottom: 1px dotted #B8B8B8;
+  line-height: 0.87rem;
+  font-size: 0.11rem;
+}
+
+#personmain1 .list li div {
+  display: inline-block;
+}
+
+#personmain1 .list li .lister {
+  display: inline-block;
+  float: right;
+  margin-right: 0.31rem;
+}
+
+#personmain1 .list li .lister h6 {
+  display: inline-block;
+  margin-right: 0.11rem;
+  color: #3D3D3D;
+}
+
+#personmain1 .list li .lister .cirty {
+  width: 0.88rem;
+  height: 0.42rem;
+  border: 0.03rem solid #D9E1FF;
+  border-radius: 0.42rem;
+  margin-right: 0;
+}
+
+#personmain1 .list li .lister .cirty .cir {
+  width: 0.26rem;
+  height: 0.26rem;
+  border: 0.03rem solid #D9E1FF;
+  border-radius: 0.26rem;
+  background: #FAFAFA;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.03rem;
+}
+
+#personmain1 .list li .lister .cirty .cir .smallcir {
+  width: 0.06rem;
+  height: 0.06rem;
+  border-radius: 50%;
+  background: #2FE7CB;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.03rem;
+}
+
+#personmain1 .list li h2 {
+  line-height: 0.7rem;
+  height: 50%;
+  color: #363636;
+  font-size: 0.16rem;
+}
+
+#personmain1 .list li p {
+  height: 50%;
+  line-height: 0.01rem;
+  color: #666666;
+}
+
+#personmain1 .list li span {
+  margin-left: 0.165rem;
+  margin-right: 0.165rem;
+  margin-top: 0.27rem;
+  float: left;
+  display: inline-block;
+  width: 0.33rem;
+  height: 0.33rem;
+  background: #3DFBFD;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.33rem;
+}
+
+#personmain1 .list li span img {
+  width: 50%;
+}
+
+#personmain1 .list li .yellow {
+  background: #E1B42E;
+}
+
+#personmain1 .list .last {
+  border: 0;
+}
+
+#shade {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+}
+
+#Headportrait {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4.78rem;
+  height: 2.95rem;
+  background: #FFFFFF;
+  z-index: 11;
+  border-radius: 0.2rem;
+  z-index: 102;
+}
+
+#Headportrait .headp {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#Headportrait .headp .first {
+  height: 0.72rem;
+}
+
+#Headportrait .headp .first img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+
+#Headportrait .headp .first .pers {
+  position: absolute;
+  top: 0.18rem;
+  left: 0.54rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+  text-align: center;
+  line-height: 0.36rem;
+}
+
+#Headportrait .headp .first .pers img {
+  width: 70%;
+}
+
+#Headportrait .headp .first h5 {
+  position: absolute;
+  top: 0.18rem;
+  left: 1.04rem;
+  font-size: 0.2rem;
+  color: #FAFAFA;
+  font-weight: normal;
+}
+
+#Headportrait .headp .first h6 {
+  position: absolute;
+  top: 0.4rem;
+  left: 1.04rem;
+  font-size: 0.11rem;
+  color: #D1FEF6;
+  font-weight: normal;
+}
+
+#Headportrait .headp .second {
+  width: 100%;
+  height: 0.9rem;
+  border-bottom: 1px dotted #999999;
+}
+
+#Headportrait .headp .second div {
+  display: inline-block;
+}
+
+#Headportrait .headp .second h2 {
+  line-height: 0.7rem;
+  height: 50%;
+  color: #363636;
+  font-size: 0.22rem;
+}
+
+#Headportrait .headp .second p {
+  height: 50%;
+  line-height: 0.01rem;
+  color: #666666;
+  font-size: 0.13rem;
+}
+
+#Headportrait .headp .second span {
+  margin-left: 0.165rem;
+  margin-right: 0.165rem;
+  margin-top: 0.3rem;
+  float: left;
+  display: inline-block;
+  width: 0.33rem;
+  height: 0.33rem;
+  background: #34FC87;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.33rem;
+}
+
+#Headportrait .headp .second span img {
+  width: 50%;
+}
+
+#Headportrait .headp .second .yellow {
+  background: #E1B42E;
+}
+
+#Headportrait .headp .three {
+  width: 100%;
+  height: 0.9rem;
+}
+
+#Headportrait .headp .three div {
+  display: inline-block;
+}
+
+#Headportrait .headp .three h2 {
+  line-height: 0.7rem;
+  height: 50%;
+  color: #363636;
+  font-size: 0.22rem;
+}
+
+#Headportrait .headp .three p {
+  height: 50%;
+  line-height: 0.01rem;
+  color: #666666;
+  font-size: 0.13rem;
+}
+
+#Headportrait .headp .three span {
+  margin-left: 0.165rem;
+  margin-right: 0.165rem;
+  margin-top: 0.3rem;
+  float: left;
+  display: inline-block;
+  width: 0.33rem;
+  height: 0.33rem;
+  background: #34FC87;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 0.33rem;
+}
+
+#Headportrait .headp .three span img {
+  width: 80%;
+}
+
+#Headportrait .headp .three .qblue {
+  background: #34FC87;
+}
+
+#Headportrait .headp .three .yellow {
+  background: #34D3FC;
+}
+
+#Headportrait .Notrue {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -0.31rem;
+  width: 2.53rem;
+  height: 0.65rem;
+  background: #2BDCBC;
+  border-radius: 0.65rem;
+  text-align: center;
+  line-height: 0.65rem;
+  font-size: 0.21rem;
+  color: #FAFAFA;
+}
+
+#Sex {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4.78rem;
+  height: 2.95rem;
+  background: #FFFFFF;
+  z-index: 102;
+  border-radius: 0.2rem;
+}
+
+#Sex .headp {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#Sex .headp .first {
+  height: 0.72rem;
+}
+
+#Sex .headp .first img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+
+#Sex .headp .first .pers {
+  position: absolute;
+  top: 0.18rem;
+  left: 0.54rem;
+  width: 0.36rem;
+  height: 0.36rem;
+  border-radius: 50%;
+  background: #FFFFFF;
+  text-align: center;
+  line-height: 0.36rem;
+}
+
+#Sex .headp .first .pers img {
+  max-width: 60%;
+  max-height: 60%;
+}
+
+#Sex .headp .first h5 {
+  position: absolute;
+  top: 0.18rem;
+  left: 1.04rem;
+  font-size: 0.2rem;
+  color: #FAFAFA;
+  font-weight: normal;
+}
+
+#Sex .headp .first h6 {
+  position: absolute;
+  top: 0.4rem;
+  left: 1.04rem;
+  font-size: 0.11rem;
+  color: #D1FEF6;
+  font-weight: normal;
+}
+
+#Sex .headp .three {
+  width: 100%;
+  height: 1.8rem;
+}
+
+#Sex .headp .three span {
+  display: inline-block;
+  width: 0.66rem;
+  height: 0.66rem;
+  border-radius: 50%;
+  background: #FAFAFA;
+  box-shadow: 0 0 0 5px rgba(236, 236, 236, 0.5);
+  text-align: center;
+  line-height: 0.66rem;
+}
+
+#Sex .headp .three span img {
+  width: 70%;
+  height: 70%;
+}
+
+#Sex .headp .three span:nth-of-type(1) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 1.09rem;
+}
+
+#Sex .headp .three span:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 1.09rem;
+}
+
+#Sex .Notrue {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -0.31rem;
+  width: 2.53rem;
+  height: 0.65rem;
+  background: #2BDCBC;
+  border-radius: 0.65rem;
+  text-align: center;
+  line-height: 0.65rem;
+  font-size: 0.21rem;
+  color: #FAFAFA;
+}

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li,b,i{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 16px;
+}
+$d-list:320px 360px 375px 384px 412px 414px 768px 800px;
+$sign:750px;
+@each $i in $d-list{
+    @media screen and (min-width:#{$i}) {
+        html{
+            font-size: 100px * $i / $sign;
+        }
+    }
+}

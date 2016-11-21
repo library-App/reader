@@ -1,0 +1,512 @@
+@import '../base/base';
+body{
+    background: #FFE7A7;
+}
+
+.box{
+    $backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac),(5,0.1rem,#21858e),(6,0.1rem,#f4c5d4),(7,0.1rem,#79d143),(8,0.1rem,#ffffff);
+    height: 100%;
+    background: #ffe7a7;
+    .con{
+        overflow: hidden;
+        //书名小标
+        .book-title{
+            display: none;
+            height: 0.4rem;
+            .short{
+                height: 1px;
+                width: 0.25rem;
+                position: absolute;
+                bottom: 0.1rem;
+                left: 0.25rem;
+                background: #292722;
+            }
+            .long{
+                height: 1px;
+                width: 5.4rem;
+                position: absolute;
+                bottom: 0.1rem;
+                right: 0.55rem;
+                background: #292722;
+            }
+            span{
+                font-size: 0.17rem;
+                color: #292722;
+                position: absolute;
+                bottom: 0;
+                left: 0.55rem;
+            }
+        }
+        //更多功能  头部
+        .book-title-t{
+            display: none;
+            height: 1.1rem;
+            background: #29a6dc;
+            .b-con{
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0.25rem;
+                right: 0.25rem;
+                margin: auto;
+                .b-l{
+                    width: 2rem;
+                    height: 100%;
+                    float: left;
+                    a{
+                        display: block;
+                        @include square(0.43rem,0.43rem);
+                        @include top-bottom;
+                        left: 0;
+                        background: #fafafa url(../img/readPages/return.png) center no-repeat;
+                        background-size: 0.22rem 0.22rem;
+                        border: 1px solid #076cbe;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                    }
+                }
+                .b-r{
+                    width: 4rem;
+                    height: 100%;
+                    float: right;
+                    .one{
+                        @include square(0.43rem,0.43rem);
+                        @include top-bottom;
+                        right: 0;
+                        background: #fafafa url(../img/readPages/download.png) center no-repeat;
+                        background-size: 0.22rem 0.22rem;
+                        border: 1px solid #076cbe;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                    }
+                    .two{
+                        @include square(0.43rem,0.43rem);
+                        @include top-bottom;
+                        right: 0.66rem;
+                        background: url(../img/readPages/bookmark.png) center no-repeat;
+                        background-size: 0.39rem 0.39rem;
+                    }
+                }
+            }
+        }
+        //夜间小标
+        .night{
+            @include square(0.6rem,0.6rem);
+            border-radius: 50%;
+            position: fixed;
+            left: 0.24rem;
+            bottom: 3.3rem;
+            z-index: 10;
+            display: none;
+            background: url(../img/readPages/night.png) no-repeat;
+            background-size: 0.6rem 0.6rem;
+        }
+        //书签
+        .bookmark{
+            position: fixed;
+            top: 40%;
+            right: -0.95rem;
+            width: 1.9rem;
+            height: 0.77rem;
+            border-radius: 0.34rem;
+            background: #fff url(../img/readPages/bookmark2.png) 0.24rem center no-repeat;
+            background-size: 0.4rem 0.4rem;
+            z-index: 10;
+            display: none;
+        }
+        //更多功能   底部
+        .cor-footer{
+            display: none;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            bottom: 0rem;
+            left: 0;
+            z-index: 2;
+            .foot1{
+                width: 100%;
+                height: 2.25rem;
+                padding: 0.2rem 0.24rem;
+                background: #151c2b;
+                display: none;
+                .progress{
+                    height: 0.8rem;
+                    .last,.next{
+                        font-size: 0.24rem;
+                        color: #c6c6c6;
+                        line-height: 0.8rem;
+                        @include top-bottom;
+                    }
+                    .last{
+                        left: 0.19rem;
+                    }
+                    .next{
+                        right: 0.19rem;
+                    }
+                    .pick{
+                        width: 4.7rem;
+                        height: 0.12rem;
+                        border-radius: 0.06rem;
+                        background: #d5d5d5;
+                        @include center;
+                        .rel{
+                            width: 2rem;
+                            height: 100%;
+                            background: #37d72a;
+                            border-radius: 0.06rem;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        .circle-lg{
+                            @include square(0.24rem,0.24rem);
+                            border-radius: 50%;
+                            border: 0.06rem solid #595f68;
+                            background: #ffd235;
+                            position: absolute;
+                            top: -(0.24rem-0.12rem)/2;
+                            left: 2rem-0.24rem/2;
+                        }
+                    }
+                }
+                .navs{
+                   height: 1.05rem;
+                   .nav{
+                       width: 0.6rem;
+                       height: 100%;
+                       a{
+                           display: block;
+                           width: 100%;
+                           height: 100%;
+                       }
+                       div{
+                           @include square(0.57rem,0.57rem);
+                           margin: 0.14rem auto 0.09rem;
+                           border-radius: 50%;
+                       }
+                   } 
+                   .nav:nth-of-type(1){
+                       @include top-bottom;
+                       left: 0.84rem;
+                       div{
+                           background: #29a6dc url(../img/readPages/catalog.png) center no-repeat;
+                           background-size: 0.42rem 0.42rem;
+                       }
+                   }
+                   .nav:nth-of-type(2){
+                       @include center;
+                       div{
+                           background: #29a6dc url(../img/readPages/setUp.png) center no-repeat;
+                           background-size: 0.42rem 0.42rem;
+                       }
+                   }
+                   .nav:nth-of-type(3){
+                       @include top-bottom;
+                       right: 0.84rem;
+                       div{
+                           background: #29a6dc url(../img/readPages/brightness.png) center no-repeat;
+                           background-size: 0.42rem 0.42rem;
+                       }
+                   }
+                   span{
+                       display: block;
+                       font-size: 0.22rem;
+                       line-height: 0.22rem;
+                       margin: 0 auto;
+                       text-align: center;
+                       color: #d2d2d2;
+                   }
+                }
+            }
+            //点击设置后
+            .foot2{
+                width: 100%;
+                height: 2.8rem;
+                padding: 0.1rem 0.24rem 0.4rem;
+                background: #151c2b;
+                display: none;
+                .foot2-ul{
+                    height: 2.3rem;
+                    .li{
+                        height: 0.6rem;
+                        .written{
+                            @include top-bottom;
+                            left: 0.24rem;
+                            font-size: 0.24rem;
+                            color: #f0f0f0;
+                            line-height: 0.6rem;
+                        }
+                    }
+                    .back{
+                        height: 1.1rem;
+                    }
+                    .li-progress{
+                        .log{
+                            @include square(0.4rem,0.4rem);
+                            @include top-bottom;
+                            left: 1rem;
+                            background: url(../img/readPages/kern.png) center no-repeat;
+                            background-size: 0.4rem 0.4rem;
+                        }
+                        .num{
+                            width: 0.4rem;
+                            @include top-bottom;
+                            right: 0.45rem;
+                            line-height: 0.6rem;
+                            text-align: right;
+                            color: #f2f2f2;
+                            font-size: 0.24rem;
+                        }
+                        .progress{
+                            width: 4.7rem;
+                            height: 0.06rem;
+                            border-radius: 0.1rem;
+                            background: #d5d5d5;
+                            position: absolute;
+                            bottom: 50%;
+                            left: 1.5rem;
+                            .rel{
+                                width: 2rem;
+                                height: 100%;
+                                background: #37d72a;
+                                border-radius: 0.06rem;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                            .circle-lg{
+                                @include square(0.2rem,0.2rem);
+                                border-radius: 50%;
+                                border: 0.05rem solid #595f68;
+                                background: #ffd235;
+                                position: absolute;
+                                top: -(0.20rem-0.06rem)/2;
+                                left: 2rem-0.2rem/2;
+                            }
+                        }
+                    }
+                    .size{
+                        .log{
+                            background: url(../img/readPages/size.png) center no-repeat;
+                            background-size: 0.35rem 0.35rem;
+                        }
+                    }
+                    .back{
+                        ul{
+                            @include top-bottom;
+                            left: 1rem;
+                            right: 0.38rem;
+                            margin: auto;
+                            .color{
+                                @include square(0.6rem,1.1rem);
+                                margin-top: 0.18rem;
+                                float: left;
+                                .name{
+                                    width: 0.6rem;
+                                    font-size: 0.14rem;
+                                    color: #cccccc;
+                                    text-align: center;
+                                }
+                                .squ{
+                                    border: 0.04rem solid transparent;
+                                }
+                            }
+                            .border{
+                                .squ{
+                                    border-color: #41e441; 
+                                }
+                            }
+                            @each $v,$l,$back in $backColor{
+                                .color:nth-of-type(#{$v}){
+                                    margin-left: $l;
+                                    .squ{
+                                        @include square(0.6rem,0.6rem);
+                                        background: $back;
+                                        text-align: center;
+                                        line-height: 0.55rem;
+                                        color: #313131;
+                                        font-size: 0.18rem;
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //点击亮度后
+            .foot3{
+                height: 1.88rem;
+                padding: 0.24rem 0.2rem;
+                background: #151c2b;
+                display: none;
+                ul{
+                    .pro{
+                        height: 0.68rem;
+                        .an{
+                            font-size: 0.24rem;
+                            color: #F2F2F2;
+                            @include top-bottom;
+                            left: 0.18rem;
+                            line-height: 0.68rem;
+                        }
+                        .liang{
+                            font-size: 0.24rem;
+                            color: #F2F2F2;
+                            @include top-bottom;
+                            right: 1.18rem;
+                            line-height: 0.68rem;
+                        }
+                        .pick{
+                            width: 4.7rem;
+                            height: 0.06rem;
+                            border-radius: 0.06rem;
+                            background: #d5d5d5;
+                            @include top-bottom;
+                            left: 0.62rem;
+                            .rel{
+                                width: 2rem;
+                                height: 100%;
+                                background: #37d72a;
+                                border-radius: 0.06rem;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                            .circle-lg{
+                                @include square(0.2rem,0.2rem);
+                                border-radius: 50%;
+                                border: 0.05rem solid #595f68;
+                                background: #ffd235;
+                                position: absolute;
+                                top: -(0.20rem-0.06rem)/2;
+                                left: 2rem-0.2rem/2;
+                            }
+                        }
+                        .squ{
+                            @include square(0.72rem,0.32rem);
+                            border-radius: 0.05rem;
+                            border: 2px solid #c0c0c0;
+                            @include top-bottom;
+                            right: 0.24rem;
+                            font-size: 0.16rem;
+                            color: #F2F2F2;
+                            line-height: 0.28rem;
+                            text-align: center;
+                        }
+                    }
+                    .pattern{
+                        height: 0.8rem;
+                        .pat{
+                            width: 1.24rem;
+                            @include top-bottom;
+                            left: 0.24rem;
+                            color: #999999;
+                            font-size: 0.22rem;
+                            line-height: 0.8rem;
+                            text-align: right;
+                        }
+                        .pat:before{
+                            content: "";
+                            display: block;
+                            box-sizing: border-box;
+                            @include square(0.2rem,0.2rem);
+                            border: 0.05rem solid #FFFFFF;
+                            border-radius: 50%;
+                            @include top-bottom;
+                            left: 0;
+                            background: #7d7d7d;
+                        }
+                        .ness{
+                            width: 1.24rem;
+                            @include top-bottom;
+                            right: 0.24rem;
+                            color: #e0e0e0;
+                            font-size: 0.22rem;
+                            line-height: 0.8rem;
+                            text-align: right;
+                        }
+                        .ness:before{
+                            content: "";
+                            display: block;
+                            box-sizing: border-box;
+                            @include square(0.2rem,0.2rem);
+                            border: 0.05rem solid #FFFFFF;
+                            border-radius: 50%;
+                            @include top-bottom;
+                            left: 0;
+                            background: #ffd235;
+                        }
+                    }
+                }
+            }
+            
+            .show{
+                display: block;
+            }
+        }
+        .show{
+            display: block;
+        }
+        //正文
+        .text{
+            padding: 0 0.25rem;
+            h2{
+                font-size: 0.3rem;
+                padding: 0.25rem 0.12rem;
+            }
+            .texts{
+                height: 11rem;
+                overflow: hidden;
+                p{
+                    padding: 0.2rem 0.25rem;
+                    font-size: 0.25rem;
+                    color: #292722;
+                    height: auto;
+                    text-indent: 2em;
+                    line-height: 0.3rem;
+                }
+            }
+                
+        }
+        .corner{
+            height: 0.35rem;
+            position: fixed;
+            bottom: 0.2rem;
+            left: 0.25rem;
+            z-index: 1;
+            right: 0.25rem;
+            margin: auto;
+            .cor-left{
+                @include top-bottom;
+                left: 0.3rem;
+                font-size: 0.23rem;
+            }
+            .cor-right{
+                @include top-bottom;
+                right: 0.3rem;
+                font-size: 0.23rem;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

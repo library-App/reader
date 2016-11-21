@@ -1,0 +1,118 @@
+@import '../base/base';
+body{
+    background: #FFE7A7;
+}
+
+#selected{
+    height: 100%;
+    background: #ffe7a7;
+    .con{
+        overflow: hidden;
+        //书名小标
+        .book-title{
+            height: 0.4rem;
+            .short{
+                height: 1px;
+                width: 0.25rem;
+                position: absolute;
+                bottom: 0.1rem;
+                left: 0.25rem;
+                background: #292722;
+            }
+            .long{
+                height: 1px;
+                width: 5.4rem;
+                position: absolute;
+                bottom: 0.1rem;
+                right: 0.55rem;
+                background: #292722;
+            }
+            span{
+                font-size: 0.17rem;
+                color: #292722;
+                position: absolute;
+                bottom: 0;
+                left: 0.55rem;
+            }
+        }
+        .text{
+            padding: 0 0.25rem;
+            h2{
+                font-size: 0.3rem;
+                padding: 0.25rem 0.12rem;
+            }
+            .texts{
+                height: 11rem;
+                overflow: hidden;
+                .p{
+                    display: block;
+                    margin: 0.2rem 0.25rem;
+                    font-size: 0.25rem;
+                    color: #292722;
+                    height: auto;
+                    text-indent: 2em;
+                    line-height: 0.3rem;
+                }
+                .sele{
+                    background: #fff100;
+                    .sel{
+                        @include square(4rem,0.45rem);
+                        background: rgba(0,0,0,0.8);
+                        @include left-right;
+                        top: -200%;
+                        border-radius: 0.1rem;
+                        a{
+                            text-indent: 0;
+                            float: left;
+                            line-height: 0.45rem;
+                            text-align: center;
+                            color: #fafafa;
+                            width: 20%;
+                            border-right: 1px solid #000;
+                            font-size: 0.18rem;
+                        }
+                    }
+                    .sel:before{
+                        content: "";
+                        display: block;
+                        width: 0;
+                        height: 0;
+                        border: 0.18rem solid rgba(0,0,0,0.8);
+                        border-left-color: transparent;
+                        border-right-color: transparent;
+                        border-bottom: 0;
+                        @include left-right;
+                        bottom: -0.18rem;
+                    }
+                }
+            }     
+        }
+        .corner{
+            height: 0.35rem;
+            position: fixed;
+            bottom: 0.2rem;
+            left: 0.25rem;
+            z-index: 1;
+            right: 0.25rem;
+            margin: auto;
+            .cor-left{
+                @include top-bottom;
+                left: 0.3rem;
+                font-size: 0.23rem;
+            }
+            .cor-right{
+                @include top-bottom;
+                right: 0.3rem;
+                font-size: 0.23rem;
+            }
+        }
+            
+    }
+    
+    
+    
+    
+    
+    
+    
+}

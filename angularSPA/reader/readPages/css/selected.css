@@ -1,0 +1,251 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  color: #777779;
+  position: relative;
+  font-family: "微软雅黑";
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 170.66667px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 213.33333px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 192px;
+  }
+}
+
+input {
+  background: transparent;
+  outline: medium;
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  background: #FFE7A7;
+}
+
+#selected {
+  height: 100%;
+  background: #ffe7a7;
+}
+
+#selected .con {
+  overflow: hidden;
+}
+
+#selected .con .book-title {
+  height: 0.4rem;
+}
+
+#selected .con .book-title .short {
+  height: 1px;
+  width: 0.25rem;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 0.25rem;
+  background: #292722;
+}
+
+#selected .con .book-title .long {
+  height: 1px;
+  width: 5.4rem;
+  position: absolute;
+  bottom: 0.1rem;
+  right: 0.55rem;
+  background: #292722;
+}
+
+#selected .con .book-title span {
+  font-size: 0.17rem;
+  color: #292722;
+  position: absolute;
+  bottom: 0;
+  left: 0.55rem;
+}
+
+#selected .con .text {
+  padding: 0 0.25rem;
+}
+
+#selected .con .text h2 {
+  font-size: 0.3rem;
+  padding: 0.25rem 0.12rem;
+}
+
+#selected .con .text .texts {
+  height: 11rem;
+  overflow: hidden;
+}
+
+#selected .con .text .texts .p {
+  display: block;
+  margin: 0.2rem 0.25rem;
+  font-size: 0.25rem;
+  color: #292722;
+  height: auto;
+  text-indent: 2em;
+  line-height: 0.3rem;
+}
+
+#selected .con .text .texts .sele {
+  background: #fff100;
+}
+
+#selected .con .text .texts .sele .sel {
+  width: 4rem;
+  height: 0.45rem;
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -200%;
+  border-radius: 0.1rem;
+}
+
+#selected .con .text .texts .sele .sel a {
+  text-indent: 0;
+  float: left;
+  line-height: 0.45rem;
+  text-align: center;
+  color: #fafafa;
+  width: 20%;
+  border-right: 1px solid #000;
+  font-size: 0.18rem;
+}
+
+#selected .con .text .texts .sele .sel:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 0.18rem solid rgba(0, 0, 0, 0.8);
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -0.18rem;
+}
+
+#selected .con .corner {
+  height: 0.35rem;
+  position: fixed;
+  bottom: 0.2rem;
+  left: 0.25rem;
+  z-index: 1;
+  right: 0.25rem;
+  margin: auto;
+}
+
+#selected .con .corner .cor-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.3rem;
+  font-size: 0.23rem;
+}
+
+#selected .con .corner .cor-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.3rem;
+  font-size: 0.23rem;
+}

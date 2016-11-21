@@ -1,0 +1,490 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  color: #777779;
+  position: relative;
+  font-family: "苹方";
+  box-sizing: border-box; }
+
+img {
+  vertical-align: middle;
+  border: 0; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 15px;
+  background: #000; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 170.66667px; } }
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 213.33333px; } }
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 192px; } }
+
+input {
+  background: transparent;
+  outline: medium; }
+
+.clear {
+  clear: both; }
+
+body {
+  background: #fff; }
+
+* {
+  font-weight: normal; }
+
+.page1 .header {
+  width: 100%;
+  height: 1rem;
+  background: #2BA6DC; }
+  .page1 .header .circle {
+    width: 0.44rem;
+    height: 0.44rem;
+    border: 0.02rem solid #076CBE;
+    border-radius: 50%;
+    background: #fff url("../img/book/left.jpg") no-repeat;
+    background-size: auto 0.17rem;
+    background-position: 0.15rem 0.12rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.25rem; }
+
+.page1 .book {
+  width: 6.87rem;
+  height: 5.19rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0.04rem #C4EDFF;
+  margin: 0.12rem auto 0.35rem; }
+  .page1 .book .bookPic {
+    width: 2.4rem;
+    height: 2.05rem;
+    float: left;
+    background: url("../img/book/book03.jpg");
+    background-size: 100% auto;
+    margin-left: 0.35rem;
+    margin-top: 0.6rem; }
+  .page1 .book .text {
+    width: 3.42rem;
+    height: 2.49rem;
+    float: right;
+    margin-right: 0.38rem;
+    margin-top: 0.6rem;
+    padding-left: 0.06rem; }
+    .page1 .book .text h1 {
+      font-size: 0.3rem;
+      color: #343434;
+      line-height: 0.3rem; }
+    .page1 .book .text h2 {
+      font-size: 0.16rem;
+      color: #424242;
+      line-height: 0.3rem; }
+      .page1 .book .text h2 span {
+        font-size: 0.13rem;
+        margin-left: 0.1rem; }
+    .page1 .book .text h3 {
+      font-size: 0.19rem;
+      color: #595959;
+      line-height: 0.3rem; }
+    .page1 .book .text .star {
+      width: 1.33rem;
+      height: 0.23rem;
+      background: url("../img/book/book06.jpg");
+      background-size: 100% auto; }
+    .page1 .book .text p {
+      font-size: 0.11rem;
+      color: #C5C5C5;
+      line-height: 0.29rem;
+      margin-top: 0.04rem; }
+    .page1 .book .text ul {
+      width: 3rem;
+      height: 0.33rem;
+      margin-left: -0.06rem;
+      margin-top: 0.09rem; }
+      .page1 .book .text ul li {
+        width: 0.84rem;
+        height: 100%;
+        border-radius: 0.16rem;
+        background: #67E479;
+        float: left;
+        font-size: 0.23rem;
+        color: #fff;
+        text-align: center;
+        line-height: 0.35rem;
+        margin-right: 0.16rem; }
+  .page1 .book .con {
+    width: 100%;
+    height: 0.69rem;
+    margin-top: 0.38rem; }
+    .page1 .book .con a {
+      width: 2.57rem;
+      height: 100%;
+      border-radius: 0.35rem;
+      box-shadow: 0 0 0.04rem #C4EDFF;
+      text-align: right;
+      line-height: 0.69rem;
+      background: url("../img/book/book15.jpg") no-repeat;
+      background-size: 0.46rem auto;
+      background-position: 0.46rem 0.09rem;
+      float: left;
+      margin-left: 0.56rem;
+      padding-right: 0.28rem; }
+    .page1 .book .con a:nth-of-type(2) {
+      background: url("../img/book/book18.jpg") no-repeat;
+      background-size: 0.46rem auto;
+      background-position: 0.46rem 0.09rem; }
+  .page1 .book .reader {
+    display: block;
+    width: 2.57rem;
+    height: 0.69rem;
+    border-radius: 0.35rem;
+    margin: 0.21rem auto 0;
+    background: #2BA6DC;
+    color: #fff;
+    text-align: center;
+    line-height: 0.69rem;
+    font-size: 0.26rem;
+    position: relative; }
+  .page1 .book .reader:before, .page1 .book .reader:after {
+    content: '';
+    display: block;
+    width: 0.09rem;
+    height: 0.09rem;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto; }
+  .page1 .book .reader:before {
+    left: 0.32rem; }
+  .page1 .book .reader:after {
+    right: 0.32rem; }
+
+.page1 .review, .page1 .bookmark, .page1 .note, .page1 .similar {
+  width: 6.9rem;
+  margin: 0 auto; }
+  .page1 .review .title, .page1 .bookmark .title, .page1 .note .title, .page1 .similar .title {
+    width: 6rem;
+    height: 0.95rem;
+    background: url("../img/book/book27.jpg");
+    background-repeat: no-repeat;
+    background-position: 0.1rem 0;
+    background-size: auto 0.6rem; }
+    .page1 .review .title h1, .page1 .bookmark .title h1, .page1 .note .title h1, .page1 .similar .title h1 {
+      font-size: 0.28rem;
+      color: #252525;
+      line-height: 0.3rem;
+      margin-left: 0.65rem; }
+    .page1 .review .title h2, .page1 .bookmark .title h2, .page1 .note .title h2, .page1 .similar .title h2 {
+      font-size: 0.14rem;
+      color: #252525;
+      margin-left: 0.65rem; }
+  .page1 .review ul, .page1 .bookmark ul, .page1 .note ul, .page1 .similar ul {
+    width: 100%; }
+    .page1 .review ul li, .page1 .bookmark ul li, .page1 .note ul li, .page1 .similar ul li {
+      width: 100%;
+      height: 1.54rem;
+      border-radius: 0.1rem;
+      box-shadow: 0 0 0.04rem #C4EDFF;
+      margin-bottom: 0.22rem;
+      padding-top: 0.25rem; }
+      .page1 .review ul li .headPortrait, .page1 .bookmark ul li .headPortrait, .page1 .note ul li .headPortrait, .page1 .similar ul li .headPortrait {
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        background: url("../img/book/book39.jpg");
+        background-size: 100% 100%;
+        float: left;
+        margin-left: 0.19rem; }
+      .page1 .review ul li p, .page1 .bookmark ul li p, .page1 .note ul li p, .page1 .similar ul li p {
+        width: 5.32rem;
+        height: 0.76rem;
+        float: left;
+        font-size: 0.2rem;
+        color: #737373;
+        border-bottom: 0.01rem dashed #A0A0A0;
+        margin-left: 0.35rem; }
+        .page1 .review ul li p .smiling, .page1 .bookmark ul li p .smiling, .page1 .note ul li p .smiling, .page1 .similar ul li p .smiling {
+          display: block;
+          width: 0.21rem;
+          height: 0.21rem;
+          position: absolute;
+          right: 1.71rem;
+          bottom: 0.1rem;
+          background: url("../img/book/book23.jpg");
+          background-size: 100% 100%; }
+      .page1 .review ul li .time, .page1 .review ul li .like, .page1 .bookmark ul li .time, .page1 .bookmark ul li .like, .page1 .note ul li .time, .page1 .note ul li .like, .page1 .similar ul li .time, .page1 .similar ul li .like {
+        width: 1.7rem;
+        height: 0.52rem;
+        float: left;
+        margin-left: 0.28rem; }
+        .page1 .review ul li .time .circle, .page1 .review ul li .like .circle, .page1 .bookmark ul li .time .circle, .page1 .bookmark ul li .like .circle, .page1 .note ul li .time .circle, .page1 .note ul li .like .circle, .page1 .similar ul li .time .circle, .page1 .similar ul li .like .circle {
+          width: 0.35rem;
+          height: 0.35rem;
+          border-radius: 50%;
+          background: #fff url("../img/book/book43.jpg");
+          background-size: 50% 50%;
+          background-repeat: no-repeat;
+          background-position: 0.1rem 0.098rem;
+          box-shadow: 0 0 0.04rem #C4EDFF;
+          margin-top: 0.09rem; }
+        .page1 .review ul li .time span, .page1 .review ul li .like span, .page1 .bookmark ul li .time span, .page1 .bookmark ul li .like span, .page1 .note ul li .time span, .page1 .note ul li .like span, .page1 .similar ul li .time span, .page1 .similar ul li .like span {
+          display: block;
+          font-size: 0.13rem;
+          line-height: 0.13rem;
+          position: absolute;
+          left: 0.42rem;
+          top: 0.19rem; }
+      .page1 .review ul li .like, .page1 .bookmark ul li .like, .page1 .note ul li .like, .page1 .similar ul li .like {
+        float: right;
+        margin-right: -0.3rem; }
+        .page1 .review ul li .like .circle, .page1 .bookmark ul li .like .circle, .page1 .note ul li .like .circle, .page1 .similar ul li .like .circle {
+          background: #fff url("../img/book/book50.jpg");
+          background-size: 50% 50%;
+          background-repeat: no-repeat;
+          background-position: 0.1rem 0.098rem; }
+    .page1 .review ul li:nth-of-type(2) .headPortrait, .page1 .bookmark ul li:nth-of-type(2) .headPortrait, .page1 .note ul li:nth-of-type(2) .headPortrait, .page1 .similar ul li:nth-of-type(2) .headPortrait {
+      background: url("../img/book/book46.jpg");
+      background-size: 100% 100%; }
+  .page1 .review .all, .page1 .bookmark .all, .page1 .note .all, .page1 .similar .all {
+    display: block;
+    width: 2.25rem;
+    height: 0.39rem;
+    margin: 0.35rem auto;
+    background: #29A6DC;
+    border-radius: 1.125rem;
+    color: #fff;
+    font-size: 0.23rem;
+    text-align: center;
+    line-height: 0.39rem; }
+  .page1 .review .all:after, .page1 .review .all:before, .page1 .bookmark .all:after, .page1 .bookmark .all:before, .page1 .note .all:after, .page1 .note .all:before, .page1 .similar .all:after, .page1 .similar .all:before {
+    content: '';
+    display: block;
+    width: 0.07rem;
+    height: 0.07rem;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.18rem; }
+  .page1 .review .all:before, .page1 .bookmark .all:before, .page1 .note .all:before, .page1 .similar .all:before {
+    left: 0.26rem; }
+  .page1 .review .all:after, .page1 .bookmark .all:after, .page1 .note .all:after, .page1 .similar .all:after {
+    right: 0.26rem; }
+
+.page1 .bookmark {
+  width: 100%;
+  margin: 0.2rem auto 0; }
+  .page1 .bookmark .title {
+    background: url("../img/book/book54.jpg");
+    background-repeat: no-repeat;
+    background-position: 0.05rem 0;
+    background-size: auto 0.5rem;
+    margin-left: 0.31rem; }
+    .page1 .bookmark .title h1 {
+      font-size: 0.28rem;
+      color: #252525;
+      line-height: 0.3rem;
+      margin-left: 0.7rem; }
+    .page1 .bookmark .title h2 {
+      font-size: 0.14rem;
+      color: #252525;
+      margin-left: 0.7rem; }
+  .page1 .bookmark ul li {
+    border-bottom: 1px dashed #A7A7A7;
+    box-shadow: 0 0 0 #fff;
+    border-radius: 0;
+    padding-left: 0.31rem;
+    padding-bottom: 0.3rem; }
+    .page1 .bookmark ul li .img {
+      width: 0.66rem;
+      height: 0.64rem;
+      background: url("../img/book/book54.jpg");
+      background-size: 100% auto;
+      float: left; }
+    .page1 .bookmark ul li .text {
+      width: 5.6rem;
+      height: 100%;
+      float: left;
+      margin-left: 0.26rem; }
+      .page1 .bookmark ul li .text h1 {
+        font-size: 0.22rem;
+        color: #151C2B;
+        line-height: 0.22rem;
+        font-weight: bold; }
+      .page1 .bookmark ul li .text h5 {
+        font-size: 0.17rem;
+        color: #505050; }
+      .page1 .bookmark ul li .text .time, .page1 .bookmark ul li .text .like {
+        width: 1.7rem;
+        height: 0.52rem;
+        float: left;
+        position: absolute;
+        bottom: -0.25rem; }
+        .page1 .bookmark ul li .text .time .circle, .page1 .bookmark ul li .text .like .circle {
+          width: 0.17rem;
+          height: 0.17rem;
+          background: #fff url("../img/book/book43.jpg");
+          background-size: auto 100%;
+          background-repeat: no-repeat;
+          margin-top: 0.15rem; }
+        .page1 .bookmark ul li .text .time span, .page1 .bookmark ul li .text .like span {
+          font-size: 0.11rem;
+          position: absolute;
+          left: 0.31rem;
+          top: 0.15rem; }
+      .page1 .bookmark ul li .text .time {
+        left: 0.08rem; }
+      .page1 .bookmark ul li .text .like {
+        width: 1rem;
+        height: 0.52rem;
+        float: right;
+        right: -0.03rem; }
+        .page1 .bookmark ul li .text .like .circle {
+          width: 0.34rem;
+          height: 0.17rem;
+          background: #fff url("../img/book/book11.jpg");
+          background-size: auto 100%;
+          background-repeat: no-repeat; }
+
+.page1 .note {
+  width: 6.9rem; }
+  .page1 .note ul li {
+    height: auto;
+    border: 0;
+    font-size: 0.21rem;
+    color: #747474;
+    padding-bottom: 0.14rem;
+    padding-top: 0.18rem;
+    padding-left: 0.47rem;
+    padding-right: 0.53rem; }
+    .page1 .note ul li .circles {
+      width: 0.07rem;
+      height: 0.07rem;
+      background: #34BFDD;
+      position: absolute;
+      left: 0.15rem;
+      top: 0.13rem; }
+    .page1 .note ul li .circles:before {
+      content: '';
+      display: block;
+      width: 0.07rem;
+      height: 0.07rem;
+      background: #34DD5C;
+      position: absolute;
+      left: 0.12rem;
+      top: 0; }
+    .page1 .note ul li .time {
+      position: absolute;
+      right: 0.23rem;
+      bottom: 0; }
+
+.page1 .similar .title {
+  background: url("../img/book/book58.jpg");
+  background-repeat: no-repeat;
+  background-position: 0.05rem 0;
+  background-size: auto 0.5rem; }
+
+.page1 .similar ul {
+  width: 100%;
+  height: 3.2rem; }
+  .page1 .similar ul li {
+    width: 2.14rem;
+    height: 3.08rem;
+    background: url("../img/book/book02.png");
+    background-size: cover;
+    float: left;
+    box-shadow: 0 0 0.05rem #E8E8E8;
+    margin-top: 0.13rem;
+    margin-right: 0.24rem; }
+    .page1 .similar ul li .imgs {
+      width: 1.78rem;
+      height: 2.38rem;
+      background: url("../img/book/book61.jpg");
+      border: 0.02rem #fff;
+      box-shadow: 0 0 0.05rem #EFEFEF;
+      background-size: cover;
+      position: absolute;
+      top: -0.13rem;
+      left: 0.17rem; }
+    .page1 .similar ul li h1 {
+      font-size: 0.19rem;
+      color: #333333;
+      text-align: center;
+      margin-top: 2.05rem; }
+    .page1 .similar ul li h2 {
+      font-size: 0.11rem;
+      color: #999999;
+      text-align: center;
+      text-transform: uppercase; }
+  .page1 .similar ul li:last-child {
+    margin-right: 0; }
+
+.page1 .similar .list {
+  width: 0.57rem;
+  height: 0.08rem;
+  margin: 0.29rem auto; }
+  .page1 .similar .list .circleList {
+    width: 0.08rem;
+    height: 0.08rem;
+    border-radius: 50%;
+    float: left;
+    border: 0.01rem solid #0090FF;
+    margin-right: 0.11rem; }
+  .page1 .similar .list .circleList:first-child {
+    background: #0090FF; }

@@ -1,0 +1,214 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, li, b, i {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+:root {
+  background: #F2F2F2; }
+
+.ksl {
+  /*导航*/
+  /*轮播*/
+  /*main*/
+  /*foot*/ }
+  .ksl .head {
+    width: 100%;
+    height: 1.08rem;
+    background: #29A6DC; }
+  .ksl .header-f {
+    width: 100%;
+    height: 1.08rem;
+    background: #29A6DC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; }
+  .ksl .h-add {
+    width: 100%;
+    height: 1.08rem;
+    background: #29A6DC;
+    position: relative; }
+  .ksl .header {
+    width: 5.72rem;
+    height: 0.84rem;
+    background: url("../../img/kk-img/title2.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  .ksl .found {
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../../img/kk-img/found.png") no-repeat;
+    background-size: cover;
+    margin-right: 0.24rem; }
+  .ksl .h-chose {
+    display: block;
+    width: 1.90667rem;
+    height: 100%;
+    float: left;
+    background: url("../../img/kk-img/1.png") no-repeat center;
+    background-size: 1.65rem 0.71rem; }
+  .ksl .h-chose:nth-child(2) {
+    background: url("../../img/kk-img/2.png") no-repeat center;
+    background-size: 1.65rem 0.71rem;
+    display: none; }
+  .ksl .h-chose:nth-child(3) {
+    background: url("../../img/kk-img/3.png") no-repeat center;
+    background-size: 1.65rem 0.71rem;
+    display: none; }
+  .ksl .lun {
+    width: 100%;
+    height: 5.06rem;
+    position: relative; }
+    .ksl .lun .lun-in {
+      width: 100%;
+      height: 4.82rem;
+      background: url("../../img/kk-img/lun.png") no-repeat;
+      background-size: cover; }
+    .ksl .lun ul {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 0.08rem;
+      width: 0.9rem;
+      margin-bottom: 0.02rem; }
+      .ksl .lun ul li {
+        float: left;
+        margin: 0 0.11rem;
+        width: 0.08rem;
+        height: 0.08rem;
+        background: url("../../img/kk-img/sc.png") no-repeat;
+        background-size: cover; }
+      .ksl .lun ul li:nth-child(1) {
+        background: url("../../img/kk-img/kc.png") no-repeat;
+        background-size: cover; }
+  .ksl .newshow {
+    width: 100%;
+    height: 0.56rem;
+    box-sizing: border-box;
+    padding: 0 0.38rem; }
+    .ksl .newshow .new-show {
+      width: 2rem;
+      height: 0.54rem;
+      background: url("../../img/kk-img/h1.png") no-repeat;
+      background-size: cover; }
+  .ksl .main {
+    padding: 0.38rem 0.38rem 1.1rem; }
+    .ksl .main ul {
+      width: 100%;
+      overflow: hidden; }
+      .ksl .main ul li {
+        float: left;
+        box-sizing: border-box;
+        width: 2.4rem;
+        height: 3.76rem;
+        padding-right: 0.6rem; }
+        .ksl .main ul li .main-img {
+          display: block;
+          width: 100%;
+          height: 2.55rem;
+          background: url("../../img/kk-img/3-03.png") no-repeat;
+          background-size: cover; }
+        .ksl .main ul li p {
+          font-size: 0.1rem;
+          margin-top: 0.1rem; }
+          .ksl .main ul li p a {
+            color: #333333; }
+        .ksl .main ul li div {
+          font-size: 0.1rem;
+          margin-top: 0.1rem; }
+          .ksl .main ul li div a {
+            color: #999999; }
+      .ksl .main ul li:nth-child(3n) {
+        float: left;
+        box-sizing: border-box;
+        width: 1.8rem;
+        height: 3.76rem;
+        padding-right: 0; }
+        .ksl .main ul li:nth-child(3n) .main-img {
+          width: 100%;
+          height: 2.55rem;
+          background: url("../../img/kk-img/3-03.png") no-repeat;
+          background-size: cover; }
+      .ksl .main ul li:nth-child(4) .main-img {
+        background: url("../../img/kk-img/3-06.png") no-repeat;
+        background-size: cover; }
+      .ksl .main ul li:nth-child(5) .main-img {
+        background: url("../../img/kk-img/3-06.png") no-repeat;
+        background-size: cover; }
+      .ksl .main ul li:nth-child(6) .main-img {
+        background: url("../../img/kk-img/3-06.png") no-repeat;
+        background-size: cover; }
+  .ksl .foot {
+    width: 100%;
+    height: 1rem;
+    background: url("../../img/kk-img/123_02.png") no-repeat;
+    background-size: cover;
+    position: fixed;
+    bottom: 0;
+    left: 0; }
+    .ksl .foot .foot-list {
+      display: block;
+      width: 33.33%;
+      height: 100%;
+      float: left; }
+    .ksl .foot .foot-list:nth-child(2) {
+      background: url("../../img/kk-img/2_02.png") no-repeat;
+      background-size: cover; }

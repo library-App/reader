@@ -1,0 +1,588 @@
+@import '../base/base';
+#bookmark{
+    .cata{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fff;
+        z-index: 2000;
+        .header{
+            height: 1.1rem;
+            background: #29a6dc;
+            .return{
+                @include square(0.43rem,0.43rem);
+                @include top-bottom;
+                left: 0.24rem;
+                background: #fafafa url(../img/bookmark/return.png) center no-repeat;
+                background-size: 0.22rem 0.22rem;
+                border: 1px solid #076cbe;
+                border-radius: 50%;
+                box-sizing: border-box;
+            }
+            .option{
+                @include square(5.8rem,0.84rem);
+                border-radius: 0.42rem;
+                @include center;
+                background: #2a3441;
+                li{
+                    float: left;
+                    margin: 0 0.08rem;
+                }
+                .none{
+                    @include square(1px,0.56rem);
+                    margin-top: 0.14rem;
+                    background: #c4c4c4;
+                    .t{
+                        @include square(3px,1px);
+                        position: absolute;
+                        top: 1px;
+                        left: -1px;
+                        background: #efefef;
+                    }
+                    .b{
+                        @include square(3px,1px);
+                        position: absolute;
+                        bottom: 1px;
+                        left: -1px;
+                        background: #efefef;
+                    }
+                }
+                .list{
+                    box-sizing: border-box;
+                    height: 0.84rem;
+                    width: 1.65rem;
+                    .div{
+                        height: 0.7rem;
+                        @include center;
+                        .lt{
+                            display: none;
+                            color: #FFFFFF;
+                            @include top-bottom;
+                            left: 0.32rem;
+                        }
+                        .gt{
+                            display: none;
+                            color: #FFFFFF;
+                            @include top-bottom;
+                            right: 0.32rem;
+                        }
+                        .wr{
+                            width: 1.6rem;
+                            @include center;
+                            .ch{
+                                color: #FFFFFF;
+                                font-size: 0.22rem;
+                                display: block;
+                                text-align: center;
+                                @include left-right;
+                                top: 15%;
+                            }
+                            .en{
+                                display: block;
+                                color: #bddbe8;
+                                font-size: 0.14rem;
+                                text-align: center;
+                                @include left-right;
+                                top: 50%;
+                            }
+                        }
+                    }
+                }
+                .selected{
+                    .div{
+                        border: 2px solid #fff;
+                        border-radius: 0.35rem;
+                        background: #29a6dc;
+                        .lt,.gt{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        
+        //目录
+        .catalogs{
+            display: none;
+            ul{
+                .cata-li{
+                    width: 100%;
+                    height: 0.9rem;
+                    border-bottom: 2px dotted #9f9f9f;
+                    a{
+                        display: block;
+                        @include top-bottom;
+                        left: 0.45rem;
+                        right: 1.5rem;
+                        line-height: 0.88rem;
+                        color: #333333;
+                        font-size: 0.28rem;
+                        span{
+                            margin-right: 0.25rem;
+                        }
+                    }
+                    .current{
+                        span{
+                            color: #357fe4;
+                        }
+                    }
+                    .download{
+                        display: block;
+                        @include top-bottom;
+                        right: 0.45rem;
+                        width: 0.9rem;
+                        text-align: center;
+                        line-height: 0.88rem;
+                        color: 989898;
+                        font-size: 0.28rem;
+                    }
+                    .already{
+                        color: #222222;
+                    }
+                }
+            }
+        }
+        
+        //书签
+        .bookmarks{
+            display: none;
+            ul{
+                .jilu{
+                    height: 0.48rem;
+                    background: #e5e5e5;
+                    color: #a8a8a8;
+                    line-height: 0.48rem;
+                    text-align: center;
+                    font-size: 0.28rem;
+                }
+                .bookM{
+                    height: 1.18rem;
+                    border-bottom: 2px dotted #9f9f9f;
+                    border-top: 2px solid transparent;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        .img{
+                            @include square(0.7rem,0.7rem);
+                            @include top-bottom;
+                            left: 0.3rem;
+                            background: url(../img/bookmark/bookmarks.png) center no-repeat;
+                            background-size: 0.7rem 0.7rem;
+                        }
+                        h4{
+                            margin-left: 1.25rem;
+                            padding-top: 0.2rem;
+                            font-size: 0.24rem;
+                            span{
+                                color: #151c2b;
+                                margin-right: 0.2rem;
+                            }
+                        }
+                        p{
+                            color: #737373;
+                            font-size: 0.18rem;
+                            line-height: 0.4rem;
+                            margin-left: 1.25rem;
+                        }
+                        .hours{
+                            display: block;
+                            @include square(3rem,0.2rem);
+                            position: absolute;
+                            left: 1.25rem;
+                            bottom: 0.07rem;
+                            line-height: 0.2rem;
+                            font-size: 0.16rem;
+                            i{
+                                @include square(0.2rem,0.2rem);
+                                display: block;
+                                @include top-bottom;
+                                left: 0.04rem;
+                                background: url(../img/bookmark/time.png) center no-repeat;
+                                background-size: 0.2rem 0.2rem;
+                            }
+                            .time{
+                                color: #7f7f7f;
+                                margin:{
+                                  left: 0.3rem;
+                                  right: 0.1rem;  
+                                };
+                            }
+                        }
+                        .eye{
+                            @include square(0.7rem,0.2rem);
+                            display: block;
+                            position: absolute;
+                            right: 0.66rem;
+                            bottom: 0.07rem;
+                            line-height: 0.2rem;
+                            color: #7f7f7f;
+                            font-size: 0.16rem;
+                            i{
+                                display: block;
+                                @include square(0.3rem,0.3rem);
+                                @include top-bottom;
+                                left: 0;
+                                background: url(../img/bookmark/eye.png) center no-repeat;
+                                background-size: 0.3rem 0.3rem;
+                            }
+                            span{
+                                float: right;
+                            }
+                        }
+                    }
+                    .del{
+                        @include top-bottom;
+                        right: 0;
+                        @include square(0.92rem,1.18rem);
+                        transform: translateX(0.92rem);
+                        background: url(../img/bookmark/del.png) center no-repeat;
+                        background-size: 0.3rem 0.3rem;
+                    }
+                }
+                .check{
+                    border-bottom: 2px solid #29DCBC;
+                    border-top: 2px solid #29DCBC;
+                    a{
+                        background: #29dcbc;
+                        transform: translateX(-0.92rem);
+                        .img{
+                            display: none;
+                        }
+                        h4{
+                            span{
+                               color: #f9f9f9; 
+                            }
+                        }
+                        p{
+                            color: #f8f8f8;
+                        }
+                        .hours{
+                            .time{
+                                color: #f4f4f4;
+                            }
+                            .date{
+                                color: #f4f4f4;
+                            }
+                        }
+                        .eye{
+                            span{
+                                color: #f4f4f4;
+                            }
+                        }
+                    }
+                    .del{
+                        transform: translateX(0);
+                    }
+                }
+            }
+            .more{
+                height: 1.25rem;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                background: #151c2b;
+                a{
+                    display: block;
+                    @include square(1.4rem,0.5rem);
+                    background: #FFFFFF;
+                    color: #393939;
+                    font-size: 0.2rem;
+                    line-height: 0.5rem;
+                    text-align: center;
+                    @include center;
+                    border-radius: 0.25rem;
+                }
+            }
+        }
+        
+        //笔记
+        .notes{
+            display: none;
+            ul{
+                .jilu{
+                    height: 0.48rem;
+                    background: #e5e5e5;
+                    color: #a8a8a8;
+                    line-height: 0.48rem;
+                    text-align: center;
+                    font-size: 0.28rem;
+                }
+                .note{
+                    height: 1.9rem;
+                    border-bottom: 2px dotted #9f9f9f;
+                    border-top: 2px solid transparent;
+                    .d{
+                        height: 100%;
+                        .img{
+                            @include square(0.7rem,0.7rem);
+                            @include top-bottom;
+                            left: 0.3rem;
+                            background: url(../img/bookmark/bi.png) center no-repeat;
+                            background-size: 0.7rem;
+                        }
+                        h4{
+                            margin-left: 1.25rem;
+                            padding-top: 0.12rem;
+                            font-size: 0.24rem;
+                            span{
+                                color: #151c2b;
+                                margin-right: 0.2rem;
+                            }
+                        }
+                        p{
+                            color: #737373;
+                            font-size: 0.18rem;
+                            line-height: 0.3rem;
+                            margin-left: 1.25rem;
+                        }
+                        .noteCon{
+                            width: 5.35rem;
+                            height: 0.86rem;
+                            box-sizing: border-box;
+                            padding: 0.1rem 0.2rem;
+                            margin-left: 1.24rem;
+                            i{
+                                display: block;
+                                @include square(0.24rem,0.24rem)
+                                position: absolute;
+                                top: 0rem;
+                                bottom: 0.42rem;
+                                left: 0.24rem;
+                                margin: auto;
+                                background: url(../img/bookmark/du11.png) center no-repeat;
+                                background-size: 0.24rem;
+                            }
+                            span{
+                                display: block;
+                                line-height: 0.3rem;
+                                font-size: 0.2rem;
+                                color: #ec2e56;
+                                margin-left: 0.32rem;
+                            }
+                            b{
+                                width: 3px;
+                                height: 3px;
+                                background: #FFFFFF;
+                            }
+                            .t-l{
+                                position: absolute;
+                                top: 0.12rem;
+                                left: 0.12rem;
+                            }
+                            .t-r{
+                                position: absolute;
+                                top: 0.12rem;
+                                right: 0.12rem;
+                            }
+                            .b-l{
+                                position: absolute;
+                                bottom: 0.12rem;
+                                left: 0.12rem;
+                            }
+                            .b-r{
+                               position: absolute;
+                                bottom: 0.12rem;
+                                right: 0.12rem; 
+                            }
+                        }
+                        .bianji{
+                            display: block;
+                            @include square(0.7rem,0.3rem);
+                            background: #2542f3;
+                            color: #FFFFFF;
+                            font-size: 0.12rem;
+                            text-align: center;
+                            line-height: 0.3rem;
+                            position: absolute;
+                            bottom: 1px;
+                            right: 1.05rem;
+                            border-radius: 0.1rem;
+                        }
+                        .bianji:after{
+                            content: "";
+                            display: block;
+                            @include square(3px,3px);
+                            background: #FFFFFF;
+                            @include top-bottom;
+                            left: 0.12em;
+                            border-radius: 50%;
+                        }
+                        .bianji:before{
+                            content: "";
+                            display: block;
+                            @include square(3px,3px);
+                            background: #FFFFFF;
+                            @include top-bottom;
+                            right: 0.12em;
+                            border-radius: 50%;
+                        }
+                        .hours{
+                            display: block;
+                            height: 0.2rem;
+                            width: 1.6rem;
+                            position: absolute;
+                            left: 1.25rem;
+                            bottom: 0.07rem;
+                            .time{
+                                float: left;
+                                @include square(0.6rem,0.2rem);
+                                line-height: 0.2rem;
+                                font-size: 0.16rem;
+                                i{
+                                    @include square(0.2rem,0.2rem);
+                                    display: block;
+                                    @include top-bottom;
+                                    left: 0.04rem;
+                                    background: url(../img/bookmark/time.png) center no-repeat;
+                                    background-size: 0.2rem 0.2rem;
+                                }
+                                span{
+                                    color: #7f7f7f;
+                                    margin:{
+                                      left: 0.3rem;
+                                      right: 0.1rem;  
+                                    };
+                                }
+                            }
+                            .eye{
+                                @include square(0.7rem,0.2rem);
+                                float: right;
+                                line-height: 0.2rem;
+                                color: #7f7f7f;
+                                font-size: 0.16rem;
+                                i{
+                                    display: block;
+                                    @include square(0.3rem,0.3rem);
+                                    @include top-bottom;
+                                    left: 0;
+                                    background: url(../img/bookmark/eye.png) center no-repeat;
+                                    background-size: 0.3rem 0.3rem;
+                                }
+                                span{
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                        
+                    .del{
+                        @include top-bottom;
+                        right: 0;
+                        @include square(0.92rem,1.18rem);
+                        transform: translateX(0.92rem);
+                        background: url(../img/bookmark/del.png) center no-repeat;
+                        background-size: 0.3rem 0.3rem;
+                    }
+                    
+                }
+                .n1{
+                    .d{
+                        .noteCon{
+                            background: #9ae1ff;
+                            border-radius: 0.1rem;
+                            i{
+                                background: url(../img/bookmark/du3.png);
+                            }
+                        }
+                    }
+                }
+                .n2{
+                    border-bottom: 2px solid #29DCBC;
+                    border-top: 2px solid #29DCBC;
+                    .d{
+                        background: #29DCBC;
+                        transform: translateX(-0.92rem);
+                        .img{
+                            display: none;
+                        }
+                        h4{
+                            span{
+                               color: #f9f9f9; 
+                            }
+                        }
+                        p{
+                            color: #f8f8f8;
+                        }
+                        .noteCon{
+                            i{
+                                background: url(../img/bookmark/du7.png);
+                            }
+                            span{
+                                color: #1d9563;
+                            }
+                        }
+                        .hours{
+                            .time{
+                                span{
+                                    color: #f9f9f9;
+                                }
+                            }
+                            .eye{
+                                span{
+                                    color: #f9f9f9;
+                                }
+                                
+                            }
+                        }
+                    }
+                    .del{
+                        transform: translateX(0);
+                    }
+                }
+            }
+            .more{
+                height: 1.25rem;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                background: #151c2b;
+                a{
+                    display: block;
+                    @include square(1.4rem,0.5rem);
+                    background: #FFFFFF;
+                    color: #393939;
+                    font-size: 0.2rem;
+                    line-height: 0.5rem;
+                    text-align: center;
+                    @include center;
+                    border-radius: 0.25rem;
+                }
+            }
+        }
+        .show{
+            display: block;
+        }
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

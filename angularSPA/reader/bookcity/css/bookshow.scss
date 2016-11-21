@@ -1,0 +1,277 @@
+@import "response.scss";
+@mixin auto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+ :root {
+    background: #FFFFFF;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+}
+/*导航*/
+.kk {
+    .head {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+    }
+    .header-f {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .h-add {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+        position: relative;
+    }
+    .back {
+        width: 0.44rem;
+        height: 0.44rem;
+        @include auto;
+        background: url("../../img/kk-img/back_06.png") no-repeat;
+        background-size: cover;
+        margin-left: 0.24rem;
+    }
+    /*main*/
+   .main-book{
+       width: 6.87rem;
+       height: 5.2rem;
+       margin: 0.12rem auto;
+       box-shadow: 0 0 4px rgba(42,126,255,0.13);
+       padding: 0.56rem 0.36rem 0;
+       box-sizing: border-box;
+   }
+   .book-img{
+       float: left;
+       background: url(../../img/kk-img/ee_03.png) no-repeat;
+       background-size: cover;
+       width: 2.44rem;
+       height: 2.06rem;
+   }
+   .book-text{
+       float: left;
+       width: 3.6rem;
+       height: 2.7rem;
+       padding-left: 0.3rem;
+       box-sizing: border-box;
+       line-height: 0.3rem;
+       h3{
+           font-size: 0.26rem;
+       }
+       h6{
+           font-size: 0.24rem;
+           span{
+               font-size: 0.18rem;
+           }
+       }
+       h4{
+           font-size: 0.2rem;
+       }
+       p{
+           font-size: 10px;
+           color: #c0c0c0;
+       }
+       h5{
+           width: 1.34rem;
+           height: 0.24rem;
+           background: url(../../img/kk-img/ee_06.png) no-repeat;
+           background-size: cover;
+           
+       }
+       a{
+           font-size: 0.24rem;
+           color: #FFFFFF;
+           background: #67e479;
+           display: inline-block;
+           padding: 0.04rem 0.18rem;
+           border-radius: 12px 12px 12px 12px;
+           margin-top: 0.06rem;
+       }
+   }
+   .xuan{
+       width: 100%;
+       height: 0.9rem;
+       line-height: 0.9rem;
+       a{
+           display: inline-block;
+           width: 2.6rem;
+           height: 0.7rem;
+           box-shadow: 0 0 4px rgba(42,126,255,0.13);
+           border-radius: 12px 12px 12px 12px;
+           text-align: center;
+           line-height: 0.7rem;
+           color: #333333;
+           b{
+               display: inline-block;
+               width: 0.48rem;
+               height: 0.5rem;
+               background: url(../../img/kk-img/ee_11.png) no-repeat;
+               background-size: cover;
+               vertical-align: middle;
+           }
+       }  
+       a:nth-child(2){
+           margin-left: 0.56rem;
+           b{
+              background: url(../../img/kk-img/ee_14.png) no-repeat;
+               background-size: cover; 
+           }
+       }  
+   }
+   .addbook{
+       display: block;
+       width: 2.7rem;
+       height: 0.69rem;
+       margin: 0.16rem auto;
+       background: url(../../img/kk-img/ee_19.png) no-repeat;
+       background-size: cover;
+       font-size: 0.3rem;
+       color: #FFFFFF;
+       text-align: center;
+       line-height: 0.69rem;
+   }
+   .ping{
+       width: 100%;
+       height: 1.24rem;
+       padding: 0.3rem 0.36rem;
+       box-sizing: border-box;
+       .ping-img{
+           float: left;
+           width: 0.44rem;
+           height: 0.68rem;
+           background: url(../../img/kk-img/ee_23.png) no-repeat;
+           background-size: cover;
+       }
+       .ping-img2{
+           background: url(../../img/kk-img/ee_50.png) no-repeat;
+           background-size:cover ;
+           width: 0.7rem;
+       }
+       .ping-title{
+           float: left;
+           padding-left: 0.1rem;
+           h3{
+               font-size: 0.3rem;
+               font-weight: 100;
+               padding-top: 0.1rem;
+               padding-bottom: 0.05rem;
+           }
+           p{
+               font-size: 0.2rem;
+               color: #c0c0c0;
+           }
+       }
+   }
+   .ping-list{
+       height: 1.54rem;
+       width: 6.87rem;
+       margin: 0.12rem auto;
+       box-shadow: 0 0 4px rgba(42,126,255,0.13);
+       padding: 0.25rem 0.2rem;
+       box-sizing: border-box;
+       margin-bottom: 0.2rem;
+       .list-img{
+           width: 0.82rem;
+           height: 0.82rem;
+           background: url(../../img/kk-img/ee_27.png) no-repeat;
+           background-size: cover;
+           float: left;
+           border-radius: 50%;
+       }
+       .list-img2{
+           background: url(../../img/kk-img/ee_42.png) no-repeat;
+           background-size: cover;
+       }
+       .list-text{
+           float: left;
+           padding-left: 0.3rem;
+           width: 5.3rem;
+           font-size: 0.22rem;
+           color: #666666;
+           p{
+               line-height: 0.36rem;
+               b{
+                   background: url(../../img/kk-img/ee_30.png) no-repeat;
+                   background-size:cover ;
+                   display: inline-block;
+                   width: 0.22rem;
+                   height: 0.22rem;
+               }
+           }
+           .desba{
+               width: 100%;
+               height: 0;
+               border-bottom: 1px dashed #a0a0a0;
+               margin-top: 0.06rem;
+           }
+       }
+   }
+   .num{
+       width: 100%;
+       font-size: 0.18rem;
+       color: #a4a1a1;
+       line-height: 0.2rem;
+       height: 0.36rem;
+       b{
+           width: 0.36rem;
+           height: 0.36rem;
+           display: inline-block;
+           background: url(../../img/kk-img/ee_34.png) no-repeat;
+           background-size:cover ;
+           vertical-align: middle;
+           margin-left: 2.5rem;
+       }
+       i{
+           width: 0.36rem;
+           height: 0.36rem;
+           margin-left: 1.0rem;
+           display: inline-block;
+           background: url(../../img/kk-img/ee_38.png) no-repeat;
+           vertical-align: middle;
+           background-size:cover ;
+       }
+   }
+    .lookall{
+        display: block;
+        width: 2.22rem;
+        height: 0.39rem;
+        margin: 0.3rem auto;
+        background: url(../../img/kk-img/ee_46.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+        line-height: 0.39rem;
+        color: #FFFFFF;
+        font-size: 0.24rem;
+    }
+    .addqian{
+        display: block;
+         height: 0.86rem;
+       width: 6.87rem;
+       margin: 0.12rem auto;
+       box-shadow: 0 0 4px rgba(42,126,255,0.13);
+       text-align: center;
+       line-height: 0.86rem;
+       color: #666666;
+       margin-bottom: 0.2rem;
+       b{
+           display: inline-block;
+           width: 0.37rem;
+           height: 0.37rem;
+           background: url(../../img/kk-img/ee_54.png) no-repeat;
+           background-size: cover;
+           vertical-align: middle;
+       }
+    } 
+}
+

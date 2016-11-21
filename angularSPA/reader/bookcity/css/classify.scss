@@ -1,0 +1,178 @@
+@import "response.scss";
+@mixin auto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+ :root {
+    background: #F2F2F2;
+}
+@mixin back {
+    background: linear-gradient(#DDDDDD,#f2f2f2,#F2F2F2,#f2f2f2);
+    background: -o-linear-gradient(#DDDDDD,#f2f2f2,#F2F2F2,#f2f2f2);
+    background: -mov-linear-gradient(#DDDDDD,#f2f2f2,#F2F2F2,#f2f2f2);
+    background: -webit-linear-gradient(#DDDDDD,#f2f2f2,#F2F2F2,#f2f2f2);
+}
+/*导航*/
+.kk {
+    .head {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+    }
+    .header-f {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .h-add {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+        position: relative;
+    }
+    .header {
+        width: 5.72rem;
+        height: 0.84rem;
+        background: url("../../img/kk-img/title2.png") no-repeat;
+        background-size: cover;
+        @include auto;
+    }
+    .found {
+        width: 0.44rem;
+        height: 0.44rem;
+        @include auto;
+        background: url("../../img/kk-img/found.png") no-repeat;
+        background-size: cover;
+        margin-right: 0.24rem;
+    }
+    .h-chose {
+        display: block;
+        width: (5.72rem/3);
+        height: 100%;
+        float: left;
+        background: url("../../img/kk-img/1.png") no-repeat center;
+        background-size: 1.65rem 0.71rem;
+    }
+    .h-chose:nth-child(1) {
+        opacity: 0;
+    }
+    .h-chose:nth-child(2) {
+        background: url("../../img/kk-img/2.png") no-repeat center;
+        opacity: 0;
+        background-size: 1.65rem 0.71rem;
+    }
+    .h-chose:nth-child(3) {
+        background: url("../../img/kk-img/3.png") no-repeat center;
+        background-size: 1.65rem 0.71rem;
+    }
+    /*foot*/
+    .foot {
+        width: 100%;
+        height: 1rem;
+        background: url("../../img/kk-img/123_02.png") no-repeat;
+        background-size: cover;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        .foot-list {
+            display: block;
+            width: 33.33%;
+            height: 100%;
+            float: left;
+        }
+        .foot-list:nth-child(2) {
+            background: url("../../img/kk-img/2_02.png") no-repeat;
+            background-size: cover;
+        }
+    }
+    /*main*/
+    .main {
+        margin-bottom: 2rem;
+        .prefec {
+            height: 2.3rem;
+            width: 100%;
+            @include back;
+            box-sizing: border-box;
+            padding: 0.66rem 0.46rem 0;
+            color: #29A6DC;
+            position: relative;
+        }
+        .pre2{
+            height: 2.55rem;
+            padding-top: 0.92rem;
+        }
+        .pre{
+            height: 2.9rem;
+            padding: 1.26rem 0.46rem 0;
+        }
+        
+        .fen{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0.6rem;
+            background: #ACE1F8;
+            color: #666666;
+            box-sizing: border-box;
+            padding: 0.13rem 0.46rem 0.13rem;
+            box-shadow: 0 0 16px rgba(0,0,0,0.3);
+            .fen-img{
+                float: left;
+                width: 0.4rem;
+                height: 0.34rem;
+                background: url(../../img/kk-img/ify3.png) no-repeat;
+                background-size:cover ;
+                margin-right: 0.1rem;
+            }
+            .fen-text{
+                float: left;
+                line-height: 0.34rem;
+                font-size: 14px;
+            }
+        }
+        .fen2{
+            top: 0.35rem;
+        }
+        .row{
+            width: 90%;
+            height: 0;
+            border-bottom: 1px dashed #DDDDDD;
+            margin: 0.18rem auto;
+        }
+        .prefec-list{
+            width: 100%;
+            height: 1.36rem;
+            @include back;
+            box-sizing: border-box;
+            padding: 0.48rem 0.46rem 0;
+        }
+        .p-list{
+            float: left;
+            height: 0.86rem;
+            width: 2.03rem;
+            background: url(../../img/kk-img/ify1.png) no-repeat;
+            background-size:cover ;
+            margin-top: 0.03rem;
+            margin-left: 0.24rem;
+            text-align: center;
+            line-height: 0.86rem;
+            color: #FFFFFF;
+        }
+        .p-list0{
+            margin-left: 0;
+        }
+        .p-list2{
+            background: url(../../img/kk-img/ify2.png) no-repeat;
+            background-size:cover ;
+        }
+    }
+}

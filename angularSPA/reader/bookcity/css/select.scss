@@ -1,0 +1,197 @@
+@import "response.scss";
+@mixin auto {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+ :root {
+    background: #F2F2F2;
+}
+.ksl {
+    /*导航*/
+   .head{
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC; 
+   }
+    .header-f {
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .h-add{
+        width: 100%;
+        height: 1.08rem;
+        background: #29A6DC;
+        position: relative;
+    }
+    .header {
+        width: 5.72rem;
+        height: 0.84rem;
+        background: url("../../img/kk-img/title2.png") no-repeat;
+        background-size: cover;
+        @include auto;
+    }
+    .found {
+        width: 0.44rem;
+        height: 0.44rem;
+        @include auto;
+        background: url("../../img/kk-img/found.png") no-repeat;
+        background-size: cover;
+        margin-right: 0.24rem;
+    }
+    .h-chose {
+        display: block;
+        width: (5.72rem/3);
+        height: 100%;
+        float: left;
+        background: url("../../img/kk-img/1.png") no-repeat center;
+        background-size: 1.65rem 0.71rem;
+    }
+    .h-chose:nth-child(2) {
+        background: url("../../img/kk-img/2.png") no-repeat center;
+        background-size: 1.65rem 0.71rem;
+        display: none;
+    }
+    .h-chose:nth-child(3) {
+        background: url("../../img/kk-img/3.png") no-repeat center;
+        background-size: 1.65rem 0.71rem;
+        display: none;
+    }
+    /*轮播*/
+    .lun {
+        width: 100%;
+        height: 5.06rem;
+        position: relative;
+        .lun-in {
+            width: 100%;
+            height: 4.82rem;
+            background: url("../../img/kk-img/lun.png") no-repeat;
+            background-size: cover;
+        }
+        ul {
+            @include auto;
+            height: 0.08rem;
+            width: 0.9rem;
+            margin-bottom: 0.02rem;
+            li {
+                float: left;
+                margin: 0 0.11rem;
+                width: 0.08rem;
+                height: 0.08rem;
+                background: url("../../img/kk-img/sc.png") no-repeat;
+                background-size: cover;
+            }
+            li:nth-child(1) {
+                background: url("../../img/kk-img/kc.png") no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    /*main*/
+    .newshow {
+        width: 100%;
+        height: 0.56rem;
+        box-sizing: border-box;
+        padding: 0 0.38rem;
+        .new-show {
+            width: 2rem;
+            height: 0.54rem;
+            background: url("../../img/kk-img/h1.png") no-repeat;
+            background-size: cover;
+        }
+    }
+    .main {
+        padding: 0.38rem 0.38rem 1.1rem;
+        ul {
+            width: 100%;
+            overflow: hidden;
+            li {
+                float: left;
+                box-sizing: border-box;
+                width: 2.4rem;
+                height: 3.76rem;
+                padding-right: 0.6rem;
+                .main-img {
+                    display: block;
+                    width: 100%;
+                    height: 2.55rem;
+                    background: url("../../img/kk-img/3-03.png") no-repeat;
+                    background-size: cover;
+                }
+                p {
+                    font-size: 0.1rem;
+                    margin-top: 0.1rem;
+                    a {
+                        color: #333333;
+                    }
+                }
+                div {
+                    font-size: 0.1rem;
+                    margin-top: 0.1rem;
+                    a {
+                        color: #999999;
+                    }
+                }
+            }
+            li:nth-child(3n) {
+                float: left;
+                box-sizing: border-box;
+                width: 1.8rem;
+                height: 3.76rem;
+                padding-right: 0;
+                .main-img {
+                    width: 100%;
+                    height: 2.55rem;
+                    background: url("../../img/kk-img/3-03.png") no-repeat;
+                    background-size: cover;
+                }
+            }
+            li:nth-child(4) {
+                .main-img {
+                    background: url("../../img/kk-img/3-06.png") no-repeat;
+                    background-size: cover;
+                }
+            }
+            li:nth-child(5) {
+                .main-img {
+                    background: url("../../img/kk-img/3-06.png") no-repeat;
+                    background-size: cover;
+                }
+            }
+            li:nth-child(6) {
+                .main-img {
+                    background: url("../../img/kk-img/3-06.png") no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    /*foot*/
+    .foot {
+        width: 100%;
+        height: 1rem;
+        background: url("../../img/kk-img/123_02.png") no-repeat;
+        background-size: cover;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        .foot-list {
+            display: block;
+            width: 33.33%;
+            height: 100%;
+            float: left;
+        }
+        .foot-list:nth-child(2) {
+            background: url("../../img/kk-img/2_02.png") no-repeat;
+            background-size: cover;
+        }
+    }
+}

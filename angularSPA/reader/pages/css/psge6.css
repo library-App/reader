@@ -1,0 +1,213 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  color: #777779;
+  position: relative;
+  font-family: "苹方";
+  box-sizing: border-box; }
+
+img {
+  vertical-align: middle;
+  border: 0; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 15px;
+  background: #000; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 170.66667px; } }
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 213.33333px; } }
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 192px; } }
+
+input {
+  background: transparent;
+  outline: medium; }
+
+.clear {
+  clear: both; }
+
+body {
+  background: #fff; }
+
+* {
+  font-weight: normal; }
+
+.page4 .header {
+  width: 100%;
+  height: 1rem;
+  background: #2BA6DC; }
+  .page4 .header .circle {
+    width: 0.44rem;
+    height: 0.44rem;
+    border: 0.02rem solid #076CBE;
+    border-radius: 50%;
+    background: #fff url("../img/book/left.jpg") no-repeat;
+    background-size: auto 0.17rem;
+    background-position: 0.15rem 0.12rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.25rem; }
+  .page4 .header .title {
+    text-align: center; }
+    .page4 .header .title h1 {
+      font-size: 0.33rem;
+      color: #fff;
+      line-height: 0.58rem; }
+    .page4 .header .title .line {
+      width: 0.34rem;
+      border-top: 0.01rem solid #fff;
+      position: absolute;
+      bottom: 0.40rem;
+      left: 3.57rem; }
+    .page4 .header .title .line:before, .page4 .header .title .line:after {
+      content: '';
+      display: block;
+      width: 0.03rem;
+      height: 0.03rem;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -0.01rem; }
+    .page4 .header .title .line:before {
+      left: 0; }
+    .page4 .header .title .line:after {
+      right: 0; }
+    .page4 .header .title span {
+      text-transform: uppercase;
+      font-size: 0.13rem;
+      color: #A3E3FF; }
+
+.page4 .bookmark {
+  width: 100%;
+  margin: 0.2rem auto 0; }
+  .page4 .bookmark ul {
+    width: 100%; }
+    .page4 .bookmark ul li {
+      width: 100%;
+      height: 1.54rem;
+      border-bottom: 1px dotted #A7A7A7;
+      box-shadow: 0 0 0 #fff;
+      border-radius: 0;
+      padding-top: 0.22rem;
+      padding-left: 0.31rem;
+      padding-bottom: 0.3rem; }
+      .page4 .bookmark ul li .img {
+        width: 0.66rem;
+        height: 0.64rem;
+        background: url("../img/book/book54.jpg");
+        background-size: 100% auto;
+        float: left; }
+      .page4 .bookmark ul li .text {
+        width: 5.6rem;
+        height: 100%;
+        float: left;
+        margin-left: 0.26rem; }
+        .page4 .bookmark ul li .text h1 {
+          font-size: 0.22rem;
+          color: #151C2B;
+          line-height: 0.22rem;
+          font-weight: bold; }
+        .page4 .bookmark ul li .text h5 {
+          font-size: 0.17rem;
+          color: #505050; }
+        .page4 .bookmark ul li .text .time, .page4 .bookmark ul li .text .like {
+          width: 1.7rem;
+          height: 0.52rem;
+          float: left;
+          position: absolute;
+          bottom: -0.2rem; }
+          .page4 .bookmark ul li .text .time .circle, .page4 .bookmark ul li .text .like .circle {
+            width: 0.17rem;
+            height: 0.17rem;
+            background: #fff url("../img/book/book43.jpg");
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            margin-top: 0.15rem; }
+          .page4 .bookmark ul li .text .time span, .page4 .bookmark ul li .text .like span {
+            font-size: 0.11rem;
+            position: absolute;
+            left: 0.31rem;
+            top: 0.1rem; }
+        .page4 .bookmark ul li .text .time {
+          left: 0.08rem; }
+        .page4 .bookmark ul li .text .like {
+          width: 1rem;
+          height: 0.52rem;
+          float: right;
+          right: -0.03rem; }
+          .page4 .bookmark ul li .text .like .circle {
+            width: 0.34rem;
+            height: 0.17rem;
+            background: #fff url("../img/book/book11.jpg");
+            background-size: auto 100%;
+            background-repeat: no-repeat; }
+    .page4 .bookmark ul li:nth-of-type(2) {
+      background: url("../img/book/book25.png");
+      background-size: 101% auto;
+      background-repeat: no-repeat; }
+      .page4 .bookmark ul li:nth-of-type(2) .time .circle {
+        background: #fff url("../img/book/book73.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat; }
+      .page4 .bookmark ul li:nth-of-type(2) .like .circle {
+        width: 0.33rem;
+        background: #fff url("../img/book/book76.jpg");
+        background-size: auto 100%;
+        background-repeat: no-repeat; }

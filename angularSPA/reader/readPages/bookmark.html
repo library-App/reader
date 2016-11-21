@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="readPage">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width"/>
+		<title></title>
+		<link rel="stylesheet" href="css/bookmark.css" />
+		<script src="js/jquery.js"></script>
+		<script src="http://cdn.bootcss.com/angular.js/1.5.8/angular.js"></script>
+		<script src="js/bookmark.js"></script>
+	</head>
+	<body ng-controller="markCtrl">
+		<div id="bookmark">
+			<div class="cata">
+				<div class="header">
+					<a href="/readPages" class="return"></a>
+					<ul class="option">
+						<li class="selected list" ng-click="add()">
+							<div class="div">
+								<i class="lt">..</i>
+								<i class="gt">..</i>
+								<div class="wr">
+									<span class="ch">目录</span>
+									<span class="en">CATALOG</span>
+								</div>
+							</div>
+						</li>
+						<li class="none">
+							<div class="t"></div>
+							<div class="b"></div>
+						</li>
+						<li class="list" ng-click="add()">
+							<div class="div">
+								<i class="lt">..</i>
+								<i class="gt">..</i>
+								<div class="wr">
+									<span class="ch">书签</span>
+									<span class="en">BOOKMARK</span>
+								</div>
+							</div>
+						</li>
+						<li class="none">
+							<div class="t"></div>
+							<div class="b"></div>
+						</li>
+						<li class="list" ng-click="add()">
+							<div class="div">
+								<i class="lt">..</i>
+								<i class="gt">..</i>
+								<div class="wr">
+									<span class="ch">笔记</span>
+									<span class="en">NOTE</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--目录-->
+				<div class="catalogs d-con show">
+					<ul>
+						<li class="cata-li">
+							<a href="##" class="current">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第一章</span>
+								<span class="name">见鬼了</span>
+							</a>
+							<span class="download already">已下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第二章</span>
+								<span class="name">你还我初吻</span>
+							</a>
+							<span class="download already">已下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第三章</span>
+								<span class="name">韦桂梅</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+						<li class="cata-li">
+							<a href="##" class="">
+								<span class="zhengwen">正文</span>
+								<span class="zhangjie">第四章</span>
+								<span class="name">卖藏红花</span>
+							</a>
+							<span class="download">未下载</span>
+						</li>
+					</ul>
+				</div>
+				<div class="d-con"></div>
+				<!--书签-->
+				<div class="bookmarks d-con">
+					<ul>
+						<li class="jilu">目前您有4条书签记录...</li>
+						<li class="bookM">
+							<a href="##">
+								<h4>
+									<span class="zhangjie">第一章</span>
+									<span class="name">见鬼了</span>
+								</h4>
+								<p>"例如，当你见到一位相貌平平的先生，却偏要对他说…"</p>
+								<div class="img"></div>
+								<span class="hours">
+									<i></i>
+									<span class="time">22:11</span>
+									<span class="date">2016/11/11</span>
+								</span>
+								<span class="eye">
+									<i></i>
+									<span>10%</span>
+								</span>
+							</a>
+							<div class="del"></div>
+						</li>
+						<li class="bookM check">
+							<a href="##">
+								<h4>
+									<span class="zhangjie">第一章</span>
+									<span class="name">见鬼了</span>
+								</h4>
+								<p>"例如，当你见到一位相貌平平的先生，却偏要对他说…"</p>
+								<div class="img"></div>
+								<span class="hours">
+									<i></i>
+									<span class="time">22:11</span>
+									<span class="date">2016/11/11</span>
+								</span>
+								<span class="eye">
+									<i></i>
+									<span>10%</span>
+								</span>
+							</a>
+							<div class="del"></div>
+						</li>
+						<li class="bookM">
+							<a href="##">
+								<h4>
+									<span class="zhangjie">第一章</span>
+									<span class="name">见鬼了</span>
+								</h4>
+								<p>"例如，当你见到一位相貌平平的先生，却偏要对他说…"</p>
+								<div class="img"></div>
+								<span class="hours">
+									<i></i>
+									<span class="time">22:11</span>
+									<span class="date">2016/11/11</span>
+								</span>
+								<span class="eye">
+									<i></i>
+									<span>10%</span>
+								</span>
+							</a>
+							<div class="del"></div>
+						</li>
+						<li class="bookM">
+							<a href="##">
+								<h4>
+									<span class="zhangjie">第一章</span>
+									<span class="name">见鬼了</span>
+								</h4>
+								<p>"例如，当你见到一位相貌平平的先生，却偏要对他说…"</p>
+								<div class="img"></div>
+								<span class="hours">
+									<i></i>
+									<span class="time">22:11</span>
+									<span class="date">2016/11/11</span>
+								</span>
+								<span class="eye">
+									<i></i>
+									<span>10%</span>
+								</span>
+							</a>
+							<div class="del"></div>
+						</li>
+					</ul>
+					<div class="more">
+						<a href="##">查看全部</a>
+					</div>
+				</div>
+				
+				<div class="d-con"></div>	
+				<!--笔记-->
+				<div class="notes d-con">
+					<ul>
+						<li class="jilu">目前您有3条读书笔记...</li>
+						<li class="note n1">
+							<div class="d">
+								<div class="img"></div>
+								<h4>
+									<span class="zhangjie">第一章</span>
+									<span class="name">见鬼了</span>
+								</h4>
+								<p>"例如，当你见到一位相貌平平的先生，却偏要对他说…"</p>
+								<div class="noteCon">
+									<b class="t-l"></b>
+									<b class="t-r"></b>
+									<b class="b-l"></b>
+									<b class="b-r"></b>
+									<i></i>
+									<span class="t">这里运用排比修辞手法形象生动的说明…</span>
+									<span class="b">心情无比激动，看到睡不着！</span>
+								</div>
+								<span class="hours">
+									<span class="time">
+										<i></i>
+										<span>22:11</span>
+									</span>
+									<span class="eye">
+										<i></i>
+										<span>10%</span>
+									</span>
+								</span>
+								<a href="/notes" class="bianji">编辑</a>
+							</div>
+							<div class="del"></div>
+						</li>
+						<li class="note n2">
+							<div class="d">
+								<div class="img"></div>
+								<h4>
+									<span class="zhangjie">第一章</span>
+									<span class="name">见鬼了</span>
+								</h4>
+								<p>"例如，当你见到一位相貌平平的先生，却偏要对他说…"</p>
+								<div class="noteCon">
+									<i></i>
+									<span class="t">这里运用排比修辞手法形象生动的说明…</span>
+									<span class="b">心情无比激动，看到睡不着！</span>
+								</div>
+								<span class="hours">
+									<span class="time">
+										<i></i>
+										<span>22:11</span>
+									</span>
+									<span class="eye">
+										<i></i>
+										<span>10%</span>
+									</span>
+								</span>
+							</div>
+							<div class="del"></div>
+						</li>
+						<li class="note n3">
+							<div class="d">
+								<div class="img"></div>
+								<h4>
+									<span class="zhangjie">第一章</span>
+									<span class="name">见鬼了</span>
+								</h4>
+								<p>"例如，当你见到一位相貌平平的先生，却偏要对他说…"</p>
+								<div class="noteCon">
+									<i></i>
+									<span class="t">这里运用排比修辞手法形象生动的说明…</span>
+									<span class="b">心情无比激动，看到睡不着！</span>
+								</div>
+								<span class="hours">
+									<span class="time">
+										<i></i>
+										<span>22:11</span>
+									</span>
+									<span class="eye">
+										<i></i>
+										<span>10%</span>
+									</span>
+								</span>
+							</div>
+							<div class="del"></div>
+						</li>
+					</ul>
+					<div class="more">
+						<a href="##">查看全部</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

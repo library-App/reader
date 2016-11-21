@@ -1,0 +1,280 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, li, b, i {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+:root {
+  background: #FFFFFF; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; }
+
+/*导航*/
+.kk {
+  /*main*/ }
+  .kk .head {
+    width: 100%;
+    height: 1.08rem;
+    background: #29A6DC; }
+  .kk .header-f {
+    width: 100%;
+    height: 1.08rem;
+    background: #29A6DC;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; }
+  .kk .h-add {
+    width: 100%;
+    height: 1.08rem;
+    background: #29A6DC;
+    position: relative; }
+  .kk .back {
+    width: 0.44rem;
+    height: 0.44rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../../img/kk-img/back_06.png") no-repeat;
+    background-size: cover;
+    margin-left: 0.24rem; }
+  .kk .main-book {
+    width: 6.87rem;
+    height: 5.2rem;
+    margin: 0.12rem auto;
+    box-shadow: 0 0 4px rgba(42, 126, 255, 0.13);
+    padding: 0.56rem 0.36rem 0;
+    box-sizing: border-box; }
+  .kk .book-img {
+    float: left;
+    background: url(../../img/kk-img/ee_03.png) no-repeat;
+    background-size: cover;
+    width: 2.44rem;
+    height: 2.06rem; }
+  .kk .book-text {
+    float: left;
+    width: 3.6rem;
+    height: 2.7rem;
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    line-height: 0.3rem; }
+    .kk .book-text h3 {
+      font-size: 0.26rem; }
+    .kk .book-text h6 {
+      font-size: 0.24rem; }
+      .kk .book-text h6 span {
+        font-size: 0.18rem; }
+    .kk .book-text h4 {
+      font-size: 0.2rem; }
+    .kk .book-text p {
+      font-size: 10px;
+      color: #c0c0c0; }
+    .kk .book-text h5 {
+      width: 1.34rem;
+      height: 0.24rem;
+      background: url(../../img/kk-img/ee_06.png) no-repeat;
+      background-size: cover; }
+    .kk .book-text a {
+      font-size: 0.24rem;
+      color: #FFFFFF;
+      background: #67e479;
+      display: inline-block;
+      padding: 0.04rem 0.18rem;
+      border-radius: 12px 12px 12px 12px;
+      margin-top: 0.06rem; }
+  .kk .xuan {
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.9rem; }
+    .kk .xuan a {
+      display: inline-block;
+      width: 2.6rem;
+      height: 0.7rem;
+      box-shadow: 0 0 4px rgba(42, 126, 255, 0.13);
+      border-radius: 12px 12px 12px 12px;
+      text-align: center;
+      line-height: 0.7rem;
+      color: #333333; }
+      .kk .xuan a b {
+        display: inline-block;
+        width: 0.48rem;
+        height: 0.5rem;
+        background: url(../../img/kk-img/ee_11.png) no-repeat;
+        background-size: cover;
+        vertical-align: middle; }
+    .kk .xuan a:nth-child(2) {
+      margin-left: 0.56rem; }
+      .kk .xuan a:nth-child(2) b {
+        background: url(../../img/kk-img/ee_14.png) no-repeat;
+        background-size: cover; }
+  .kk .addbook {
+    display: block;
+    width: 2.7rem;
+    height: 0.69rem;
+    margin: 0.16rem auto;
+    background: url(../../img/kk-img/ee_19.png) no-repeat;
+    background-size: cover;
+    font-size: 0.3rem;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 0.69rem; }
+  .kk .ping {
+    width: 100%;
+    height: 1.24rem;
+    padding: 0.3rem 0.36rem;
+    box-sizing: border-box; }
+    .kk .ping .ping-img {
+      float: left;
+      width: 0.44rem;
+      height: 0.68rem;
+      background: url(../../img/kk-img/ee_23.png) no-repeat;
+      background-size: cover; }
+    .kk .ping .ping-img2 {
+      background: url(../../img/kk-img/ee_50.png) no-repeat;
+      background-size: cover;
+      width: 0.7rem; }
+    .kk .ping .ping-title {
+      float: left;
+      padding-left: 0.1rem; }
+      .kk .ping .ping-title h3 {
+        font-size: 0.3rem;
+        font-weight: 100;
+        padding-top: 0.1rem;
+        padding-bottom: 0.05rem; }
+      .kk .ping .ping-title p {
+        font-size: 0.2rem;
+        color: #c0c0c0; }
+  .kk .ping-list {
+    height: 1.54rem;
+    width: 6.87rem;
+    margin: 0.12rem auto;
+    box-shadow: 0 0 4px rgba(42, 126, 255, 0.13);
+    padding: 0.25rem 0.2rem;
+    box-sizing: border-box;
+    margin-bottom: 0.2rem; }
+    .kk .ping-list .list-img {
+      width: 0.82rem;
+      height: 0.82rem;
+      background: url(../../img/kk-img/ee_27.png) no-repeat;
+      background-size: cover;
+      float: left;
+      border-radius: 50%; }
+    .kk .ping-list .list-img2 {
+      background: url(../../img/kk-img/ee_42.png) no-repeat;
+      background-size: cover; }
+    .kk .ping-list .list-text {
+      float: left;
+      padding-left: 0.3rem;
+      width: 5.3rem;
+      font-size: 0.22rem;
+      color: #666666; }
+      .kk .ping-list .list-text p {
+        line-height: 0.36rem; }
+        .kk .ping-list .list-text p b {
+          background: url(../../img/kk-img/ee_30.png) no-repeat;
+          background-size: cover;
+          display: inline-block;
+          width: 0.22rem;
+          height: 0.22rem; }
+      .kk .ping-list .list-text .desba {
+        width: 100%;
+        height: 0;
+        border-bottom: 1px dashed #a0a0a0;
+        margin-top: 0.06rem; }
+  .kk .num {
+    width: 100%;
+    font-size: 0.18rem;
+    color: #a4a1a1;
+    line-height: 0.2rem;
+    height: 0.36rem; }
+    .kk .num b {
+      width: 0.36rem;
+      height: 0.36rem;
+      display: inline-block;
+      background: url(../../img/kk-img/ee_34.png) no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+      margin-left: 2.5rem; }
+    .kk .num i {
+      width: 0.36rem;
+      height: 0.36rem;
+      margin-left: 1.0rem;
+      display: inline-block;
+      background: url(../../img/kk-img/ee_38.png) no-repeat;
+      vertical-align: middle;
+      background-size: cover; }
+  .kk .lookall {
+    display: block;
+    width: 2.22rem;
+    height: 0.39rem;
+    margin: 0.3rem auto;
+    background: url(../../img/kk-img/ee_46.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 0.39rem;
+    color: #FFFFFF;
+    font-size: 0.24rem; }
+  .kk .addqian {
+    display: block;
+    height: 0.86rem;
+    width: 6.87rem;
+    margin: 0.12rem auto;
+    box-shadow: 0 0 4px rgba(42, 126, 255, 0.13);
+    text-align: center;
+    line-height: 0.86rem;
+    color: #666666;
+    margin-bottom: 0.2rem; }
+    .kk .addqian b {
+      display: inline-block;
+      width: 0.37rem;
+      height: 0.37rem;
+      background: url(../../img/kk-img/ee_54.png) no-repeat;
+      background-size: cover;
+      vertical-align: middle; }

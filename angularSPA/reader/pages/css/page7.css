@@ -1,0 +1,277 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  color: #777779;
+  position: relative;
+  font-family: "苹方";
+  box-sizing: border-box; }
+
+img {
+  vertical-align: middle;
+  border: 0; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 15px;
+  background: #000; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 170.66667px; } }
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 213.33333px; } }
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 192px; } }
+
+input {
+  background: transparent;
+  outline: medium; }
+
+.clear {
+  clear: both; }
+
+body {
+  background: #fff; }
+
+* {
+  font-weight: normal; }
+
+.page7 .header {
+  width: 100%;
+  height: 1rem;
+  background: #2BA6DC; }
+  .page7 .header .circle {
+    width: 0.44rem;
+    height: 0.44rem;
+    border: 0.02rem solid #076CBE;
+    border-radius: 50%;
+    background: #fff url("../img/book/left.jpg") no-repeat;
+    background-size: auto 0.17rem;
+    background-position: 0.15rem 0.12rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0.25rem; }
+  .page7 .header .title {
+    text-align: center; }
+    .page7 .header .title h1 {
+      font-size: 0.33rem;
+      color: #fff;
+      line-height: 0.58rem; }
+    .page7 .header .title .line {
+      width: 0.34rem;
+      border-top: 0.01rem solid #fff;
+      position: absolute;
+      bottom: 0.40rem;
+      left: 3.57rem; }
+    .page7 .header .title .line:before, .page7 .header .title .line:after {
+      content: '';
+      display: block;
+      width: 0.03rem;
+      height: 0.03rem;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: -0.01rem; }
+    .page7 .header .title .line:before {
+      left: 0; }
+    .page7 .header .title .line:after {
+      right: 0; }
+    .page7 .header .title span {
+      text-transform: uppercase;
+      font-size: 0.13rem;
+      color: #A3E3FF; }
+
+.page7 .remind {
+  width: 100%;
+  height: 0.48rem;
+  background: #E5E5E5;
+  text-align: center;
+  line-height: 0.48rem;
+  font-size: 0.19rem;
+  color: #ACACAC; }
+
+.page7 .note {
+  width: 100%;
+  margin: 0.2rem auto 0; }
+  .page7 .note ul {
+    width: 100%; }
+    .page7 .note ul li {
+      width: 100%;
+      height: 2rem;
+      border-bottom: 1px dotted #A7A7A7;
+      box-shadow: 0 0 0 #fff;
+      border-radius: 0;
+      padding-top: 0.22rem;
+      padding-left: 0.31rem;
+      padding-bottom: 0.3rem; }
+      .page7 .note ul li .img {
+        width: 0.66rem;
+        height: 0.64rem;
+        background: url("../img/book/book54.jpg");
+        background-size: 100% auto;
+        float: left;
+        margin-top: 0.26rem; }
+      .page7 .note ul li .text {
+        width: 5.6rem;
+        height: 100%;
+        float: left;
+        margin-left: 0.26rem; }
+        .page7 .note ul li .text h1 {
+          font-size: 0.22rem;
+          color: #151C2B;
+          line-height: 0.22rem;
+          font-weight: bold; }
+        .page7 .note ul li .text h5 {
+          font-size: 0.17rem;
+          color: #505050; }
+        .page7 .note ul li .text .write {
+          width: 5.35rem;
+          height: 0.89rem;
+          font-size: 0.18rem;
+          color: #F57782;
+          padding-left: 0.54rem;
+          padding-top: 0.1rem;
+          padding-right: 0.24rem; }
+          .page7 .note ul li .text .write .pen {
+            width: 0.22rem;
+            height: 0.21rem;
+            background: url("../img/book/book69.jpg");
+            background-size: cover;
+            position: absolute;
+            left: 0.2rem;
+            top: 0.14rem; }
+        .page7 .note ul li .text .time, .page7 .note ul li .text .like {
+          width: 1.7rem;
+          height: 0.52rem;
+          float: left;
+          position: absolute;
+          bottom: -0.45rem; }
+          .page7 .note ul li .text .time .circle, .page7 .note ul li .text .like .circle {
+            width: 0.17rem;
+            height: 0.17rem;
+            background: #fff url("../img/book/book43.jpg");
+            background-size: auto 100%;
+            background-repeat: no-repeat;
+            margin-top: 0.15rem; }
+          .page7 .note ul li .text .time span, .page7 .note ul li .text .like span {
+            font-size: 0.01rem;
+            position: absolute;
+            left: 0.31rem;
+            top: 0.06rem; }
+        .page7 .note ul li .text .time {
+          left: 0.08rem; }
+        .page7 .note ul li .text .like {
+          width: 1rem;
+          height: 0.52rem;
+          left: 1.5rem; }
+          .page7 .note ul li .text .like .circle {
+            width: 0.34rem;
+            height: 0.17rem;
+            background: #fff url("../img/book/book11.jpg");
+            background-size: auto 100%;
+            background-repeat: no-repeat; }
+    .page7 .note ul li:nth-of-type(1) .write {
+      background: url("../img/book/book17.png");
+      background-size: cover; }
+    .page7 .note ul li:nth-of-type(2) {
+      background: url("../img/book/book25.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -1rem 0; }
+      .page7 .note ul li:nth-of-type(2) .time .circle {
+        background: #fff url("../img/book/book73.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat; }
+      .page7 .note ul li:nth-of-type(2) .like .circle {
+        width: 0.33rem;
+        background: #fff url("../img/book/book76.jpg");
+        background-size: auto 100%;
+        background-repeat: no-repeat; }
+    .page7 .note ul li:nth-of-type(3) .text .write .pen {
+      background: url("../img/book/book19.png");
+      background-size: cover; }
+
+.page7 .bottom {
+  width: 100%;
+  height: 1.27rem;
+  background: #151C2B;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  .page7 .bottom .release {
+    display: block;
+    margin: 0.41rem auto;
+    width: 1.4rem;
+    height: 0.51rem;
+    border-radius: 0.25rem;
+    background: #F4F4F4;
+    color: #5E5E5E;
+    font-size: 0.19rem;
+    text-align: center;
+    line-height: 0.51rem; }
+  .page7 .bottom .release:before, .page7 .bottom .release:after {
+    content: '';
+    display: block;
+    width: 0.06rem;
+    height: 0.06rem;
+    background: #C4C4C4;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.24rem; }
+  .page7 .bottom .release:before {
+    left: 0.08rem; }
+  .page7 .bottom .release:after {
+    right: 0.08rem; }

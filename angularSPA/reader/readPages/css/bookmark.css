@@ -1,0 +1,613 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+  font-style: normal;
+  color: #777779;
+  position: relative;
+  font-family: "微软雅黑";
+  box-sizing: border-box; }
+
+img {
+  vertical-align: middle;
+  border: 0; }
+
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 15px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 51.2px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 80px; } }
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 85.33333px; } }
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 102.4px; } }
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 106.66667px; } }
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 170.66667px; } }
+
+@media screen and (min-width: 1600px) {
+  html {
+    font-size: 213.33333px; } }
+
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 192px; } }
+
+input {
+  background: transparent;
+  outline: medium; }
+
+.clear {
+  clear: both; }
+
+#bookmark .cata {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  z-index: 2000; }
+  #bookmark .cata .header {
+    height: 1.1rem;
+    background: #29a6dc; }
+    #bookmark .cata .header .return {
+      width: 0.43rem;
+      height: 0.43rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      left: 0.24rem;
+      background: #fafafa url(../img/bookmark/return.png) center no-repeat;
+      background-size: 0.22rem 0.22rem;
+      border: 1px solid #076cbe;
+      border-radius: 50%;
+      box-sizing: border-box; }
+    #bookmark .cata .header .option {
+      width: 5.8rem;
+      height: 0.84rem;
+      border-radius: 0.42rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #2a3441; }
+      #bookmark .cata .header .option li {
+        float: left;
+        margin: 0 0.08rem; }
+      #bookmark .cata .header .option .none {
+        width: 1px;
+        height: 0.56rem;
+        margin-top: 0.14rem;
+        background: #c4c4c4; }
+        #bookmark .cata .header .option .none .t {
+          width: 3px;
+          height: 1px;
+          position: absolute;
+          top: 1px;
+          left: -1px;
+          background: #efefef; }
+        #bookmark .cata .header .option .none .b {
+          width: 3px;
+          height: 1px;
+          position: absolute;
+          bottom: 1px;
+          left: -1px;
+          background: #efefef; }
+      #bookmark .cata .header .option .list {
+        box-sizing: border-box;
+        height: 0.84rem;
+        width: 1.65rem; }
+        #bookmark .cata .header .option .list .div {
+          height: 0.7rem;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto; }
+          #bookmark .cata .header .option .list .div .lt {
+            display: none;
+            color: #FFFFFF;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0.32rem; }
+          #bookmark .cata .header .option .list .div .gt {
+            display: none;
+            color: #FFFFFF;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: 0.32rem; }
+          #bookmark .cata .header .option .list .div .wr {
+            width: 1.6rem;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto; }
+            #bookmark .cata .header .option .list .div .wr .ch {
+              color: #FFFFFF;
+              font-size: 0.22rem;
+              display: block;
+              text-align: center;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 15%; }
+            #bookmark .cata .header .option .list .div .wr .en {
+              display: block;
+              color: #bddbe8;
+              font-size: 0.14rem;
+              text-align: center;
+              position: absolute;
+              left: 0;
+              right: 0;
+              margin: auto;
+              top: 50%; }
+      #bookmark .cata .header .option .selected .div {
+        border: 2px solid #fff;
+        border-radius: 0.35rem;
+        background: #29a6dc; }
+        #bookmark .cata .header .option .selected .div .lt, #bookmark .cata .header .option .selected .div .gt {
+          display: block; }
+  #bookmark .cata .catalogs {
+    display: none; }
+    #bookmark .cata .catalogs ul .cata-li {
+      width: 100%;
+      height: 0.9rem;
+      border-bottom: 2px dotted #9f9f9f; }
+      #bookmark .cata .catalogs ul .cata-li a {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0.45rem;
+        right: 1.5rem;
+        line-height: 0.88rem;
+        color: #333333;
+        font-size: 0.28rem; }
+        #bookmark .cata .catalogs ul .cata-li a span {
+          margin-right: 0.25rem; }
+      #bookmark .cata .catalogs ul .cata-li .current span {
+        color: #357fe4; }
+      #bookmark .cata .catalogs ul .cata-li .download {
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0.45rem;
+        width: 0.9rem;
+        text-align: center;
+        line-height: 0.88rem;
+        color: 989898;
+        font-size: 0.28rem; }
+      #bookmark .cata .catalogs ul .cata-li .already {
+        color: #222222; }
+  #bookmark .cata .bookmarks {
+    display: none; }
+    #bookmark .cata .bookmarks ul .jilu {
+      height: 0.48rem;
+      background: #e5e5e5;
+      color: #a8a8a8;
+      line-height: 0.48rem;
+      text-align: center;
+      font-size: 0.28rem; }
+    #bookmark .cata .bookmarks ul .bookM {
+      height: 1.18rem;
+      border-bottom: 2px dotted #9f9f9f;
+      border-top: 2px solid transparent; }
+      #bookmark .cata .bookmarks ul .bookM a {
+        display: block;
+        width: 100%;
+        height: 100%; }
+        #bookmark .cata .bookmarks ul .bookM a .img {
+          width: 0.7rem;
+          height: 0.7rem;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0.3rem;
+          background: url(../img/bookmark/bookmarks.png) center no-repeat;
+          background-size: 0.7rem 0.7rem; }
+        #bookmark .cata .bookmarks ul .bookM a h4 {
+          margin-left: 1.25rem;
+          padding-top: 0.2rem;
+          font-size: 0.24rem; }
+          #bookmark .cata .bookmarks ul .bookM a h4 span {
+            color: #151c2b;
+            margin-right: 0.2rem; }
+        #bookmark .cata .bookmarks ul .bookM a p {
+          color: #737373;
+          font-size: 0.18rem;
+          line-height: 0.4rem;
+          margin-left: 1.25rem; }
+        #bookmark .cata .bookmarks ul .bookM a .hours {
+          display: block;
+          width: 3rem;
+          height: 0.2rem;
+          position: absolute;
+          left: 1.25rem;
+          bottom: 0.07rem;
+          line-height: 0.2rem;
+          font-size: 0.16rem; }
+          #bookmark .cata .bookmarks ul .bookM a .hours i {
+            width: 0.2rem;
+            height: 0.2rem;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0.04rem;
+            background: url(../img/bookmark/time.png) center no-repeat;
+            background-size: 0.2rem 0.2rem; }
+          #bookmark .cata .bookmarks ul .bookM a .hours .time {
+            color: #7f7f7f;
+            margin-left: 0.3rem;
+            margin-right: 0.1rem; }
+        #bookmark .cata .bookmarks ul .bookM a .eye {
+          width: 0.7rem;
+          height: 0.2rem;
+          display: block;
+          position: absolute;
+          right: 0.66rem;
+          bottom: 0.07rem;
+          line-height: 0.2rem;
+          color: #7f7f7f;
+          font-size: 0.16rem; }
+          #bookmark .cata .bookmarks ul .bookM a .eye i {
+            display: block;
+            width: 0.3rem;
+            height: 0.3rem;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            background: url(../img/bookmark/eye.png) center no-repeat;
+            background-size: 0.3rem 0.3rem; }
+          #bookmark .cata .bookmarks ul .bookM a .eye span {
+            float: right; }
+      #bookmark .cata .bookmarks ul .bookM .del {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        width: 0.92rem;
+        height: 1.18rem;
+        transform: translateX(0.92rem);
+        background: url(../img/bookmark/del.png) center no-repeat;
+        background-size: 0.3rem 0.3rem; }
+    #bookmark .cata .bookmarks ul .check {
+      border-bottom: 2px solid #29DCBC;
+      border-top: 2px solid #29DCBC; }
+      #bookmark .cata .bookmarks ul .check a {
+        background: #29dcbc;
+        transform: translateX(-0.92rem); }
+        #bookmark .cata .bookmarks ul .check a .img {
+          display: none; }
+        #bookmark .cata .bookmarks ul .check a h4 span {
+          color: #f9f9f9; }
+        #bookmark .cata .bookmarks ul .check a p {
+          color: #f8f8f8; }
+        #bookmark .cata .bookmarks ul .check a .hours .time {
+          color: #f4f4f4; }
+        #bookmark .cata .bookmarks ul .check a .hours .date {
+          color: #f4f4f4; }
+        #bookmark .cata .bookmarks ul .check a .eye span {
+          color: #f4f4f4; }
+      #bookmark .cata .bookmarks ul .check .del {
+        transform: translateX(0); }
+    #bookmark .cata .bookmarks .more {
+      height: 1.25rem;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      background: #151c2b; }
+      #bookmark .cata .bookmarks .more a {
+        display: block;
+        width: 1.4rem;
+        height: 0.5rem;
+        background: #FFFFFF;
+        color: #393939;
+        font-size: 0.2rem;
+        line-height: 0.5rem;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 0.25rem; }
+  #bookmark .cata .notes {
+    display: none; }
+    #bookmark .cata .notes ul .jilu {
+      height: 0.48rem;
+      background: #e5e5e5;
+      color: #a8a8a8;
+      line-height: 0.48rem;
+      text-align: center;
+      font-size: 0.28rem; }
+    #bookmark .cata .notes ul .note {
+      height: 1.9rem;
+      border-bottom: 2px dotted #9f9f9f;
+      border-top: 2px solid transparent; }
+      #bookmark .cata .notes ul .note .d {
+        height: 100%; }
+        #bookmark .cata .notes ul .note .d .img {
+          width: 0.7rem;
+          height: 0.7rem;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0.3rem;
+          background: url(../img/bookmark/bi.png) center no-repeat;
+          background-size: 0.7rem; }
+        #bookmark .cata .notes ul .note .d h4 {
+          margin-left: 1.25rem;
+          padding-top: 0.12rem;
+          font-size: 0.24rem; }
+          #bookmark .cata .notes ul .note .d h4 span {
+            color: #151c2b;
+            margin-right: 0.2rem; }
+        #bookmark .cata .notes ul .note .d p {
+          color: #737373;
+          font-size: 0.18rem;
+          line-height: 0.3rem;
+          margin-left: 1.25rem; }
+        #bookmark .cata .notes ul .note .d .noteCon {
+          width: 5.35rem;
+          height: 0.86rem;
+          box-sizing: border-box;
+          padding: 0.1rem 0.2rem;
+          margin-left: 1.24rem; }
+          #bookmark .cata .notes ul .note .d .noteCon i {
+            display: block;
+            width: 0.24rem;
+            height: 0.24rem;
+            position: absolute;
+            top: 0rem;
+            bottom: 0.42rem;
+            left: 0.24rem;
+            margin: auto;
+            background: url(../img/bookmark/du11.png) center no-repeat;
+            background-size: 0.24rem; }
+          #bookmark .cata .notes ul .note .d .noteCon span {
+            display: block;
+            line-height: 0.3rem;
+            font-size: 0.2rem;
+            color: #ec2e56;
+            margin-left: 0.32rem; }
+          #bookmark .cata .notes ul .note .d .noteCon b {
+            width: 3px;
+            height: 3px;
+            background: #FFFFFF; }
+          #bookmark .cata .notes ul .note .d .noteCon .t-l {
+            position: absolute;
+            top: 0.12rem;
+            left: 0.12rem; }
+          #bookmark .cata .notes ul .note .d .noteCon .t-r {
+            position: absolute;
+            top: 0.12rem;
+            right: 0.12rem; }
+          #bookmark .cata .notes ul .note .d .noteCon .b-l {
+            position: absolute;
+            bottom: 0.12rem;
+            left: 0.12rem; }
+          #bookmark .cata .notes ul .note .d .noteCon .b-r {
+            position: absolute;
+            bottom: 0.12rem;
+            right: 0.12rem; }
+        #bookmark .cata .notes ul .note .d .bianji {
+          display: block;
+          width: 0.7rem;
+          height: 0.3rem;
+          background: #2542f3;
+          color: #FFFFFF;
+          font-size: 0.12rem;
+          text-align: center;
+          line-height: 0.3rem;
+          position: absolute;
+          bottom: 1px;
+          right: 1.05rem;
+          border-radius: 0.1rem; }
+        #bookmark .cata .notes ul .note .d .bianji:after {
+          content: "";
+          display: block;
+          width: 3px;
+          height: 3px;
+          background: #FFFFFF;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0.12em;
+          border-radius: 50%; }
+        #bookmark .cata .notes ul .note .d .bianji:before {
+          content: "";
+          display: block;
+          width: 3px;
+          height: 3px;
+          background: #FFFFFF;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          right: 0.12em;
+          border-radius: 50%; }
+        #bookmark .cata .notes ul .note .d .hours {
+          display: block;
+          height: 0.2rem;
+          width: 1.6rem;
+          position: absolute;
+          left: 1.25rem;
+          bottom: 0.07rem; }
+          #bookmark .cata .notes ul .note .d .hours .time {
+            float: left;
+            width: 0.6rem;
+            height: 0.2rem;
+            line-height: 0.2rem;
+            font-size: 0.16rem; }
+            #bookmark .cata .notes ul .note .d .hours .time i {
+              width: 0.2rem;
+              height: 0.2rem;
+              display: block;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              left: 0.04rem;
+              background: url(../img/bookmark/time.png) center no-repeat;
+              background-size: 0.2rem 0.2rem; }
+            #bookmark .cata .notes ul .note .d .hours .time span {
+              color: #7f7f7f;
+              margin-left: 0.3rem;
+              margin-right: 0.1rem; }
+          #bookmark .cata .notes ul .note .d .hours .eye {
+            width: 0.7rem;
+            height: 0.2rem;
+            float: right;
+            line-height: 0.2rem;
+            color: #7f7f7f;
+            font-size: 0.16rem; }
+            #bookmark .cata .notes ul .note .d .hours .eye i {
+              display: block;
+              width: 0.3rem;
+              height: 0.3rem;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              left: 0;
+              background: url(../img/bookmark/eye.png) center no-repeat;
+              background-size: 0.3rem 0.3rem; }
+            #bookmark .cata .notes ul .note .d .hours .eye span {
+              float: right; }
+      #bookmark .cata .notes ul .note .del {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 0;
+        width: 0.92rem;
+        height: 1.18rem;
+        transform: translateX(0.92rem);
+        background: url(../img/bookmark/del.png) center no-repeat;
+        background-size: 0.3rem 0.3rem; }
+    #bookmark .cata .notes ul .n1 .d .noteCon {
+      background: #9ae1ff;
+      border-radius: 0.1rem; }
+      #bookmark .cata .notes ul .n1 .d .noteCon i {
+        background: url(../img/bookmark/du3.png); }
+    #bookmark .cata .notes ul .n2 {
+      border-bottom: 2px solid #29DCBC;
+      border-top: 2px solid #29DCBC; }
+      #bookmark .cata .notes ul .n2 .d {
+        background: #29DCBC;
+        transform: translateX(-0.92rem); }
+        #bookmark .cata .notes ul .n2 .d .img {
+          display: none; }
+        #bookmark .cata .notes ul .n2 .d h4 span {
+          color: #f9f9f9; }
+        #bookmark .cata .notes ul .n2 .d p {
+          color: #f8f8f8; }
+        #bookmark .cata .notes ul .n2 .d .noteCon i {
+          background: url(../img/bookmark/du7.png); }
+        #bookmark .cata .notes ul .n2 .d .noteCon span {
+          color: #1d9563; }
+        #bookmark .cata .notes ul .n2 .d .hours .time span {
+          color: #f9f9f9; }
+        #bookmark .cata .notes ul .n2 .d .hours .eye span {
+          color: #f9f9f9; }
+      #bookmark .cata .notes ul .n2 .del {
+        transform: translateX(0); }
+    #bookmark .cata .notes .more {
+      height: 1.25rem;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      background: #151c2b; }
+      #bookmark .cata .notes .more a {
+        display: block;
+        width: 1.4rem;
+        height: 0.5rem;
+        background: #FFFFFF;
+        color: #393939;
+        font-size: 0.2rem;
+        line-height: 0.5rem;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 0.25rem; }
+  #bookmark .cata .show {
+    display: block; }
