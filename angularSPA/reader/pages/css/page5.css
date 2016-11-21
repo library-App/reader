@@ -92,6 +92,8 @@ body {
   height: 1rem;
   background: #2BA6DC; }
   .page5 .header .circle {
+  	display:block;
+  	z-index:100;
     width: 0.44rem;
     height: 0.44rem;
     border: 0.02rem solid #076CBE;

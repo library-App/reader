@@ -3,9 +3,8 @@ app.config([
 	'$routeProvider',
 	function($routeProvider){
 		$routeProvider.when('/',{
-			templateUrl:'reader/login/login.html',
+			templateUrl:'reader/login/Login.html',
 			controller:'loginCtrl'
-<<<<<<< HEAD
 		}).when('/bookshelf',{
 			templateUrl:'reader/bookshelf/bookshelf.html',
 			controller:''
@@ -18,7 +17,6 @@ app.config([
 		}).when('/notes',{
 			templateUrl:'reader/readPages/note.html',
 			controller:'notCtrl'
-=======
 		}).when('/select',{
 			templateUrl:'reader/bookcity/select.html',
 			controller:'selectCtrl'
@@ -33,7 +31,16 @@ app.config([
 			templateUrl:'reader/bookcity/classify.html'
 		}).when('/bookshow',{
 			templateUrl:'reader/bookcity/bookshow.html'
->>>>>>> 1a73ad8dd19f02fc6da6747ad79ee31f99fdd648
+		}).when('/page1',{
+			templateUrl:'reader/pages/page1.html',
+		}).when('/bookmark',{
+			templateUrl:'reader/readPages/bookmark.html',
+		}).when('/page3',{
+			templateUrl:'reader/pages/page3.html',
+		}).when('/page6',{
+			templateUrl:'reader/pages/page6.html',
+		}).when('/page7',{
+			templateUrl:'reader/pages/page7.html',
 		})
 	}
 ])

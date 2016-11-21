@@ -8,7 +8,7 @@
   font-style: normal;
   color: #777779;
   position: relative;
-  font-family: "苹方";
+  font-family: "微软雅黑";
   box-sizing: border-box; }
 
 img {
@@ -92,6 +92,7 @@ body {
   height: 1rem;
   background: #2BA6DC; }
   .page1 .header .circle {
+  	display:block;
     width: 0.44rem;
     height: 0.44rem;
     border: 0.02rem solid #076CBE;
@@ -104,7 +105,6 @@ body {
     bottom: 0;
     margin: auto;
     left: 0.25rem; }
-
 .page1 .book {
   width: 6.87rem;
   height: 5.19rem;
