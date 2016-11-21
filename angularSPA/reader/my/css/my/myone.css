@@ -23,7 +23,6 @@ html {
 
 body {
   font-size: 15px;
-  background: #000;
 }
 
 @media screen and (min-width: 320px) {
@@ -123,7 +122,14 @@ body, html {
   position: relative;
 }
 
-a {
+/*顶部*/
+#myone {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#myone a {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -139,15 +145,8 @@ a {
   color: #FAFAFA;
 }
 
-.greenzi {
+#myone .greenzi {
   color: #29DD8B;
-}
-
-/*顶部*/
-#myone {
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
 #myone #persontopintercalate {

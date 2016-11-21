@@ -4,7 +4,11 @@ body,html{
     height: 100%;
     position: relative;
 }
-a{
+
+$img:"../../img/my/";
+/*顶部*/
+#myfour{ 
+    a{
     display: inline-block;
     width: 100%;
     height: 100%; 
@@ -12,9 +16,6 @@ a{
     z-index: 100;
     color: #FAFAFA;
 }
-$img:"../../img/my/";
-/*顶部*/
-#myfour{ 
     width: 100%;
     height: 100%;
     position: relative;

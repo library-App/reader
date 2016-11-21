@@ -5,6 +5,9 @@ body,html{
     height: 100%;
     position: relative;
 }
+
+/*顶部*/
+#mythree{
 a{
     display: inline-block;
     width: 100%;
@@ -12,10 +15,7 @@ a{
     @include center;
     z-index: 100;
     color: #FAFAFA;
-}
-/*顶部*/
-#mythree{
-
+} 
 
 #persontopintercalate{
     width: 100%;

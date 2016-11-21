@@ -118,7 +118,8 @@ body, html {
   position: relative;
 }
 
-a {
+/*顶部*/
+#mysix a {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -133,7 +134,6 @@ a {
   z-index: 100;
 }
 
-/*顶部*/
 #mysix #persontopintercalate {
   width: 100%;
   height: 1.08rem;

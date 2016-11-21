@@ -118,7 +118,14 @@ body, html {
   position: relative;
 }
 
-a {
+/*顶部*/
+#myfour {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#myfour a {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -132,13 +139,6 @@ a {
   margin: auto;
   z-index: 100;
   color: #FAFAFA;
-}
-
-/*顶部*/
-#myfour {
-  width: 100%;
-  height: 100%;
-  position: relative;
 }
 
 #myfour #persontopintercalate {

@@ -4,17 +4,17 @@ body,html{
     height: 100%;
     position: relative;
 }
-a{ 
+
+$img:"../../img/my/";
+/*顶部*/
+#mysix{
+    a{ 
     display: inline-block;
     width: 100%;
     height: 100%; 
     @include center;
     z-index: 100;
 }
-$img:"../../img/my/";
-/*顶部*/
-#mysix{
-    
 
 #persontopintercalate{ 
     width: 100%;

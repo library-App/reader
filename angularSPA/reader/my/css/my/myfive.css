@@ -118,7 +118,8 @@ body, html {
   position: relative;
 }
 
-a {
+/*顶部*/
+#myfive a {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -134,7 +135,6 @@ a {
   color: #FAFAFA;
 }
 
-/*顶部*/
 #myfive #persontopintercalate {
   width: 100%;
   height: 1.08rem;
