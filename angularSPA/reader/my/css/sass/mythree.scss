@@ -1,7 +1,4 @@
 @import "../base/base.scss";
-body{ 
-    background: #FAFAFA;
-}
 $img:"../../img/my/";
 body,html{
     width: 100%;
@@ -17,6 +14,9 @@ a{
     color: #FAFAFA;
 }
 /*顶部*/
+#mythree{
+
+
 #persontopintercalate{
     width: 100%;
     height: 1.08rem;
@@ -37,12 +37,10 @@ a{
             height: 0.44rem;
             border: 3px solid #0F74B5;
             border-radius: 50%;
-            background: #FAFAFA;
+            background: #FAFAFA url($img+"11.png")no-repeat;
+            background-size: 30%;
+            background-position: center;
             margin-top: 0.32rem;
-            img{
-                width: 30%;
-                @include center;
-            }
         }
     }
     .install .middle{
@@ -60,6 +58,8 @@ a{
             height: 25%;
             font-size: 0.35rem;
             color: #FAFAFA;
+            background:url($img+"1.png")no-repeat;
+            background-position: center 52%;
         }
         div:nth-of-type(3){
             line-height: 0rem;
@@ -225,9 +225,9 @@ a{
         .middle{
             @include center;
             line-height: 0.84rem;
-            img{
-                height: 70%;
-            }
+            background: url($img+"16.png")no-repeat;
+            background-size: 0.5%;
+            background-position: center;
         }
         .right{
             margin-top: 0.08rem;
@@ -279,9 +279,11 @@ a{
                 display: inline-block;
                 float: right;
                 margin-right: 0.31rem;
+                background:url($img+"7.png")no-repeat;
+                background-position: right;
                 h6{
                     display: inline-block;
-                    margin-right: 0.11rem;
+                    margin-right: 0.3rem;
                     color: #3D3D3D;
                 }
                 .cirty{
@@ -330,22 +332,27 @@ a{
                 display: inline-block;
                 width: 0.33rem;
                 height: 0.33rem;
-                background: #FDCD3D;
+                background: #FDCD3D url($img+"17.png")no-repeat;
+                background-size: 70%;
+                background-position: center;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 0.33rem;
-                img{
-                    width: 70%;
-                }
             }
             .qblue{
-                background: #FDCD3D;
+                background: #FDCD3D url($img+"17.png")no-repeat;
+                background-size: 70%;
+                background-position: center;
             }
             .green{
-                background: #FDCD3D;
+                background: #FDCD3D url($img+"17.png")no-repeat;
+                background-size: 70%;
+                background-position: center;
             }
             .yellow{
-                background: #FDCD3D;
+                background: #FDCD3D url($img+"17.png")no-repeat;
+                background-size: 70%;
+                background-position: center;
             }
         }
         .last{
@@ -380,6 +387,9 @@ a{
                 right: 0;
                 top: 0.039rem;
                 margin-right: 0.31rem;
+                padding-left: 0.4rem;
+                background:url($img+"20.png")no-repeat;
+                background-position: left;
                 h6{
                     display: inline-block;
                     color: #666666;
@@ -413,23 +423,14 @@ a{
                 border-radius: 50%;
                 text-align: center;
                 line-height: 0.68rem;
-                img{
-                    width: 100%;
-                    border-radius: 50%;
-                }
-            }
-            .qblue{
-                background: #3DBFFD;
-            }
-            .green{
-                background: #2FE7CB;
-            }
-            .yellow{
-                background: #FDCD3D;
+                background: #FAFAFA url($img+"18.png")no-repeat;
+                background-size: 100%;
+                background-position: center;
             }
         }
         .last{
             border: 0;
         }
     }
+}
 }

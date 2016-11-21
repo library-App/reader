@@ -6,10 +6,7 @@
   url('https://at.alicdn.com/t/font_3fx2ffh698iu23xr.woff') format('woff'),
   url('https://at.alicdn.com/t/font_3fx2ffh698iu23xr.ttf') format('truetype'),
   url('https://at.alicdn.com/t/font_3fx2ffh698iu23xr.svg#iconfont') format('svg');
-}
-body{
-    background: #FAFAFA; 
-}
+} 
 a{
     display: inline-block;
     width: 100%;
@@ -20,7 +17,8 @@ a{
 }
 $img:"../../img/my/";
 /*顶部*/
-#persontop{
+#my{
+    #persontop{
     width: 100%;
     height: 1.08rem;
     background: #2BA6DC;
@@ -39,13 +37,11 @@ $img:"../../img/my/";
             width: 0.44rem;
             height: 0.44rem;
             border: 3px solid #0F74B5;
-            border-radius: 50%;
-            background: #FAFAFA;
+            border-radius: 50%; 
+            background: #FAFAFA url($img+"9.png")no-repeat;
+            background-size: 70%;
+            background-position: center;
             margin-top: 0.32rem;
-            img{
-                width: 70%;
-                @include center;
-            }
         }
     }
     .install .middle{
@@ -63,6 +59,8 @@ $img:"../../img/my/";
             height: 25%;
             font-size: 0.35rem;
             color: #FAFAFA;
+            background:url($img+"1.png")no-repeat;
+            background-position: center 52%;
         }
         div:nth-of-type(3){
             line-height: 0rem;
@@ -81,12 +79,10 @@ $img:"../../img/my/";
             height: 0.44rem;
             border: 3px solid #0F74B5;
             border-radius: 50%;
-            background: #FAFAFA;
+            background: #FAFAFA url($img+"10.png")no-repeat;
+            background-size: 70%;
+            background-position: center;
             margin-top: 0.32rem;
-            img{
-                width: 70%;
-                @include center;
-            }
         }
     }
 }
@@ -125,9 +121,9 @@ $img:"../../img/my/";
             top: 2.83rem;
             text-align: center;
             color: #3D3D3D;
-            img{
-                width: 3%;
-            }
+            background: #FAFAFA url($img+"3.png")no-repeat;
+            background-size: 3%;
+            background-position: 85% center;
         }
     }
 }
@@ -155,9 +151,11 @@ $img:"../../img/my/";
                 display: inline-block;
                 float: right;
                 margin-right: 0.31rem;
+                background:url($img+"7.png")no-repeat;
+                background-position: right;
                 h6{
                     display: inline-block;
-                    margin-right: 0.11rem;
+                    margin-right: 0.3rem;
                     color: #3D3D3D;
                 }
             }
@@ -182,22 +180,27 @@ $img:"../../img/my/";
                 display: inline-block;
                 width: 0.33rem;
                 height: 0.33rem;
-                background: #3D63FD;
+                background: #3D63FD url($img+"4.png")no-repeat;
+                background-size: 70%;
+                background-position: center;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 0.33rem;
-                img{
-                    width: 70%;
-                }
             }
             .qblue{
-                background: #3DBFFD;
+                background: #3DBFFD url($img+"5.png")no-repeat;
+                background-size: 70%;
+                background-position: center;
             }
             .green{
-                background: #2FE7CB;
+                background: #2FE7CB url($img+"6.png")no-repeat;
+                background-size: 70%;
+                background-position: center;
             }
             .yellow{
-                background: #FDCD3D;
+                background: #FDCD3D url($img+"8.png")no-repeat;
+                background-size: 70%;
+                background-position: center;
             }
         }
         .last{
@@ -265,11 +268,10 @@ $img:"../../img/my/";
         height: 100%;
         .first{
             height: 0.72rem;
-            img{
-                width: 100%;
-                height: 100%;
-                border-radius: 0.2rem 0.2rem 0 0;
-            }
+            background:url($img+"25.png")no-repeat;
+            background-position: center bottom;
+            background-size: 100%;
+            border-radius: 0.2rem 0.2rem 0 0;
             .pers{
                 position: absolute;
                 top: 0.18rem;
@@ -277,13 +279,11 @@ $img:"../../img/my/";
                 width: 0.36rem;
                 height: 0.36rem;
                 border-radius: 50%;
-                background: #FFFFFF;
+                background:#FFFFFF url($img+"34.png")no-repeat;
+                background-position: center;
+                background-size: 60%;
                 text-align: center;
                 line-height: 0.36rem;
-                img{
-                    max-width: 60%;
-                    max-height: 60%;
-                }
             }
             h5{
                 position: absolute;
@@ -312,14 +312,20 @@ $img:"../../img/my/";
                 };
             }
             .first{
+                background: #FFFFFF;
                 height: auto;
                 margin: {
                     top: 0.39rem;
                 };
             }
+            .last{
+                height: 0.2rem;
+                background:#FFFFFF url($img+"33.png")no-repeat;
+                background-position: center;
+            }
         }
     }
 }
-.active{
-    display: block !important;
 }
+
+

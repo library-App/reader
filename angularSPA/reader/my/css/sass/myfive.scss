@@ -1,13 +1,10 @@
 @import "../base/base.scss";
-body{ 
-    background: #FAFAFA;
-}
 body,html{
     width: 100%;
     height: 100%;
     position: relative;
 }
-a{
+a{ 
     display: inline-block;
     width: 100%;
     height: 100%; 
@@ -17,6 +14,9 @@ a{
 }
 $img:"../../img/my/";
 /*顶部*/
+#myfive{
+    
+
 #persontopintercalate{
     width: 100%;
     height: 1.08rem; 
@@ -37,7 +37,9 @@ $img:"../../img/my/";
             height: 0.44rem;
             border: 3px solid #0F74B5;
             border-radius: 50%;
-            background: #FAFAFA;
+            background: #FAFAFA url($img+"11.png")no-repeat;
+            background-size: 30%;
+            background-position: center;
             margin-top: 0.32rem;
             img{
                 width: 30%;
@@ -60,6 +62,8 @@ $img:"../../img/my/";
             height: 25%;
             font-size: 0.35rem;
             color: #FAFAFA;
+            background:url($img+"1.png")no-repeat;
+            background-position: center 52%;
         }
         div:nth-of-type(3){
             line-height: 0rem;
@@ -108,9 +112,9 @@ $img:"../../img/my/";
                 height: 0.34rem;
                 text-align: center;
                 line-height: 0.2rem;
-                img{
-                    width: 80%;
-                }
+                background:url($img+"32.png")no-repeat;
+                background-position: center;
+                background-size: 80%;
             }
         }
         textarea{
@@ -154,4 +158,5 @@ $img:"../../img/my/";
             right: 0.34rem;
         }
     }
+}
 }

@@ -6,9 +6,6 @@ app.config([
 			templateUrl: 'reader/login/login.html',
 			controller: 'loginCtrl'
 
-		}).when('/bookshelf', {
-			templateUrl: 'reader/bookshelf/bookshelf.html',
-			controller: ''
 		}).when('/readPage', {
 			templateUrl: 'reader/readPages/readPage.html',
 			controller: 'readCtrl'
@@ -34,6 +31,27 @@ app.config([
 		}).when('/bookshow', {
 			templateUrl: 'reader/bookcity/bookshow.html'
 
+		}).when('/my', {
+			templateUrl: 'reader/my/my.html',
+			controller:'myCtrl'
+		}).when('/myone', {
+			templateUrl: 'reader/my/myone.html',
+			controller:'myoneCtrl'
+		}).when('/mytwo', {
+			templateUrl: 'reader/my/mytwo.html',
+			controller:'mytwoCtrl'
+		}).when('/mythree', {
+			templateUrl: 'reader/my/mythree.html',
+			controller:'mythreeCtrl'
+		}).when('/myfour', {
+			templateUrl: 'reader/my/myfour.html',
+			controller:'myfourCtrl'
+		}).when('/myfive', {
+			templateUrl: 'reader/my/myfive.html',
+			controller:'myfiveCtrl'
+		}).when('/mysix', {
+			templateUrl: 'reader/my/mysix.html',
+			controller:'mysixCtrl'
 		})
 	}
 ])

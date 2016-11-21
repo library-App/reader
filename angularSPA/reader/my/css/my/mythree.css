@@ -23,7 +23,6 @@ html {
 
 body {
   font-size: 15px;
-  background: #000;
 }
 
 @media screen and (min-width: 320px) {
@@ -113,10 +112,6 @@ input {
   clear: both;
 }
 
-body {
-  background: #FAFAFA;
-}
-
 body, html {
   width: 100%;
   height: 100%;
@@ -140,22 +135,22 @@ a {
 }
 
 /*顶部*/
-#persontopintercalate {
+#mythree #persontopintercalate {
   width: 100%;
   height: 1.08rem;
   background: #2BA6DC;
 }
 
-#persontopintercalate .install {
+#mythree #persontopintercalate .install {
   width: 100%;
   height: 1.08rem;
 }
 
-#persontopintercalate .install li {
+#mythree #persontopintercalate .install li {
   line-height: 1.08rem;
 }
 
-#persontopintercalate .install .left {
+#mythree #persontopintercalate .install .left {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -163,18 +158,19 @@ a {
   left: 0.24rem;
 }
 
-#persontopintercalate .install .left span {
+#mythree #persontopintercalate .install .left span {
   display: inline-block;
   width: 0.44rem;
   height: 0.44rem;
   border: 3px solid #0F74B5;
   border-radius: 50%;
-  background: #FAFAFA;
+  background: #FAFAFA url("../../img/my/11.png") no-repeat;
+  background-size: 30%;
+  background-position: center;
   margin-top: 0.32rem;
 }
 
-#persontopintercalate .install .left span img {
-  width: 30%;
+#mythree #persontopintercalate .install .middle {
   position: absolute;
   left: 0;
   right: 0;
@@ -185,18 +181,7 @@ a {
   margin: auto;
 }
 
-#persontopintercalate .install .middle {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-#persontopintercalate .install .middle div:nth-of-type(1) {
+#mythree #persontopintercalate .install .middle div:nth-of-type(1) {
   line-height: 1rem;
   text-align: center;
   height: 50%;
@@ -204,15 +189,17 @@ a {
   color: #FAFAFA;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(2) {
+#mythree #persontopintercalate .install .middle div:nth-of-type(2) {
   line-height: 0.2rem;
   text-align: center;
   height: 25%;
   font-size: 0.35rem;
   color: #FAFAFA;
+  background: url("../../img/my/1.png") no-repeat;
+  background-position: center 52%;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(3) {
+#mythree #persontopintercalate .install .middle div:nth-of-type(3) {
   line-height: 0rem;
   text-align: center;
   height: 25%;
@@ -220,7 +207,7 @@ a {
   color: #90DCFF;
 }
 
-#personxxk {
+#mythree #personxxk {
   widows: 100%;
   height: auto;
   position: absolute;
@@ -231,7 +218,7 @@ a {
   text-align: center;
 }
 
-#personxxk .xxkz {
+#mythree #personxxk .xxkz {
   margin: 0 auto;
   width: 5.71rem;
   background: #2C3744;
@@ -239,7 +226,7 @@ a {
   border-radius: 0.84rem;
 }
 
-#personxxk .xxkz .bg {
+#mythree #personxxk .xxkz .bg {
   width: 2.39rem;
   height: 0.68rem;
   background: #2BA6DC;
@@ -248,21 +235,21 @@ a {
   font-size: 0.05rem;
 }
 
-#personxxk .xxkz .bg span {
+#mythree #personxxk .xxkz .bg span {
   display: inline-block;
   border: 1px solid #3D3D3D;
   border-radius: 1rem;
   margin-top: 0.13rem;
 }
 
-#personxxk .xxkz .bg .cirz {
+#mythree #personxxk .xxkz .bg .cirz {
   background: #2BA6DC;
   border: 0;
   color: #FAFAFA;
   font-size: 0.15rem;
 }
 
-#personxxk .xxkz .bg .cirz .cirl1 {
+#mythree #personxxk .xxkz .bg .cirz .cirl1 {
   margin-bottom: 0.03rem;
   width: 0.04rem;
   height: 0.04rem;
@@ -272,7 +259,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg .cirz .cirl2 {
+#mythree #personxxk .xxkz .bg .cirz .cirl2 {
   margin-bottom: 0.03rem;
   width: 0.04rem;
   height: 0.04rem;
@@ -282,7 +269,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg .cirz .cirr1 {
+#mythree #personxxk .xxkz .bg .cirz .cirr1 {
   margin-bottom: 0.03rem;
   width: 0.04rem;
   height: 0.04rem;
@@ -292,7 +279,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg .cirz .cirr2 {
+#mythree #personxxk .xxkz .bg .cirz .cirr2 {
   margin-bottom: 0.03rem;
   width: 0.04rem;
   height: 0.04rem;
@@ -302,7 +289,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg .Ewenzi {
+#mythree #personxxk .xxkz .bg .Ewenzi {
   position: absolute;
   left: 0;
   right: 0;
@@ -313,20 +300,20 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg span {
+#mythree #personxxk .xxkz .bg span {
   display: inline-block;
   border: 1px solid #3D3D3D;
   border-radius: 1rem;
   margin-top: 0.13rem;
 }
 
-#personxxk .xxkz .bg .cirz {
+#mythree #personxxk .xxkz .bg .cirz {
   border: 0;
   color: #FAFAFA;
   font-size: 0.15rem;
 }
 
-#personxxk .xxkz .bg .cirz .cirl1 {
+#mythree #personxxk .xxkz .bg .cirz .cirl1 {
   margin-bottom: 0.03rem;
   width: 0.04rem;
   height: 0.04rem;
@@ -336,7 +323,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg .cirz .cirl2 {
+#mythree #personxxk .xxkz .bg .cirz .cirl2 {
   margin-bottom: 0.03rem;
   width: 0.04rem;
   height: 0.04rem;
@@ -346,7 +333,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg .cirz .cirr1 {
+#mythree #personxxk .xxkz .bg .cirz .cirr1 {
   margin-bottom: 0.03rem;
   width: 0.04rem;
   height: 0.04rem;
@@ -356,7 +343,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg .cirz .cirr2 {
+#mythree #personxxk .xxkz .bg .cirz .cirr2 {
   margin-bottom: 0.03rem;
   width: 0.04rem;
   height: 0.04rem;
@@ -366,7 +353,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .bg .Ewenzi {
+#mythree #personxxk .xxkz .bg .Ewenzi {
   position: absolute;
   left: 0;
   right: 0;
@@ -377,7 +364,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .left {
+#mythree #personxxk .xxkz .left {
   margin-top: 0.08rem;
   float: left;
   margin-left: 0.08rem;
@@ -387,7 +374,7 @@ a {
   font-size: 0.05rem;
 }
 
-#personxxk .xxkz .left span {
+#mythree #personxxk .xxkz .left span {
   color: #FAFAFA;
   font-size: 0.15rem;
   display: inline-block;
@@ -395,7 +382,7 @@ a {
   margin-top: 0.13rem;
 }
 
-#personxxk .xxkz .left .Ewenzi {
+#mythree #personxxk .xxkz .left .Ewenzi {
   position: absolute;
   left: 0;
   right: 0;
@@ -406,7 +393,7 @@ a {
   border: 0;
 }
 
-#personxxk .xxkz .middle {
+#mythree #personxxk .xxkz .middle {
   position: absolute;
   left: 0;
   right: 0;
@@ -416,13 +403,12 @@ a {
   bottom: 0;
   margin: auto;
   line-height: 0.84rem;
+  background: url("../../img/my/16.png") no-repeat;
+  background-size: 0.5%;
+  background-position: center;
 }
 
-#personxxk .xxkz .middle img {
-  height: 70%;
-}
-
-#personxxk .xxkz .right {
+#mythree #personxxk .xxkz .right {
   margin-top: 0.08rem;
   float: right;
   margin-right: 0.08rem;
@@ -432,7 +418,7 @@ a {
   font-size: 0.05rem;
 }
 
-#personxxk .xxkz .right span {
+#mythree #personxxk .xxkz .right span {
   color: #FAFAFA;
   font-size: 0.15rem;
   display: inline-block;
@@ -440,7 +426,7 @@ a {
   margin-top: 0.13rem;
 }
 
-#personxxk .xxkz .right .Ewenzi {
+#mythree #personxxk .xxkz .right .Ewenzi {
   position: absolute;
   left: 0;
   right: 0;
@@ -451,7 +437,7 @@ a {
   border: 0;
 }
 
-#personmainl {
+#mythree #personmainl {
   display: block;
   widows: 100%;
   height: auto;
@@ -462,7 +448,7 @@ a {
   top: 2.55rem;
 }
 
-#personmainl .list {
+#mythree #personmainl .list {
   position: absolute;
   left: 0;
   right: 0;
@@ -474,30 +460,32 @@ a {
   border-radius: 2px;
 }
 
-#personmainl .list li {
+#mythree #personmainl .list li {
   height: 0.87rem;
   border-bottom: 1px dotted #B8B8B8;
   line-height: 0.87rem;
   font-size: 11px;
 }
 
-#personmainl .list li div {
+#mythree #personmainl .list li div {
   display: inline-block;
 }
 
-#personmainl .list li .lister {
+#mythree #personmainl .list li .lister {
   display: inline-block;
   float: right;
   margin-right: 0.31rem;
+  background: url("../../img/my/7.png") no-repeat;
+  background-position: right;
 }
 
-#personmainl .list li .lister h6 {
+#mythree #personmainl .list li .lister h6 {
   display: inline-block;
-  margin-right: 0.11rem;
+  margin-right: 0.3rem;
   color: #3D3D3D;
 }
 
-#personmainl .list li .lister .cirty {
+#mythree #personmainl .list li .lister .cirty {
   width: 0.88rem;
   height: 0.42rem;
   border: 0.03rem solid #D9E1FF;
@@ -505,7 +493,7 @@ a {
   margin-right: 0;
 }
 
-#personmainl .list li .lister .cirty .cir {
+#mythree #personmainl .list li .lister .cirty .cir {
   width: 0.26rem;
   height: 0.26rem;
   border: 0.03rem solid #D9E1FF;
@@ -518,7 +506,7 @@ a {
   right: 0.03rem;
 }
 
-#personmainl .list li .lister .cirty .cir .smallcir {
+#mythree #personmainl .list li .lister .cirty .cir .smallcir {
   width: 0.06rem;
   height: 0.06rem;
   border-radius: 50%;
@@ -530,20 +518,20 @@ a {
   left: 0.03rem;
 }
 
-#personmainl .list li h2 {
+#mythree #personmainl .list li h2 {
   line-height: 0.7rem;
   height: 50%;
   color: #363636;
   font-size: 0.16rem;
 }
 
-#personmainl .list li p {
+#mythree #personmainl .list li p {
   height: 50%;
   line-height: 0.01rem;
   color: #666666;
 }
 
-#personmainl .list li span {
+#mythree #personmainl .list li span {
   margin-left: 0.165rem;
   margin-right: 0.165rem;
   margin-top: 0.27rem;
@@ -551,33 +539,37 @@ a {
   display: inline-block;
   width: 0.33rem;
   height: 0.33rem;
-  background: #FDCD3D;
+  background: #FDCD3D url("../../img/my/17.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
   border-radius: 50%;
   text-align: center;
   line-height: 0.33rem;
 }
 
-#personmainl .list li span img {
-  width: 70%;
+#mythree #personmainl .list li .qblue {
+  background: #FDCD3D url("../../img/my/17.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 
-#personmainl .list li .qblue {
-  background: #FDCD3D;
+#mythree #personmainl .list li .green {
+  background: #FDCD3D url("../../img/my/17.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 
-#personmainl .list li .green {
-  background: #FDCD3D;
+#mythree #personmainl .list li .yellow {
+  background: #FDCD3D url("../../img/my/17.png") no-repeat;
+  background-size: 70%;
+  background-position: center;
 }
 
-#personmainl .list li .yellow {
-  background: #FDCD3D;
-}
-
-#personmainl .list .last {
+#mythree #personmainl .list .last {
   border: 0;
 }
 
-#personmainr {
+#mythree #personmainr {
   display: none;
   widows: 100%;
   height: auto;
@@ -588,7 +580,7 @@ a {
   top: 2.55rem;
 }
 
-#personmainr .list {
+#mythree #personmainr .list {
   position: absolute;
   left: 0;
   right: 0;
@@ -600,39 +592,42 @@ a {
   border-radius: 2px;
 }
 
-#personmainr .list li {
+#mythree #personmainr .list li {
   height: 1.4rem;
   border-bottom: 1px dotted #B8B8B8;
   line-height: 0.87rem;
   font-size: 0.11rem;
 }
 
-#personmainr .list li div {
+#mythree #personmainr .list li div {
   position: absolute;
   display: inline-block;
 }
 
-#personmainr .list li .lister {
+#mythree #personmainr .list li .lister {
   display: inline-block;
   position: absolute;
   right: 0;
   top: 0.039rem;
   margin-right: 0.31rem;
+  padding-left: 0.4rem;
+  background: url("../../img/my/20.png") no-repeat;
+  background-position: left;
 }
 
-#personmainr .list li .lister h6 {
+#mythree #personmainr .list li .lister h6 {
   display: inline-block;
   color: #666666;
 }
 
-#personmainr .list li h2 {
+#mythree #personmainr .list li h2 {
   line-height: 0.6rem;
   height: 50%;
   color: #363636;
   font-size: 0.16rem;
 }
 
-#personmainr .list li p {
+#mythree #personmainr .list li p {
   margin-top: -0.1rem;
   height: 25%;
   line-height: 0.19rem;
@@ -641,7 +636,7 @@ a {
   font-size: 0.1rem;
 }
 
-#personmainr .list li span {
+#mythree #personmainr .list li span {
   margin-left: 0.165rem;
   margin-right: 0.165rem;
   margin-top: 0.27rem;
@@ -653,25 +648,11 @@ a {
   border-radius: 50%;
   text-align: center;
   line-height: 0.68rem;
+  background: #FAFAFA url("../../img/my/18.png") no-repeat;
+  background-size: 100%;
+  background-position: center;
 }
 
-#personmainr .list li span img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-#personmainr .list li .qblue {
-  background: #3DBFFD;
-}
-
-#personmainr .list li .green {
-  background: #2FE7CB;
-}
-
-#personmainr .list li .yellow {
-  background: #FDCD3D;
-}
-
-#personmainr .list .last {
+#mythree #personmainr .list .last {
   border: 0;
 }

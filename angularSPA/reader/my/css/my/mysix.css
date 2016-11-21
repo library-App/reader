@@ -23,7 +23,6 @@ html {
 
 body {
   font-size: 15px;
-  background: #000;
 }
 
 @media screen and (min-width: 320px) {
@@ -113,10 +112,6 @@ input {
   clear: both;
 }
 
-body {
-  background: #FAFAFA;
-}
-
 body, html {
   width: 100%;
   height: 100%;
@@ -139,22 +134,22 @@ a {
 }
 
 /*顶部*/
-#persontopintercalate {
+#mysix #persontopintercalate {
   width: 100%;
   height: 1.08rem;
   background: #2BA6DC;
 }
 
-#persontopintercalate .install {
+#mysix #persontopintercalate .install {
   width: 100%;
   height: 1.08rem;
 }
 
-#persontopintercalate .install li {
+#mysix #persontopintercalate .install li {
   line-height: 1.08rem;
 }
 
-#persontopintercalate .install .left {
+#mysix #persontopintercalate .install .left {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -162,18 +157,19 @@ a {
   left: 0.24rem;
 }
 
-#persontopintercalate .install .left span {
+#mysix #persontopintercalate .install .left span {
   display: inline-block;
   width: 0.44rem;
   height: 0.44rem;
   border: 3px solid #0F74B5;
   border-radius: 50%;
-  background: #FAFAFA;
+  background: #FAFAFA url("../../img/my/11.png") no-repeat;
+  background-size: 30%;
+  background-position: center;
   margin-top: 0.32rem;
 }
 
-#persontopintercalate .install .left span img {
-  width: 30%;
+#mysix #persontopintercalate .install .middle {
   position: absolute;
   left: 0;
   right: 0;
@@ -184,18 +180,7 @@ a {
   margin: auto;
 }
 
-#persontopintercalate .install .middle {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-#persontopintercalate .install .middle div:nth-of-type(1) {
+#mysix #persontopintercalate .install .middle div:nth-of-type(1) {
   line-height: 0.9rem;
   text-align: center;
   height: 50%;
@@ -203,15 +188,17 @@ a {
   color: #FAFAFA;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(2) {
+#mysix #persontopintercalate .install .middle div:nth-of-type(2) {
   line-height: 0.2rem;
   text-align: center;
   height: 25%;
   font-size: 0.35rem;
   color: #FAFAFA;
+  background: url("../../img/my/1.png") no-repeat;
+  background-position: center 52%;
 }
 
-#persontopintercalate .install .middle div:nth-of-type(3) {
+#mysix #persontopintercalate .install .middle div:nth-of-type(3) {
   line-height: 0rem;
   text-align: center;
   height: 25%;
@@ -219,7 +206,7 @@ a {
   color: #90DCFF;
 }
 
-#personmain {
+#mysix #personmain {
   z-index: 10;
   widows: 100%;
   height: auto;
@@ -230,7 +217,7 @@ a {
   top: 1.29rem;
 }
 
-#personmain .cirl {
+#mysix #personmain .cirl {
   position: absolute;
   left: 0;
   right: 0;
@@ -243,7 +230,7 @@ a {
   z-index: 1;
 }
 
-#personmain .list {
+#mysix #personmain .list {
   background: #FAFAFA;
   z-index: 10;
   position: absolute;
@@ -257,19 +244,19 @@ a {
   border-radius: 0.02rem;
 }
 
-#personmain .list li {
+#mysix #personmain .list li {
   color: #666666;
   width: 5.5rem;
   margin: 0 auto;
   margin-bottom: 0.51rem;
 }
 
-#personmain .list .first {
+#mysix #personmain .list .first {
   text-align: center;
   margin-top: 0.39rem;
   margin-bottom: 0.65rem;
 }
 
-#personmain .list .first h2 {
+#mysix #personmain .list .first h2 {
   font-weight: normal;
 }
