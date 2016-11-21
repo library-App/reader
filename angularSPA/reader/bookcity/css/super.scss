@@ -36,7 +36,7 @@
         width: 0.44rem;
         height: 0.44rem;
         @include auto;
-        background: url("../../img/kk-img/found.png") no-repeat;
+        background: url("../img/found.png") no-repeat;
         background-size: cover;
         margin-right: 0.24rem;
     }
@@ -44,11 +44,11 @@
         width: 0.44rem;
         height: 0.44rem;
         @include auto;
-        background: url("../../img/kk-img/back_06.png") no-repeat;
+        background: url("../img/back_06.png") no-repeat;
         background-size: cover;
         margin-left: 0.24rem;
     }
-    .header {
+    .header1 {
         @include auto;
         width: 2.6rem;
         height: 0.64rem;
@@ -66,7 +66,7 @@
             height: 0.03rem;
             width: 0.36rem;
             margin: 0 auto;
-            background: url("../../img/kk-img/line_10.png") no-repeat;
+            background: url("../img/line_10.png") no-repeat;
             background-size: cover;
         }
     }
@@ -79,10 +79,10 @@
             @include auto;
             width: 5.72rem;
             height: 0.84rem;
-            background: url("../../img/kk-img/su1.png") no-repeat;
+            background: url("../img/su1.png") no-repeat;
             background-size: cover;
             .title-img {
-                background: url("../../img/kk-img/su2.png") no-repeat;
+                background: url("../img/su2.png") no-repeat;
                 background-size: cover;
                 @include auto;
                 width: 1.65rem;
@@ -101,7 +101,7 @@
         .book-img{
             width: 2.46rem;
             height: 100%;
-            background: url(../../img/kk-img/book1.png) no-repeat;
+            background: url(../img/book1.png) no-repeat;
             background-size: cover;
             float: left;
         }
@@ -135,14 +135,15 @@
             h4{
                 width: 1.36rem;
                 height: 0.23rem;
-                background: url(../../img/kk-img/book3.png) no-repeat;
+                background: url(../img/book3.png) no-repeat;
                 background-size: cover;
                 margin-top: 0.2rem;
             }
             .look{
+                display: block;
                 width: 1.84rem;
                 height: 0.57rem;
-                background: url(../../img/kk-img/look.png) no-repeat;
+                background: url(../img/look.png) no-repeat;
                 background-size: cover;
                 position: absolute;
                 bottom: 0.18rem;
@@ -153,7 +154,7 @@
                     display: inline-block;
                     width: 0.18rem;
                     height: 0.18rem;
-                    background: url(../../img/kk-img/book2.png) no-repeat;
+                    background: url(../img/book2.png) no-repeat;
                     background-size: cover;
                 }
                 span{

@@ -1,0 +1,1 @@
+app.controller('superCtrl', ['$scope', function($scope){}])
