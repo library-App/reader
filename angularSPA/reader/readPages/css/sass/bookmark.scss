@@ -11,8 +11,10 @@
         z-index: 2000;
         .header{
             height: 1.1rem;
-            background: #29a6dc;
+            background: #29a6dc; 
+            position: relative;
             .return{
+                display: block;
                 @include square(0.43rem,0.43rem);
                 @include top-bottom;
                 left: 0.24rem;

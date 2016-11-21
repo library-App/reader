@@ -5,9 +5,18 @@ app.config([
 		$routeProvider.when('/',{
 			templateUrl:'reader/login/login.html',
 			controller:'loginCtrl'
-		}).when('/list',{
-			templateUrl:'list/list.html',
-//			controller:'listCtrl'
+		}).when('/bookshelf',{
+			templateUrl:'reader/bookshelf/bookshelf.html',
+			controller:''
+		}).when('/readPage',{
+			templateUrl:'reader/readPages/readPage.html',
+			controller:'readCtrl'
+		}).when('/bookmark',{
+			templateUrl:'reader/readPages/bookmark.html',
+			controller:'markCtrl'
+		}).when('/notes',{
+			templateUrl:'reader/readPages/note.html',
+			controller:'notCtrl'
 		})
 	}
 ])

@@ -1,4 +1,4 @@
-var app=angular.module('readPage',[]);
+
 app.controller('readCtrl',['$scope',function($scope){
 	$scope.colors=[
 		{
