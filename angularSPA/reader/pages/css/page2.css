@@ -92,6 +92,7 @@ body {
   height: 1rem;
   background: #2BA6DC; }
   .page2 .header .circle {
+  	display:block;
     width: 0.44rem;
     height: 0.44rem;
     border: 0.02rem solid #076CBE;

@@ -92,6 +92,8 @@ body {
   height: 1rem;
   background: #2BA6DC; }
   .page5 .header .circle {
+  	display:block;
+  	z-index:100;
     width: 0.44rem;
     height: 0.44rem;
     border: 0.02rem solid #076CBE;
@@ -165,14 +167,22 @@ body {
   bottom: 0;
   background: url("../img/book/book31.png");
   background-size: cover; }
-
+.page5 .key .go{
+	display:block;
+	width:1.76rem;
+	height:0.84rem;
+	position:absolute;
+	right:0;
+	bottom:0;
+}
 .page5 .popupZhao {
   width: 100%;
   height: 13.32rem;
   background: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0; 
+  display:none;}
   .page5 .popupZhao .popup {
     width: 4.78rem;
     height: 2.95rem;

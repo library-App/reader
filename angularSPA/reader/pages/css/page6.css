@@ -87,11 +87,11 @@ body {
 * {
   font-weight: normal; }
 
-.page7 .header {
+.page4 .header {
   width: 100%;
   height: 1rem;
   background: #2BA6DC; }
-  .page7 .header .circle {
+  .page4 .header .circle {
   	display:block;
   	z-index:100;
     width: 0.44rem;
@@ -106,19 +106,19 @@ body {
     bottom: 0;
     margin: auto;
     left: 0.25rem; }
-  .page7 .header .title {
+  .page4 .header .title {
     text-align: center; }
-    .page7 .header .title h1 {
+    .page4 .header .title h1 {
       font-size: 0.33rem;
       color: #fff;
       line-height: 0.58rem; }
-    .page7 .header .title .line {
+    .page4 .header .title .line {
       width: 0.34rem;
       border-top: 0.01rem solid #fff;
       position: absolute;
       bottom: 0.40rem;
       left: 3.57rem; }
-    .page7 .header .title .line:before, .page7 .header .title .line:after {
+    .page4 .header .title .line:before, .page4 .header .title .line:after {
       content: '';
       display: block;
       width: 0.03rem;
@@ -127,153 +127,89 @@ body {
       border-radius: 50%;
       position: absolute;
       top: -0.01rem; }
-    .page7 .header .title .line:before {
+    .page4 .header .title .line:before {
       left: 0; }
-    .page7 .header .title .line:after {
+    .page4 .header .title .line:after {
       right: 0; }
-    .page7 .header .title span {
+    .page4 .header .title span {
       text-transform: uppercase;
       font-size: 0.13rem;
       color: #A3E3FF; }
 
-.page7 .remind {
-  width: 100%;
-  height: 0.48rem;
-  background: #E5E5E5;
-  text-align: center;
-  line-height: 0.48rem;
-  font-size: 0.19rem;
-  color: #ACACAC; }
-
-.page7 .note {
+.page4 .bookmark {
   width: 100%;
   margin: 0.2rem auto 0; }
-  .page7 .note ul {
+  .page4 .bookmark ul {
     width: 100%; }
-    .page7 .note ul li {
+    .page4 .bookmark ul li {
       width: 100%;
-      height: 2rem;
+      height: 1.54rem;
       border-bottom: 1px dotted #A7A7A7;
       box-shadow: 0 0 0 #fff;
       border-radius: 0;
       padding-top: 0.22rem;
       padding-left: 0.31rem;
       padding-bottom: 0.3rem; }
-      .page7 .note ul li .img {
+      .page4 .bookmark ul li .img {
         width: 0.66rem;
         height: 0.64rem;
         background: url("../img/book/book54.jpg");
         background-size: 100% auto;
-        float: left;
-        margin-top: 0.26rem; }
-      .page7 .note ul li .text {
+        float: left; }
+      .page4 .bookmark ul li .text {
         width: 5.6rem;
         height: 100%;
         float: left;
         margin-left: 0.26rem; }
-        .page7 .note ul li .text h1 {
+        .page4 .bookmark ul li .text h1 {
           font-size: 0.22rem;
           color: #151C2B;
           line-height: 0.22rem;
           font-weight: bold; }
-        .page7 .note ul li .text h5 {
+        .page4 .bookmark ul li .text h5 {
           font-size: 0.17rem;
           color: #505050; }
-        .page7 .note ul li .text .write {
-          width: 5.35rem;
-          height: 0.89rem;
-          font-size: 0.18rem;
-          color: #F57782;
-          padding-left: 0.54rem;
-          padding-top: 0.1rem;
-          padding-right: 0.24rem; }
-          .page7 .note ul li .text .write .pen {
-            width: 0.22rem;
-            height: 0.21rem;
-            background: url("../img/book/book69.jpg");
-            background-size: cover;
-            position: absolute;
-            left: 0.2rem;
-            top: 0.14rem; }
-        .page7 .note ul li .text .time, .page7 .note ul li .text .like {
+        .page4 .bookmark ul li .text .time, .page4 .bookmark ul li .text .like {
           width: 1.7rem;
           height: 0.52rem;
           float: left;
           position: absolute;
-          bottom: -0.45rem; }
-          .page7 .note ul li .text .time .circle, .page7 .note ul li .text .like .circle {
+          bottom: -0.2rem; }
+          .page4 .bookmark ul li .text .time .circle, .page4 .bookmark ul li .text .like .circle {
             width: 0.17rem;
             height: 0.17rem;
             background: #fff url("../img/book/book43.jpg");
             background-size: auto 100%;
             background-repeat: no-repeat;
             margin-top: 0.15rem; }
-          .page7 .note ul li .text .time span, .page7 .note ul li .text .like span {
-            font-size: 0.01rem;
+          .page4 .bookmark ul li .text .time span, .page4 .bookmark ul li .text .like span {
+            font-size: 0.11rem;
             position: absolute;
             left: 0.31rem;
-            top: 0.06rem; }
-        .page7 .note ul li .text .time {
+            top: 0.1rem; }
+        .page4 .bookmark ul li .text .time {
           left: 0.08rem; }
-        .page7 .note ul li .text .like {
+        .page4 .bookmark ul li .text .like {
           width: 1rem;
           height: 0.52rem;
-          left: 1.5rem; }
-          .page7 .note ul li .text .like .circle {
+          float: right;
+          right: -0.03rem; }
+          .page4 .bookmark ul li .text .like .circle {
             width: 0.34rem;
             height: 0.17rem;
             background: #fff url("../img/book/book11.jpg");
             background-size: auto 100%;
             background-repeat: no-repeat; }
-    .page7 .note ul li:nth-of-type(1) .write {
-      background: url("../img/book/book17.png");
-      background-size: cover; }
-    .page7 .note ul li:nth-of-type(2) {
+    .page4 .bookmark ul li:nth-of-type(2) {
       background: url("../img/book/book25.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: -1rem 0; }
-      .page7 .note ul li:nth-of-type(2) .time .circle {
+      background-size: 101% auto;
+      background-repeat: no-repeat; }
+      .page4 .bookmark ul li:nth-of-type(2) .time .circle {
         background: #fff url("../img/book/book73.jpg");
         background-size: 100% auto;
         background-repeat: no-repeat; }
-      .page7 .note ul li:nth-of-type(2) .like .circle {
+      .page4 .bookmark ul li:nth-of-type(2) .like .circle {
         width: 0.33rem;
         background: #fff url("../img/book/book76.jpg");
         background-size: auto 100%;
         background-repeat: no-repeat; }
-    .page7 .note ul li:nth-of-type(3) .text .write .pen {
-      background: url("../img/book/book19.png");
-      background-size: cover; }
-
-.page7 .bottom {
-  width: 100%;
-  height: 1.27rem;
-  background: #151C2B;
-  position: fixed;
-  bottom: 0;
-  left: 0; }
-  .page7 .bottom .release {
-    display: block;
-    margin: 0.41rem auto;
-    width: 1.4rem;
-    height: 0.51rem;
-    border-radius: 0.25rem;
-    background: #F4F4F4;
-    color: #5E5E5E;
-    font-size: 0.19rem;
-    text-align: center;
-    line-height: 0.51rem; }
-  .page7 .bottom .release:before, .page7 .bottom .release:after {
-    content: '';
-    display: block;
-    width: 0.06rem;
-    height: 0.06rem;
-    background: #C4C4C4;
-    border-radius: 50%;
-    position: absolute;
-    top: 0.24rem; }
-  .page7 .bottom .release:before {
-    left: 0.08rem; }
-  .page7 .bottom .release:after {
-    right: 0.08rem; }
