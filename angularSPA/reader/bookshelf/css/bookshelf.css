@@ -178,6 +178,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.first .header .sousuo li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .first .banner {
   height: 4.20rem;
   width: 100%;
@@ -532,7 +538,15 @@ body {
   color: #fff;
 }
 
-.first .read .readkuan .yidu .continue li span:nth-of-type(1) {
+.first .read .readkuan .yidu .continue li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 0.10rem;
+}
+
+.first .read .readkuan .yidu .continue li a span:nth-of-type(1) {
   position: absolute;
   position: absolute;
   top: 0;
@@ -545,7 +559,7 @@ body {
   background: #75CDF3;
 }
 
-.first .read .readkuan .yidu .continue li span:nth-of-type(2) {
+.first .read .readkuan .yidu .continue li a span:nth-of-type(2) {
   position: absolute;
   position: absolute;
   top: 0;
@@ -1110,7 +1124,6 @@ body {
   height: 100%;
   border-radius: 0.3rem;
   position: relative;
-  text-align: center;
   line-height: 0.57rem;
 }
 
@@ -1162,92 +1175,13 @@ body {
   font-size: 0.06rem;
   font-weight: 400;
   color: #fff;
+  margin-left: 25%;
 }
 
-.four .header {
-  height: 1.4rem;
+.four {
   width: 100%;
-  background: #2BA6DC;
-  position: relative;
-}
-
-.four .header .head-left {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  border: 0.02rem solid #137ABA;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  left: 0.25rem;
-  background: #fff;
-  text-align: center;
-  line-height: 0.5rem;
-  font-family: "宋体";
-  color: #45B0E0;
-  font-size: 0.28rem;
-}
-
-.four .header .shuru {
-  width: 5.47rem;
-  height: 0.54rem;
-  border-radius: 0.4rem;
-  background: #FFFFFF;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.four .header .shuru .sousuo {
-  width: 0.58rem;
-  height: 100%;
-  background-image: url("../../img/bookshelf/6.png");
-  background-position: center;
-  background-color: #F6F6F6;
-  border-radius: 0.4rem 0 0 0.4rem;
-  background-size: 0.26rem;
-  background-repeat: no-repeat;
-  float: left;
-}
-
-.four .header .shuru input {
-  padding-left: 0.2rem;
-  color: #DCDCDC;
-  width: 70%;
-  height: 100%;
-  border: 0;
-  float: left;
-  font-weight: 300;
-}
-
-.four .header .head-right {
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  border: 0.02rem solid #137ABA;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  right: 0.25rem;
-  background: #fff;
-  text-align: center;
-  line-height: 0.5rem;
-  font-family: "宋体";
-  color: #45B0E0;
-  font-size: 0.28rem;
-  background-image: url("../../img/bookshelf/t1.png");
-  background-position: center;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-color: #FAFAFA;
+  height: 1000px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .four .top-hidden {
@@ -1256,6 +1190,9 @@ body {
   background: #fff;
   border-radius: 0 0 0.4rem 0.4rem;
   box-shadow: 0 0 0.18rem #AAAAAA;
+  position: fixed;
+  top: 1.4rem;
+  left: 0;
 }
 
 .four .top-hidden .top-top {
@@ -1380,6 +1317,7 @@ body {
 }
 
 .four .top-hidden .shaixuan .yanqing .all {
+  display: block;
   width: 1.75rem;
   height: 0.45rem;
   border: 0.02rem solid #80868E;
