@@ -5,17 +5,16 @@ body,html{
     height: 100%;
     position: relative;
 }
-
 /*顶部*/
 #mytwo{
     a{ 
-    display: inline-block;
-    width: 100%;
-    height: 100%; 
-    @include center;
-    z-index: 100;
-    color: #FAFAFA;
-}
+        display: inline-block;
+        width: 100%;
+        height: 100%; 
+        @include center;
+        z-index: 100;
+        color: #FAFAFA;
+    }
     #persontopintercalate{
     width: 100%;
     height: 1.08rem;

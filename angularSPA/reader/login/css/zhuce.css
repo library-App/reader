@@ -132,8 +132,7 @@ img {
     background: #fff; }
     .zhuce-body ul li img {
       position: absolute;
-      width: 0.5rem;
-      top: 0.23rem;
+      top: 0.2rem;
       left: 0.45rem; }
     .zhuce-body ul li input {
       color: #ADADAD;
@@ -190,8 +189,7 @@ img {
   .dengl a {
     color: #A0A0A0; }
   .dengl img {
-    margin-right: 0.2rem;
-    width: 0.3rem; }
+    margin-right: 0.2rem; }
   .dengl .left {
     float: left; }
   .dengl .right {

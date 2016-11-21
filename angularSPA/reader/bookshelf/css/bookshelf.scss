@@ -378,6 +378,9 @@ body{
         } 
     }   
     .footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
         width: 100%;
         height: 0.98rem;
         background: #141C2D;
@@ -478,6 +481,11 @@ body{
                  background-size:0.26rem;
                  background-repeat: no-repeat;
                  float: left;
+                 a{
+                     display: block;
+                     width: 100%;
+                     height: 100%;
+                 }
             }
             input{
                 padding-left: 0.2rem;
@@ -686,6 +694,8 @@ body{
 
 /** 书架第三张**/
 .three{
+    position: relative;
+    z-index: 1;
    .header{
         height:1.4rem ;
         width:100%;
@@ -880,10 +890,97 @@ body{
     }
 }
 //第四张
-.four{
-    width: 100%;
-    height: 1000px;
+#four{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     background: rgba(0,0,0,0.3);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .header{
+        height:1.4rem ;
+        width:100%;
+        background: #2BA6DC;
+        position: relative;
+        .head-left{
+            width: 0.5rem;
+            height:0.5rem;
+            border-radius: 50%; 
+            border:0.02rem solid #137ABA;     
+            @include top-bottom;
+            left: 0.25rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.5rem;           
+            font-size: 0.28rem;
+            a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                font-family: "宋体";
+                color: #45B0E0;
+            }
+        }
+        .shuru{
+            width: 5.47rem;
+            height: 0.54rem;
+            border-radius: 0.4rem;
+            background: #FFFFFF;
+            overflow: hidden;
+            @include center;
+            .sousuo{
+                width:0.58rem;
+                height: 100%;
+                background-image:url($imgPath+"bookshelf/6.png");
+                background-position: center;
+                background-color: #F6F6F6;
+                 border-radius:0.4rem 0 0 0.4rem;
+                 background-size:0.26rem;
+                 background-repeat: no-repeat;
+                 float: left;
+            }
+            input{
+                padding-left: 0.2rem;
+                color: #DCDCDC;
+                width:70%;
+                height: 100%;
+                border:0;
+                float: left;
+                font-weight:300;
+            }
+        }
+        .head-right{
+            width: 0.5rem;
+            height:0.5rem;
+            border-radius: 50%; 
+            border:0.02rem solid #137ABA;     
+            @include top-bottom;
+            right: 0.25rem;
+            background: #fff;
+            text-align: center;
+            line-height: 0.5rem;
+            font-family: "宋体";
+            color: #45B0E0;
+            font-size: 0.28rem;
+            background-image: url($imgPath+"bookshelf/t1.png");
+            background-position:center;
+            background-size:50%;
+            background-repeat: no-repeat;
+            background-color: #FAFAFA;
+            a{
+                display: block;
+                width: 100%;
+                height:100%;
+                border-radius: 50%;
+            }
+        }
+    } 
     .top-hidden{
         height: 4.18rem;
         width: 100%;

@@ -122,6 +122,10 @@ body, html {
   position: relative;
 }
 
+.greenzi {
+  color: #29DD8B;
+}
+
 /*顶部*/
 #myone {
   width: 100%;
@@ -143,10 +147,6 @@ body, html {
   margin: auto;
   z-index: 100;
   color: #FAFAFA;
-}
-
-#myone .greenzi {
-  color: #29DD8B;
 }
 
 #myone #persontopintercalate {

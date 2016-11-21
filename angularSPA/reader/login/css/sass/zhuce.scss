@@ -46,8 +46,7 @@ li{ position: relative;
     @include input(6.15rem); 
     background: #fff;
 img{position: absolute;
-    width: 0.5rem;
-    top:0.23rem;
+    top:0.2rem;
     left: 0.45rem;}
 input{color: #ADADAD;
     font-size: 0.28rem;
@@ -90,8 +89,7 @@ input{
     margin: auto;
     font-size: 0.22rem; 
 a{color: #A0A0A0;}
-img{margin-right: 0.2rem;
-    width: 0.3rem;}
+img{margin-right: 0.2rem;}
 .left{float: left;}
 .right{float:right;}}
 .an{height: 0.7rem;

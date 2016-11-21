@@ -573,6 +573,9 @@ body {
 }
 
 .first .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 0.98rem;
   background: #141C2D;
@@ -688,6 +691,12 @@ body {
   background-size: 0.26rem;
   background-repeat: no-repeat;
   float: left;
+}
+
+.second .header .shuru .sousuo a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .second .header .shuru input {
@@ -938,6 +947,11 @@ body {
 }
 
 /** 书架第三张**/
+.three {
+  position: relative;
+  z-index: 1;
+}
+
 .three .header {
   height: 1.4rem;
   width: 100%;
@@ -1178,13 +1192,120 @@ body {
   margin-left: 25%;
 }
 
-.four {
-  width: 100%;
-  height: 1000px;
+#four {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
   background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
-.four .top-hidden {
+#four .header {
+  height: 1.4rem;
+  width: 100%;
+  background: #2BA6DC;
+  position: relative;
+}
+
+#four .header .head-left {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 0.02rem solid #137ABA;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0.25rem;
+  background: #fff;
+  text-align: center;
+  line-height: 0.5rem;
+  font-size: 0.28rem;
+}
+
+#four .header .head-left a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  font-family: "宋体";
+  color: #45B0E0;
+}
+
+#four .header .shuru {
+  width: 5.47rem;
+  height: 0.54rem;
+  border-radius: 0.4rem;
+  background: #FFFFFF;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+#four .header .shuru .sousuo {
+  width: 0.58rem;
+  height: 100%;
+  background-image: url("../bookshelf/6.png");
+  background-position: center;
+  background-color: #F6F6F6;
+  border-radius: 0.4rem 0 0 0.4rem;
+  background-size: 0.26rem;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+#four .header .shuru input {
+  padding-left: 0.2rem;
+  color: #DCDCDC;
+  width: 70%;
+  height: 100%;
+  border: 0;
+  float: left;
+  font-weight: 300;
+}
+
+#four .header .head-right {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: 0.02rem solid #137ABA;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0.25rem;
+  background: #fff;
+  text-align: center;
+  line-height: 0.5rem;
+  font-family: "宋体";
+  color: #45B0E0;
+  font-size: 0.28rem;
+  background-image: url("../bookshelf/t1.png");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-color: #FAFAFA;
+}
+
+#four .header .head-right a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#four .top-hidden {
   height: 4.18rem;
   width: 100%;
   background: #fff;
@@ -1195,14 +1316,14 @@ body {
   left: 0;
 }
 
-.four .top-hidden .top-top {
+#four .top-hidden .top-top {
   width: 100%;
   height: 1.19rem;
   background: #fff;
   position: relative;
 }
 
-.four .top-hidden .top-top .system {
+#four .top-hidden .top-top .system {
   width: 5.74rem;
   height: 0.84rem;
   background: #2C3744;
@@ -1218,14 +1339,14 @@ body {
   text-align: center;
 }
 
-.four .top-hidden .top-top .system .sys {
+#four .top-hidden .top-top .system .sys {
   width: 50%;
   height: 100%;
   float: left;
   position: relative;
 }
 
-.four .top-hidden .top-top .system .sys .xian {
+#four .top-hidden .top-top .system .sys .xian {
   height: 0.54rem;
   width: 0.01rem;
   background: #fff;
@@ -1236,7 +1357,7 @@ body {
   right: 0;
 }
 
-.four .top-hidden .top-top .system .sys .xian:before {
+#four .top-hidden .top-top .system .sys .xian:before {
   content: "";
   display: block;
   width: 0.04rem;
@@ -1246,7 +1367,7 @@ body {
   margin-left: -0.02rem;
 }
 
-.four .top-hidden .top-top .system .sys .xian:after {
+#four .top-hidden .top-top .system .sys .xian:after {
   content: "";
   display: block;
   width: 0.04rem;
@@ -1257,7 +1378,7 @@ body {
   margin-top: 0.5rem;
 }
 
-.four .top-hidden .top-top .system .sys .sys-nei {
+#four .top-hidden .top-top .system .sys .sys-nei {
   width: 2.39rem;
   height: 0.67rem;
   background: #2BA6DC;
@@ -1270,7 +1391,7 @@ body {
   border: 0.02rem solid #fff;
 }
 
-.four .top-hidden .top-top .system .sys .sys-nei1 {
+#four .top-hidden .top-top .system .sys .sys-nei1 {
   width: 2.39rem;
   height: 0.67rem;
   border-radius: 0.4rem;
@@ -1281,7 +1402,7 @@ body {
   left: 0.1rem;
 }
 
-.four .top-hidden .top-top .system .sys h4 {
+#four .top-hidden .top-top .system .sys h4 {
   color: #fff;
   font-size: 0.24rem;
   margin-top: 0.05rem;
@@ -1289,7 +1410,7 @@ body {
   height: 0,14rem;
 }
 
-.four .top-hidden .top-top .system .sys span {
+#four .top-hidden .top-top .system .sys span {
   font-size: 0.08rem;
   white-space: nowrap;
   color: #fff;
@@ -1302,21 +1423,21 @@ body {
   font-family: "San Francisco Display";
 }
 
-.four .top-hidden .shaixuan {
+#four .top-hidden .shaixuan {
   height: 3rem;
   width: 100%;
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
 
-.four .top-hidden .shaixuan .yanqing {
+#four .top-hidden .shaixuan .yanqing {
   width: 33.33%;
   height: 30%;
   float: left;
   position: relative;
 }
 
-.four .top-hidden .shaixuan .yanqing .all {
+#four .top-hidden .shaixuan .yanqing .all {
   display: block;
   width: 1.75rem;
   height: 0.45rem;
@@ -1336,7 +1457,7 @@ body {
   font-size: 0.24rem;
 }
 
-.four .top-hidden .shaixuan .yanqing:first-child .all {
+#four .top-hidden .shaixuan .yanqing:first-child .all {
   background: #2BA6DC;
   border: 0;
   color: #fff;

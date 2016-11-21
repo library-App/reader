@@ -1,8 +1,6 @@
 @import '../base/base';
-
-.box{
-    background: #FFE7A7;$backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac),(5,0.1rem,#21858e),(6,0.1rem,#f4c5d4),(7,0.1rem,#79d143),(8,0.1rem,#ffffff);
-    height: 100%;
+$backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac),(5,0.1rem,#21858e),(6,0.1rem,#f4c5d4),(7,0.1rem,#79d143),(8,0.1rem,#ffffff);
+#box{
     background: #ffe7a7;
     .con{
         overflow: hidden;
@@ -446,13 +444,14 @@
         }
         //正文
         .text{
-            padding: 0 0.25rem;
+            padding: 0 0.25rem 0;
             h2{
                 font-size: 0.3rem;
                 padding: 0.25rem 0.12rem;
             }
             .texts{
                 height: 11rem;
+                box-sizing: border-box;
                 overflow: hidden;
                 p{
                     padding: 0.2rem 0.25rem;
@@ -466,20 +465,27 @@
                 
         }
         .corner{
+            width: 100%;
             height: 0.35rem;
+            padding: 0.55rem 0.25rem;
             position: fixed;
-            bottom: 0.2rem;
-            left: 0.25rem;
+            bottom: 0;
+            left: 0;
             z-index: 1;
-            right: 0.25rem;
-            margin: auto;
+            box-sizing: inherit;
+            background: #ffe7a7;
             .cor-left{
-                @include top-bottom;
+                height: 0.35rem;
+                position: absolute;
+                bottom: 0.25rem;
                 left: 0.3rem;
                 font-size: 0.23rem;
+                
             }
             .cor-right{
-                @include top-bottom;
+                height: 0.35rem;
+                position: absolute;
+                bottom: 0.25rem;
                 right: 0.3rem;
                 font-size: 0.23rem;
             }

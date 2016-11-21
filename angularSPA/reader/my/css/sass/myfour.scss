@@ -4,11 +4,13 @@ body,html{
     height: 100%;
     position: relative;
 }
-
 $img:"../../img/my/";
 /*顶部*/
 #myfour{ 
-    a{
+    width: 100%;
+    height: 100%;
+    position: relative;
+a{
     display: inline-block;
     width: 100%;
     height: 100%; 
@@ -16,9 +18,6 @@ $img:"../../img/my/";
     z-index: 100;
     color: #FAFAFA;
 }
-    width: 100%;
-    height: 100%;
-    position: relative;
 
 #persontopintercalate{
     width: 100%;
