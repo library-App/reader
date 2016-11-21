@@ -1,4 +1,4 @@
-var app=angular.module('reader',['ngRoute']);
+var app = angular.module('reader', ['ngRoute']);
 app.config([
 	'$routeProvider',
 	function($routeProvider){
