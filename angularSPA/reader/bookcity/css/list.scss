@@ -35,7 +35,7 @@
     .header {
         width: 5.72rem;
         height: 0.84rem;
-        background: url("../../img/kk-img/title2.png") no-repeat;
+        background: url("../img/title2.png") no-repeat;
         background-size: cover;
         @include auto;
     }
@@ -43,7 +43,7 @@
         width: 0.44rem;
         height: 0.44rem;
         @include auto;
-        background: url("../../img/kk-img/found.png") no-repeat;
+        background: url("../img/found.png") no-repeat;
         background-size: cover;
         margin-right: 0.24rem;
     }
@@ -52,18 +52,18 @@
         width: (5.72rem/3);
         height: 100%;
         float: left;
-        background: url("../../img/kk-img/1.png") no-repeat center;
+        background: url("../img/1.png") no-repeat center;
         background-size: 1.65rem 0.71rem;
     }
     .h-chose:nth-child(1) {
         opacity: 0;
     }
     .h-chose:nth-child(2) {
-        background: url("../../img/kk-img/2.png") no-repeat center;
+        background: url("../img/2.png") no-repeat center;
         background-size: 1.65rem 0.71rem;
     }
     .h-chose:nth-child(3) {
-        background: url("../../img/kk-img/3.png") no-repeat center;
+        background: url("../img/3.png") no-repeat center;
         background-size: 1.65rem 0.71rem;
         opacity: 0;
     }
@@ -71,7 +71,7 @@
     .foot {
         width: 100%;
         height: 1rem;
-        background: url("../../img/kk-img/123_02.png") no-repeat;
+        background: url("../img/123_02.png") no-repeat;
         background-size: cover;
         position: fixed;
         bottom: 0;
@@ -83,7 +83,7 @@
             float: left;
         }
         .foot-list:nth-child(2) {
-            background: url("../../img/kk-img/2_02.png") no-repeat;
+            background: url("../img/2_02.png") no-repeat;
             background-size: cover;
         }
     }
@@ -93,28 +93,28 @@
         .list-1 {
             width: 100%;
             height: 2.6rem;
-            background: url("../../img/kk-img/l1.png") no-repeat;
+            background: url("../img/l1.png") no-repeat;
             background-size: cover;
             margin-bottom: 0.16rem;
         }
         .list-2 {
             width: 100%;
             height: 2.6rem;
-            background: url("../../img/kk-img/l2.png") no-repeat;
+            background: url("../img/l2.png") no-repeat;
             background-size: cover;
             margin-bottom: 0.16rem;
         }
         .list-3 {
             width: 100%;
             height: 2.6rem;
-            background: url("../../img/kk-img/l3.png") no-repeat;
+            background: url("../img/l3.png") no-repeat;
             background-size: cover;
             margin-bottom: 0.16rem;
         }
         .list-4 {
             width: 100%;
             height: 2.6rem;
-            background: url("../../img/kk-img/l4.png") no-repeat;
+            background: url("../img/l4.png") no-repeat;
             background-size: cover;
             margin-bottom: 0.16rem;
         }

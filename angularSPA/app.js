@@ -5,9 +5,20 @@ app.config([
 		$routeProvider.when('/',{
 			templateUrl:'reader/login/login.html',
 			controller:'loginCtrl'
+		}).when('/select',{
+			templateUrl:'reader/bookcity/select.html',
+			controller:'selectCtrl'
+		}).when('/super',{
+			templateUrl:'reader/bookcity/super.html',
+			controller:'superCtrl'
+		}).when('/newbook',{
+			templateUrl:'reader/bookcity/newbook.html'
 		}).when('/list',{
-			templateUrl:'list/list.html',
-//			controller:'listCtrl'
+			templateUrl:'reader/bookcity/list.html'
+		}).when('/classify',{
+			templateUrl:'reader/bookcity/classify.html'
+		}).when('/bookshow',{
+			templateUrl:'reader/bookcity/bookshow.html'
 		})
 	}
 ])
