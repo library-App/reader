@@ -94,7 +94,7 @@ body {
     background: url("../img/back_06.png") no-repeat;
     background-size: cover;
     margin-left: 0.24rem; }
-  .kk .header {
+  .kk .header2 {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -104,14 +104,14 @@ body {
     width: 2.6rem;
     height: 0.64rem;
     color: #FFFFFF; }
-    .kk .header h3 {
+    .kk .header2 h3 {
       font-weight: 100;
       text-align: center; }
-    .kk .header p {
+    .kk .header2 p {
       font-size: 10px;
       letter-spacing: 0;
       text-align: center; }
-    .kk .header .line {
+    .kk .header2 .line {
       height: 0.03rem;
       width: 0.36rem;
       margin: 0 auto;
