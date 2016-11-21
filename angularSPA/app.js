@@ -37,6 +37,10 @@ app.config([
 			templateUrl:'reader/readPages/bookmark.html',
 		}).when('/page3',{
 			templateUrl:'reader/pages/page3.html',
+		}).when('/page4',{
+			templateUrl:'reader/pages/page4.html',
+		}).when('/page5',{
+			templateUrl:'reader/pages/page5.html',
 		}).when('/page6',{
 			templateUrl:'reader/pages/page6.html',
 		}).when('/page7',{
