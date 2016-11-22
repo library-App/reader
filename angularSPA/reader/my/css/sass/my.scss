@@ -88,7 +88,7 @@ a{
 }
 #personbody{
     width: 100%;
-    height: 10.94rem;
+    height: 11.22rem;
     background: #FAFAFA;
     .cir1{
         width: 100%;
@@ -115,7 +115,7 @@ a{
             text-align: center;
             color: #3D3D3D;
         }
-        .ziti2{
+        .ziti2{ 
             font-size: 0.2rem;
             @include left-right;
             top: 2.83rem;
@@ -124,6 +124,12 @@ a{
             background: #FAFAFA url($img+"3.png")no-repeat;
             background-size: 3%;
             background-position: 85% center;
+            input{
+                background: transparent;
+                outline: medium;
+                width: 75%;
+                height: 100%;
+            }
         }
     }
 }
@@ -207,14 +213,14 @@ a{
             border: 0;
         }
     }
-}
+} 
 #footer{
     background: #141C2D;
     width: 100%;
-    height: 1.31rem;
-    .footeran{
+    height: 1rem;
+    .footeran{ 
         width: 100%;
-        height: 1.31rem;
+        height: 1rem;
         li{
             float: left;
             width: 33.333%;
@@ -231,7 +237,7 @@ a{
             }
             h3{
                 font-weight: normal;
-                margin-top: 0.10rem;
+//              margin-top: 0.10rem;
                 text-align: center;
                 color: #777779;
             }

@@ -129,6 +129,14 @@ body, html {
   position: relative;
 }
 
+#myone .moveleft {
+  transform: translateX(-0.48rem);
+}
+
+#myone .smoveleft {
+  transform: translateX(-0.009rem);
+}
+
 #myone a {
   display: inline-block;
   width: 100%;
