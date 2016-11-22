@@ -112,8 +112,32 @@ input {
   clear: both;
 }
 
-#box {
-  background: #ffe7a7;
+.colone {
+  background: #FCF3DB;
+}
+
+.coltwo {
+  background: #FFE9B0;
+}
+
+.colthree {
+  background: #D8A764;
+}
+
+.colfour {
+  background: #3876AC;
+}
+
+.colfive {
+  background: #21858E;
+}
+
+.colsix {
+  background: #F4C5D4;
+}
+
+.colseven {
+  background: #79d143;
 }
 
 #box .con {
@@ -643,7 +667,7 @@ input {
   height: 0.68rem;
 }
 
-#box .con .cor-footer .foot3 ul .pro .an {
+#box .con .cor-footer .foot3 ul .pro .An {
   font-size: 0.24rem;
   color: #F2F2F2;
   position: absolute;
@@ -817,7 +841,6 @@ input {
   left: 0;
   z-index: 1;
   box-sizing: inherit;
-  background: #ffe7a7;
 }
 
 #box .con .corner .cor-left {
@@ -834,4 +857,32 @@ input {
   bottom: 0.25rem;
   right: 0.3rem;
   font-size: 0.23rem;
+}
+
+#box .con .colone {
+  background: #FCF3DB;
+}
+
+#box .con .coltwo {
+  background: #FFE9B0;
+}
+
+#box .con .colthree {
+  background: #D8A764;
+}
+
+#box .con .colfour {
+  background: #3876AC;
+}
+
+#box .con .colfive {
+  background: #21858E;
+}
+
+#box .con .colsix {
+  background: #F4C5D4;
+}
+
+#box .con .colseven {
+  background: #79D143;
 }

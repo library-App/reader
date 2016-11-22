@@ -105,12 +105,21 @@ img {
     left: 0.3rem;
     color: #fff;
     text-align: center;
-    font-family: '苹方'; }
+    font-family: '苹方';
+    z-index: 10000; }
+    .top-zhuce .hui a {
+      display: block;
+      width: 100%;
+      height: 100%; }
   .top-zhuce .shang {
     font-size: 0.36rem;
     color: #fff;
     text-align: center;
     font-family: '苹方'; }
+    .top-zhuce .shang a {
+      display: block;
+      width: 100%;
+      height: 100%; }
   .top-zhuce .xia {
     font-size: 0.42rem;
     color: #fff;

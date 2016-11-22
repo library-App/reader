@@ -1,7 +1,28 @@
 @import '../base/base';
 $backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac),(5,0.1rem,#21858e),(6,0.1rem,#f4c5d4),(7,0.1rem,#79d143),(8,0.1rem,#ffffff);
-#box{
-    background: #ffe7a7;
+.colone{
+    background: #FCF3DB;
+}
+.coltwo{
+    background: #FFE9B0;
+}
+.colthree{
+    background: #D8A764;
+}
+.colfour{
+    background: #3876AC;
+}
+.colfive{
+    background: #21858E;
+}
+.colsix{
+    background: #F4C5D4;
+}
+.colseven{
+    background: #79d143;
+}
+#box{ 
+//  background: #FFE9B0;
     .con{
         overflow: hidden;
         //书名小标
@@ -337,7 +358,7 @@ $backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac
                 ul{
                     .pro{
                         height: 0.68rem;
-                        .an{
+                        .An{
                             font-size: 0.24rem;
                             color: #F2F2F2;
                             @include top-bottom;
@@ -473,7 +494,6 @@ $backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac
             left: 0;
             z-index: 1;
             box-sizing: inherit;
-            background: #ffe7a7;
             .cor-left{
                 height: 0.35rem;
                 position: absolute;
@@ -489,6 +509,27 @@ $backColor:(1,0,#fcf3db),(2,0.1rem,#ffe9b0),(3,0.1rem,#d8a764),(4,0.1rem,#3876ac
                 right: 0.3rem;
                 font-size: 0.23rem;
             }
+        }
+        .colone{
+            background: #FCF3DB;
+        }
+        .coltwo{
+            background: #FFE9B0;
+        }
+        .colthree{
+            background: #D8A764;
+        }
+        .colfour{
+            background: #3876AC;
+        }
+        .colfive{
+            background: #21858E;
+        }
+        .colsix{
+            background: #F4C5D4;
+        }
+        .colseven{
+            background: #79D143;
         }
     }
     

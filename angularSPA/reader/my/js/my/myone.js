@@ -1,4 +1,29 @@
-app.controller('myoneCtrl', ['$scope', function($scope){}])
+app.controller('myoneCtrl', ['$scope', function($scope){
+$scope.add6=function(){
+		$("#Headportrait").css("display","block");
+		$("#shade").css("display","block");
+	}
+$scope.add7=function(){
+		$("#Headportrait").css("display","none");
+		$("#shade").css("display","none");
+	}
+$scope.add8=function(){
+		$("#Headportrait").css("display","none");
+		$("#shade").css("display","none");
+}
+$scope.add12=function(){
+		$("#Sex").css("display","block");
+		$("#shade").css("display","block");
+	}
+$scope.add13=function(){
+		$("#Sex").css("display","none");
+		$("#shade").css("display","none");
+	}
+$scope.add14=function(){
+		$("#Sex").css("display","none");
+		$("#shade").css("display","none");
+}
+}])
 //app.directive("wdL",[function(){
 //	return{
 //		restrict:"A",
