@@ -1,4 +1,40 @@
-app.controller('myoneCtrl', ['$scope', function($scope){}])
+app.controller('myoneCtrl', ['$scope', function($scope){
+$scope.add6=function(){
+		$("#Headportrait").css("display","block");
+		$("#shade").css("display","block");
+	}
+$scope.add7=function(){
+		$("#Headportrait").css("display","none");
+		$("#shade").css("display","none");
+	}
+$scope.add8=function(){
+		$("#Headportrait").css("display","none");
+		$("#shade").css("display","none");
+}
+$scope.add12=function(){
+		$("#Sex").css("display","block");
+		$("#shade").css("display","block");
+	}
+$scope.add13=function(){
+		$("#Sex").css("display","none");
+		$("#shade").css("display","none");
+	}
+$scope.add14=function(){
+		$("#Sex").css("display","none");
+		$("#shade").css("display","none");
+}
+$scope.add100=function(){
+		var sd=$("#personmain .list .xadfr .cir")
+		var ssd=$("#personmain .list .xadfr .cir .smallcir")
+		if(sd.hasClass("moveleft")){
+			sd.removeClass("moveleft");
+			ssd.removeClass("smoveleft");
+		}else {
+			sd.addClass("moveleft");
+			ssd.addClass("smoveleft");
+		}
+	}
+}])
 //app.directive("wdL",[function(){
 //	return{
 //		restrict:"A",

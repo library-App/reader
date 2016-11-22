@@ -1,0 +1,28 @@
+<div>
+	<style type="text/css">
+		.lunbo{
+			width: 100%;
+			height: 4.82rem;
+			position: relative;
+			margin: 0 auto;
+		}
+		.list{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			box-sizing: border-box;
+			/*display: none;*/
+		}
+		.list img{
+			width: 100%;
+		}
+	</style>
+	<div class="lunbo">
+		<div class="list" ng-repeat="v in pics track by $index" style="background: url({{v}}) center;background-size: cover;">
+			
+		</div>
+	</div>
+</div>
