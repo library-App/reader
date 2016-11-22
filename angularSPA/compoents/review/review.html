@@ -1,0 +1,17 @@
+<ul>
+	<li ng-repeat='v in book track by $index'>
+		<div class='headPortrait'></div>
+		<p>
+			{{v.text}}
+			<span class='smiling'></span>
+		</p>
+		<div class="time">
+			<div class="circle"></div>
+			<span>{{v.time}}</span>
+		</div>
+		<div class='like'>
+			<div class="circle"></div>
+			<span>{{v.num}}</span>
+		</div>
+	</li>
+</ul>

@@ -1,0 +1,10 @@
+app.directive('review',[function(){
+	return{
+		restrict:'E',
+		replace:true,
+		scope:{
+			book:'='
+		},
+		templateUrl:'compoents/review/review.html'
+	}
+}]);
