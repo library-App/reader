@@ -1,4 +1,17 @@
-app.controller('mythreeCtrl', ['$scope', function($scope){}])
+app.controller('mythreeCtrl', ['$scope', function($scope){
+$scope.add10=function(){
+		$("#personxxk .xxkz .right").removeClass("bg");
+		$("#personxxk .xxkz .left").addClass("bg");
+		$("#personmainl").css("display","block");
+		$("#personmainr").css("display","none");
+	}
+$scope.add11=function(){
+		$("#personxxk .xxkz .left").removeClass("bg");
+		$("#personxxk .xxkz .right").addClass("bg");
+		$("#personmainl").css("display","none");
+		$("#personmainr").css("display","block");
+}
+}])
 //app.directive("wdL",[function(){
 //	return{
 //		restrict:"A",

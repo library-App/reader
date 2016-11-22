@@ -1,4 +1,21 @@
-app.controller('myfourCtrl', ['$scope', function($scope){}])
+app.controller('myfourCtrl', ['$scope', function($scope){
+$scope.add2=function(){
+		$("#Headportrait").css("display","block");
+		$("#shade").css("display","block");
+	}
+$scope.add3=function(){
+		$("#Headportrait").css("display","none");
+		$("#shade").css("display","none");
+	}
+$scope.add4=function(){
+		$("#Sex").css("display","block");
+		$("#shade").css("display","block");
+	}
+$scope.add5=function(){
+		$("#Sex").css("display","none");
+		$("#shade").css("display","none");
+	}
+}])
 //app.directive("wdL",[function(){
 //	return{
 //		restrict:"A",
