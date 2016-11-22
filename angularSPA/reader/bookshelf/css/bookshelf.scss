@@ -206,6 +206,11 @@ body{
                     background-image: url($imgPath+"bookshelf/cat.png");
                     background-size: 100%;
                     background-repeat: no-repeat;
+                    a{
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }           
                 h3{
                     margin-top: 2.25rem;
@@ -621,6 +626,11 @@ body{
                 background-size: cover;
                 background-position: center;
                 left: 0.08rem;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
             }
             .border{
                 width: 0.15rem;

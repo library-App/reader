@@ -385,6 +385,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.first .newjia .newjia1 .banewo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .first .newjia .newjia1 h3 {
   margin-top: 2.25rem;
   font-size: 0.24rem;
@@ -865,6 +871,12 @@ body {
   background-size: cover;
   background-position: center;
   left: 0.08rem;
+}
+
+.second .hotbook .hb .bookpi a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .second .hotbook .hb .border {
