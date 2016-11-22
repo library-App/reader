@@ -11,6 +11,12 @@ body,html{
 
 /*顶部*/
 #myone{
+    .moveleft{ 
+        transform: translateX(-0.48rem);
+    }
+    .smoveleft{
+        transform: translateX(-0.009rem);
+    }
     width: 100%;
     height: 100%;
     position: relative;

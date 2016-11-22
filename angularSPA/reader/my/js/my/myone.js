@@ -23,6 +23,17 @@ $scope.add14=function(){
 		$("#Sex").css("display","none");
 		$("#shade").css("display","none");
 }
+$scope.add100=function(){
+		var sd=$("#personmain .list .xadfr .cir")
+		var ssd=$("#personmain .list .xadfr .cir .smallcir")
+		if(sd.hasClass("moveleft")){
+			sd.removeClass("moveleft");
+			ssd.removeClass("smoveleft");
+		}else {
+			sd.addClass("moveleft");
+			ssd.addClass("smoveleft");
+		}
+	}
 }])
 //app.directive("wdL",[function(){
 //	return{
