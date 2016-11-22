@@ -33,9 +33,22 @@ img{vertical-align: middle;}
     top: 0.3rem;
     left: 0.3rem;
     @include zi;
+    z-index:10000;
+    a{
+        display:block;
+        width:100%;
+        height:100%;
+    }
 }
-.shang{font-size: 0.36rem;
-    @include zi;}   
+.shang{
+    font-size: 0.36rem;
+    @include zi;
+    a{
+        display:block;
+        width:100%;
+        height:100%;
+    }
+}   
 .xia{font-size: 0.42rem;
     @include zi;
     margin-top: 0.9rem;}

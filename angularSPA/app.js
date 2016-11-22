@@ -3,7 +3,7 @@ app.config([
 	'$routeProvider',
 	function($routeProvider) {
 		$routeProvider.when('/', {
-			templateUrl: 'reader/login/login.html',
+			templateUrl: 'reader/login/Login.html',
 			controller: 'loginCtrl'
 
 		}).when('/select', {
@@ -87,6 +87,12 @@ app.config([
 		}).when('/bookshelf3',{
 			templateUrl:'reader/bookshelf/bookshelf3.html',
 			controller:''
+		}).when('/zhuce',{
+			templateUrl:'reader/login/zhuce.html',
+		}).when('/zhuce1',{
+			templateUrl:'reader/login/zhuce1.html',
+		}).when('/zhuce3',{
+			templateUrl:'reader/login/zhuce3.html',
 		})
 		
 	}
